@@ -8,6 +8,16 @@ ul li{
     list-style: none;
     
 }
+/* CALENDÁRIO, NÃO MEXER */
+.calendar {
+  position: relative;
+  width: 300px;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 5px 50px rgba(#000, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+}
 
 .calendar__date {
   padding: 20px;
@@ -50,3 +60,5 @@ ul li{
     cursor: pointer;
   }
 }
+
+/* FINAL CALENDÁRIO */ 
