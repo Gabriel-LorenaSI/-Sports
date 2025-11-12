@@ -1,31 +1,95 @@
+:root {
+  --azul: #0058BC;
+  --verdeClaro: #3B7C2E;
+  --verdeEscuro: #2C6422;
+  --laranja: #CD6116;
+
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body{
-    background-color: dimgrey;
+.container {
+  max-width: 1040px; 
+  margin-left: auto;   
+  margin-right: auto;  
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-nav {
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* Cria suas 12 colunas */
+  gap: 15px; /* Seu gutter de 15px do Figma */
+}
+
+
+/* Começo NAV */
+
+header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
-  display: flex;
-  align-items: center;
-  padding: 15px 30px;
 }
 
-ul{
-    
+nav.container.grid-layout {
+  align-items: center;
+  padding: 15px 0;
+}
+
+.nav-logo {
+  grid-column: span 2;
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-links {
+  grid-column: span 8;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 15px;
+}
+
+.nav-links a {
+  grid-column: span 2;
+  padding: 10px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border-radius: 25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links a:first-child { /* Apenas o 'Home' */
+  background-color: var(--laranja); /* Laranja */
+  color: white;
+}
+
+.nav-search {
+  grid-column: span 2;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
 }
 
 ul li{
     list-style: none;
     
+}
+
+/* Final Nav */
+
+body {
+    background-color: dimgrey;
 }
 
 /* HERO BANNER, NÃO MEXER */
@@ -43,6 +107,7 @@ ul li{
 }
 
 .slideshow {
+  padding: 5px;
 	position: relative;
 	width: 100%;
   height: 100%;
