@@ -70,6 +70,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: box-shadow 200ms;
 }
 
 .nav-links-wrapper a:nth-child(1) { 
@@ -94,6 +95,11 @@ header {
   grid-column: 9 / span 2; 
   background-color: white;
   color: black;
+}
+
+.nav-links-wrapper a:hover {
+  
+  box-shadow: 0 10px 50px -10px rgba(0,0,0,0.50);
 }
 
 .nav-search {
