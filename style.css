@@ -22,8 +22,8 @@
 
 .grid-layout {
   display: grid;
-  grid-template-columns: repeat(12, 1fr); /* Cria suas 12 colunas */
-  gap: 15px; /* Seu gutter de 15px do Figma */
+  grid-template-columns: repeat(12, 1fr);
+  gap: 15px;
 }
 
 
