@@ -111,10 +111,7 @@ header {
   border-radius: 25px;
 }
 
-ul li{
-    list-style: none;
-    
-}
+
 
 /* Final Nav */
 
@@ -229,59 +226,256 @@ a:target {
 /* Final HERO BANNER  */
 
 
+/* ----------------------------------------------------------------------------------------------------------------------------- */
 
 
-/* CALENDÁRIO, NÃO MEXER */
+/* Seção Modalidades */
+.modalidades {
+  max-width: 960px; 
+  margin: 40px auto; 
+  font-family: Arial, sans-serif;
+  overflow-x: auto;
+}
+
+/* --- Título "Modalidades" --- */
+.modalidades h3 {
+  text-align: center;
+  font-size: 1.8rem; 
+  font-weight: 900; 
+  color: #000;
+  margin-bottom: 30px;
+}
+
+/* Lista  */
+.modalidades ul {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 15px; 
+}
+
+/* Icone + texto */
+.modalidades li {
+  text-align: center; 
+  flex-shrink: 0; 
+  
+}
+
+/* Círculo */
+.modalidades li img {
+  display: block; 
+  background-color: #ffffff; 
+  border-radius: 50%; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+  width: 90px; 
+  height: 90px;
+  padding: 20px; 
+  box-sizing: border-box; 
+  margin: 0 auto 10px auto; 
+  cursor: pointer;
+  
+}
+
+/* Texto */
+.modalidades li p {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  text-transform: uppercase; 
+}
+
+/* Estilos para as SETAS  */
+.modalidades li.setas img {
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0;
+  width: 25px; 
+  height: 25px;
+  margin: 0; 
+  cursor: pointer;
+}
+
+
+/* -----------------------------------------------------------------------------------------------------------------------------*/
+
+/* Inicio do portifólio de eventos */
+
+section h1 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.caixaEventos {
+  background-color: #09152d; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  padding: 20px; 
+  margin-bottom: 20px; 
+  overflow: auto;
+}
+
+/* Imagem do Evento */
+.caixaEventos img {
+  float: left; 
+  width: 150px;
+  height: 150px;
+  object-fit: cover; 
+  border-radius: 8px;
+  margin-right: 20px; 
+}
+
+/* O Bloco de Texto */
+.caixaEventos h4 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-top: 0; 
+  margin-bottom: 15px;
+}
+.caixaEventos p {
+  color: #ffffff;
+  margin: 8px 0; 
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+/* Data */
+.caixaEventos p:nth-of-type(1)::before {
+  content: '📅'; /* Ícone de Calendário */
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+/* Local */
+.caixaEventos p:nth-of-type(2)::before {
+  content: '📍';
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+/* Distância */
+.caixaEventos p:nth-of-type(3)::before {
+  content: '🏃'; /* Ícone de Corrida */
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+/* Preço */
+.caixaEventos p:nth-of-type(4) {
+  font-weight: bold; 
+  color: #ffffff; 
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+.caixaEventos p:nth-of-type(4)::before {
+  content: '💲'; 
+  margin-right: 8px;
+  font-size: 1.2rem;
+  color: #555; 
+  font-weight: normal; 
+  }
+
+  /* Fim da CAIXA DE EVENTOS */
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+
+/* Calendário */
+
+/* Base do Calendário */
 .calendar {
   position: relative;
   width: 300px;
-  background-color: #fff;
+  background-color: #2C6422;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  overflow: hidden; 
   box-sizing: border-box;
-  box-shadow: 0 5px 50px rgba(#000, 0.5);
-  border-radius: 8px;
-  overflow: hidden;
+  font-family: Arial, sans-serif;
 }
 
+/* Grid dos Dias */
 .calendar__date {
-  padding: 20px;
+  padding: 15px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
-  grid-gap: 10px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 5px;
   box-sizing: border-box;
 }
 
+/* Letras dos Dias */
 .calendar__day {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 25px;
-  font-weight: 600;
-  color: #262626;
-  
-  &:nth-child(7) {
-    color: #ff685d;
-  }
+  font-weight: bold;
+  color: #ffffff; 
 }
 
+/* Números dos Dias (Botões) */
 .calendar__number {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 25px;
-  color: #262626;
-
-  &:nth-child(7n) {
-    color: #ff685d;
-    font-weight: 700;
-  }
-  
-  &--current,
-  &:hover {
-    background-color: #009688;
-    color: #fff !important;
-    font-weight: 700;
-    cursor: pointer;
-  }
+  height: 35px; 
+  width: 100%;
+  color: #222; 
+  background-color: #ffffff;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
-/* FINAL CALENDÁRIO */ 
+.calendar__number:hover {
+  background-color: #e0e0e0;
+}
+
+/* Para dias do mês anterior/posterior  */
+.calendar__number.inactive {
+  background-color: #f0f0f0;
+  color: #aaa;
+}
+
+/* Dias de evento em azul */
+.calendar__number.event-blue {
+  background-color: #0058BC; 
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Dias de evento em vermelho/marrom */
+.calendar__number.event-red {
+  background-color: #CD6116; /* Tom de marrom/vermelho */
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.calendar__events {
+  background-color: #0058BC; 
+  padding: 15px;
+}
+
+/* Título "Eventos" */
+.calendar__events h3 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  padding-left: 5px;
+}
+
+/* Item individual do evento */
+.calendar__event-item {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px 5px;
+  border-top: 1px solid #007bff;
+}
+
+/* FINAL CALENDÁRIO */

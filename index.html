@@ -1,196 +1,264 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>+Sports</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-     
-
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Começo Hero Banner -->
     <section class="heroBanner">
+      <header>
+        <nav class="nav-full-bleed">
+          <img src="img/logo.png" alt="" class="nav-logo" />
+          <div class="nav-links-wrapper grid-layout">
+            <a href="#">Home</a>
+            <a href="#">Eventos</a>
+            <a href="#">Peladas</a>
+            <a href="#">Login/Cadastro</a>
+          </div>
+          <input type="text" placeholder="Pesquisar" class="nav-search" />
+        </nav>
+      </header>
 
-        <header>
-            <nav class="nav-full-bleed">
-                <img src="img/logo.png" alt="" class="nav-logo">
-                <div class="nav-links-wrapper grid-layout">
-                    <a href="#">Home</a>
-                    <a href="#">Eventos</a>
-                    <a href="#">Peladas</a>
-                    <a href="#">Login/Cadastro</a>
-                </div>
-                <input type="text" placeholder="Pesquisar" class="nav-search">
-            </nav>
-        </header>
-
-        <div class="slideshow">
-            <div id="slide-1" class="slide">
-                <a href="#slide-7"></a>
-                <a href="#slide-2"></a>
-                <img src="/img/BG.jpg" />
-            </div>
-            <div id="slide-2" class="slide">
-                <a href="#slide-1"></a>
-                <a href="#slide-3"></a>
-                <img src="https://c2.staticflickr.com/4/3719/19819674272_2384feaaf8_n.jpg" />
-            </div>
-            <div id="slide-3" class="slide">
-                <a href="#slide-2"></a>
-                <a href="#slide-4"></a>
-                <img src="https://c2.staticflickr.com/2/1627/24319275501_3ec6f36fa7_n.jpg" />
-            </div>
-            <div id="slide-4" class="slide">
-                <a href="#slide-3"></a>
-                <a href="#slide-5"></a>
-                <img src="https://c2.staticflickr.com/2/1460/25194537936_e3c54faefc_n.jpg" />
-            </div>
-            <div id="slide-5" class="slide">
-                <a href="#slide-4"></a>
-                <a href="#slide-6"></a>
-                <img src="https://c2.staticflickr.com/2/1460/26216238325_9c425923a7_n.jpg" />
-            </div>
-            <div id="slide-6" class="slide">
-                <a href="#slide-5"></a>
-                <a href="#slide-7"></a>
-                <img src="https://c2.staticflickr.com/8/7578/26194232483_8204bf119b_n.jpg" />
-            </div>
-            <div id="slide-7" class="slide">
-                <a href="#slide-6"></a>
-                <a href="#slide-1"></a>
-                <img src="https://c2.staticflickr.com/8/7106/26862741906_d5283c42ba_n.jpg" />
-            </div>
-	    </div>
-
-        <div class="pagination">
-            <a href="#slide-1"><span>1</span></a>
-            <a href="#slide-2"><span>2</span></a>
-            <a href="#slide-3"><span>3</span></a>
-            <a href="#slide-4"><span>4</span></a>
-            <a href="#slide-5"><span>5</span></a>
-            <a href="#slide-6"><span>6</span></a>
-            <a href="#slide-7"><span>7</span></a>
+      <div class="slideshow">
+        <div id="slide-1" class="slide">
+          <a href="#slide-7"></a>
+          <a href="#slide-2"></a>
+          <img src="/img/BG.jpg" />
         </div>
+        <div id="slide-2" class="slide">
+          <a href="#slide-1"></a>
+          <a href="#slide-3"></a>
+          <img
+            src="https://c2.staticflickr.com/4/3719/19819674272_2384feaaf8_n.jpg"
+          />
+        </div>
+        <div id="slide-3" class="slide">
+          <a href="#slide-2"></a>
+          <a href="#slide-4"></a>
+          <img
+            src="https://c2.staticflickr.com/2/1627/24319275501_3ec6f36fa7_n.jpg"
+          />
+        </div>
+        <div id="slide-4" class="slide">
+          <a href="#slide-3"></a>
+          <a href="#slide-5"></a>
+          <img
+            src="https://c2.staticflickr.com/2/1460/25194537936_e3c54faefc_n.jpg"
+          />
+        </div>
+        <div id="slide-5" class="slide">
+          <a href="#slide-4"></a>
+          <a href="#slide-6"></a>
+          <img
+            src="https://c2.staticflickr.com/2/1460/26216238325_9c425923a7_n.jpg"
+          />
+        </div>
+        <div id="slide-6" class="slide">
+          <a href="#slide-5"></a>
+          <a href="#slide-7"></a>
+          <img
+            src="https://c2.staticflickr.com/8/7578/26194232483_8204bf119b_n.jpg"
+          />
+        </div>
+        <div id="slide-7" class="slide">
+          <a href="#slide-6"></a>
+          <a href="#slide-1"></a>
+          <img
+            src="https://c2.staticflickr.com/8/7106/26862741906_d5283c42ba_n.jpg"
+          />
+        </div>
+      </div>
 
+      <div class="pagination">
+        <a href="#slide-1"><span>1</span></a>
+        <a href="#slide-2"><span>2</span></a>
+        <a href="#slide-3"><span>3</span></a>
+        <a href="#slide-4"><span>4</span></a>
+        <a href="#slide-5"><span>5</span></a>
+        <a href="#slide-6"><span>6</span></a>
+        <a href="#slide-7"><span>7</span></a>
+      </div>
     </section>
     <!-- Final Hero Banner -->
 
+    <br />
 
-    
-    <br>
+    <br />
+    <hr />
 
-    <br>
-    <hr>
+    <section class="modalidades">
+  <h3>Modalidades</h3>
 
+  <ul>
+    <li class="setas">
+      <img
+        src="img/iconesModalidade/setaModalidade.png" 
+        alt="setaEsquerda"
+      />
+    </li>
 
-    <section>
-        <h3>Modalidades</h3>
-        
-        <ul>
-            <li class="setas"><img src="img/iconesModalidade/setaModalidade.png" alt="setaEsquerda"></li>
-            <li><img src="img/iconesModalidade/atividade=bike.png" alt="iconeBike"></li>
-            <li><img src="img/iconesModalidade/atividade=corrida.png" alt="iconeCorrida"></li>
-            <li><img src="img/iconesModalidade/atividade=futebol.png" alt="iconeFutebol"></li>
-            <li><img src="img/iconesModalidade/atividade=natacao.png" alt="iconeNatação"></li>
-            <li><img src="img/iconesModalidade/atividade=nightRun.png" alt="iconeNigthRun"></li>
-            <li><img src="img/iconesModalidade/atividade=triathlon.png" alt="iconeTriatro"></li>
-            <li><img src="img/iconesModalidade/atividade=volei.png" alt="iconeVolei"></li>
-            <li class="setas"><img src="img/iconesModalidade/setaDireita.png" alt="setaDireita"></li>
-        </ul>
-    </section>
-    <br>
-    <br>
-    <hr>
+    <li>
+      <img
+        src="img/iconesModalidade/atividade=corrida.png"
+        alt="iconeCorrida"
+      />
+      <p>Corrida</p>
+    </li>
+    <li>
+      <img
+        src="img/iconesModalidade/atividade=futebol.png"
+        alt="iconeFutebol"
+      />
+      <p>Futebol</p>
+    </li>
+    <li>
+      <img src="img/iconesModalidade/atividade=bike.png" alt="iconeBike" />
+      <p>Bike</p>
+    </li>
+    <li>
+      <img
+        src="img/iconesModalidade/atividade=triathlon.png"
+        alt="iconeTriatro"
+      />
+      <p>Triatlo</p>
+    </li>
+    <li>
+      <img
+        src="img/iconesModalidade/atividade=natacao.png"
+        alt="iconeNatação"
+      />
+      <p>Natação</p>
+    </li>
+    <li>
+      <img
+        src="img/iconesModalidade/atividade=volei.png"
+        alt="iconeVolei"
+      />
+      <p>Vôlei</p>
+    </li>
+    <li>
+      <img
+        src="img/iconesModalidade/atividade=nightRun.png"
+        alt="iconeNigthRun"
+      />
+      <p>Night Run</p>
+    </li>
+
+    <li class="setas">
+      <img src="img/iconesModalidade/setaDireita.png" alt="setaDireita" />
+    </li>
+  </ul>
+</section>
+    <br />
+    <br />
+    <hr />
 
     <main>
-        <section>
-            <h1>Próximos eventos</h1>
-            <div class="caixaEventos">
-                <img src="img/eventos/nerdRun.jpg" alt="eventoNerdRun">
-                <h4>Nerd Run Mario Bros</h4>
-                <p>14/12/2025</p>
-                <p>Praça Ex-Combatentes - Volta Redonda/RJ</p>
-                <p>Distância: 5Km</p>
-                <p>À partir de: R$: 74,90 reais </p>
-            </div>
+      <section>
+        <h1>Próximos eventos</h1>
+        <div class="caixaEventos">
+          <img src="img/eventos/nerdRun.jpg" alt="eventoNerdRun" />
+          <h4>Nerd Run Mario Bros</h4>
+          <p>14/12/2025</p>
+          <p>Praça Ex-Combatentes - Volta Redonda/RJ</p>
+          <p>Distância: 5Km</p>
+          <p>À partir de: R$: 74,90 reais</p>
+        </div>
 
-            <div class="caixaEventos">
-                <img src="img/eventos/nerdRun.jpg" alt="eventoNerdRun">
-                <h4>Nerd Run Mario Bros</h4>
-                <p>14/12/2025</p>
-                <p>Praça Ex-Combatentes - Volta Redonda/RJ</p>
-                <p>Distância: 5Km</p>
-                <p>À partir de: R$: 74,90 reais </p>
-            </div>
+        <div class="caixaEventos">
+          <img src="img/eventos/nerdRun.jpg" alt="eventoNerdRun" />
+          <h4>Nerd Run Mario Bros</h4>
+          <p>14/12/2025</p>
+          <p>Praça Ex-Combatentes - Volta Redonda/RJ</p>
+          <p>Distância: 5Km</p>
+          <p>À partir de: R$: 74,90 reais</p>
+        </div>
 
-            <div class="caixaEventos">
-                <img src="img/eventos/nerdRun.jpg" alt="eventoNerdRun">
-                <h4>Nerd Run Mario Bros</h4>
-                <p>14/12/2025</p>
-                <p>Praça Ex-Combatentes - Volta Redonda/RJ</p>
-                <p>Distância: 5Km</p>
-                <p>À partir de: R$: 74,90 reais </p>
-            </div>
+        <div class="caixaEventos">
+          <img src="img/eventos/nerdRun.jpg" alt="eventoNerdRun" />
+          <h4>Nerd Run Mario Bros</h4>
+          <p>14/12/2025</p>
+          <p>Praça Ex-Combatentes - Volta Redonda/RJ</p>
+          <p>Distância: 5Km</p>
+          <p>À partir de: R$: 74,90 reais</p>
+        </div>
 
-            <div class="caixaEventos">
-                <img src="img/eventos/nerdRun.jpg" alt="eventoNerdRun">
-                <h4>Nerd Run Mario Bros</h4>
-                <p>14/12/2025</p>
-                <p>Praça Ex-Combatentes - Volta Redonda/RJ</p>
-                <p>Distância: 5Km</p>
-                <p>À partir de: R$: 74,90 reais </p>
-            </div>
-        </section>
-        <aside>
-            <h2>Calendário Novembro/2025</h2>
-            <div class="calendar">
-                <div class="calendar__date">
-                    <div class="calendar__day">M</div>
-                    <div class="calendar__day">T</div>
-                    <div class="calendar__day">W</div>
-                    <div class="calendar__day">T</div>
-                    <div class="calendar__day">F</div>
-                    <div class="calendar__day">S</div>
-                    <div class="calendar__day">S</div>
-                    <div class="calendar__number"></div>
-                    <div class="calendar__number"></div>
-                    <div class="calendar__number"></div>
-                    <div class="calendar__number">1</div>
-                    <div class="calendar__number">2</div>
-                    <div class="calendar__number">3</div>
-                    <div class="calendar__number">4</div>
-                    <div class="calendar__number">5</div>
-                    <div class="calendar__number">6</div>
-                    <div class="calendar__number">7</div>
-                    <div class="calendar__number">8</div>
-                    <div class="calendar__number">9</div>
-                    <div class="calendar__number">10</div>
-                    <div class="calendar__number">11</div>
-                    <div class="calendar__number">12</div>
-                    <div class="calendar__number">13</div>
-                    <div class="calendar__number">14</div>
-                    <div class="calendar__number">15</div>
-                    <div class="calendar__number">16</div>
-                    <div class="calendar__number">17</div>
-                    <div class="calendar__number calendar__number--current">18</div>
-                    <div class="calendar__number">19</div>
-                    <div class="calendar__number">20</div>
-                    <div class="calendar__number">21</div>
-                    <div class="calendar__number">22</div>
-                    <div class="calendar__number">23</div>
-                    <div class="calendar__number">24</div>
-                    <div class="calendar__number">25</div>
-                    <div class="calendar__number">26</div>
-                    <div class="calendar__number">27</div>
-                    <div class="calendar__number">28</div>
-                    <div class="calendar__number">29</div>
-                    <div class="calendar__number">30</div>
-                </div>
-            </div>
-        </aside>
+        <div class="caixaEventos">
+          <img src="img/eventos/nerdRun.jpg" alt="eventoNerdRun" />
+          <h4>Nerd Run Mario Bros</h4>
+          <p>14/12/2025</p>
+          <p>Praça Ex-Combatentes - Volta Redonda/RJ</p>
+          <p>Distância: 5Km</p>
+          <p>À partir de: R$: 74,90 reais</p>
+        </div>
+      </section>
+      <aside>
+        <h2>Calendário Novembro/2025</h2>
+        <div class="calendar">
+          <div class="calendar__date">
+            <div class="calendar__day">D</div>
+            <div class="calendar__day">S</div>
+            <div class="calendar__day">T</div>
+            <div class="calendar__day">Q</div>
+            <div class="calendar__day">Q</div>
+            <div class="calendar__day">S</div>
+            <div class="calendar__day">S</div>
+
+            <div class="calendar__number inactive"></div>
+            <div class="calendar__number inactive"></div>
+            <div class="calendar__number inactive"></div>
+            <div class="calendar__number inactive"></div>
+            <div class="calendar__number inactive"></div>
+            <div class="calendar__number inactive"></div>
+            <div class="calendar__number inactive">1</div>
+
+            <div class="calendar__number">2</div>
+            <div class="calendar__number">3</div>
+            <div class="calendar__number">4</div>
+            <div class="calendar__number">5</div>
+            <div class="calendar__number">6</div>
+            <div class="calendar__number">7</div>
+            <div class="calendar__number">8</div>
+
+            <div class="calendar__number">9</div>
+            <div class="calendar__number">10</div>
+            <div class="calendar__number">11</div>
+            <div class="calendar__number">12</div>
+            <div class="calendar__number">13</div>
+            <div class="calendar__number">14</div>
+            <div class="calendar__number event-blue">15</div>
+            <div class="calendar__number event-blue">16</div>
+            <div class="calendar__number">17</div>
+            <div class="calendar__number">18</div>
+            <div class="calendar__number">19</div>
+            <div class="calendar__number">20</div>
+            <div class="calendar__number">21</div>
+            <div class="calendar__number">22</div>
+
+            <div class="calendar__number event-red">23</div>
+            <div class="calendar__number">24</div>
+            <div class="calendar__number">25</div>
+            <div class="calendar__number">26</div>
+            <div class="calendar__number">27</div>
+            <div class="calendar__number">28</div>
+            <div class="calendar__number">29</div>
+
+            <div class="calendar__number event-blue">30</div>
+          </div>
+
+          <div class="calendar__events">
+            <h3>Eventos</h3>
+            <div class="calendar__event-item">15/Nov - CORRIDA</div>
+            <div class="calendar__event-item">16/Nov - CORRIDA</div>
+            <div class="calendar__event-item">23/Nov - CORRIDA</div>
+            <div class="calendar__event-item">30/Nov - CORRIDA</div>
+          </div>
+        </div>
+      </aside>
     </main>
-    
-</body>
+  </body>
 </html>
