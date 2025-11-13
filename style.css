@@ -119,17 +119,18 @@ ul li{
 /* Final Nav */
 
 body {
-    background-color: dimgrey;
+    background-color: rgb(255, 255, 255);
 }
 
 /* HERO BANNER, NÃO MEXER */
 
 .heroBanner {
   position: relative;
-  height: 90vh;
-  width: 100%;
+  margin: 5px;
+  height: calc(85vh - 10px);
+  width: calc(100% - 10px);
+  border-radius: 8px;
   overflow: hidden;
-  background-color: #009688;
   transition: box-shadow 200ms;
   &:hover {
     box-shadow: 0 10px 50px -10px rgba(0,0,0,0.25);
@@ -206,7 +207,7 @@ body {
   position: absolute;
   width: 100%;
   a {
-    background: rgba(#FFF,0.75);
+    background: var(--azul);
     border-radius: 50%;
     display: block;
     height: 10px;
