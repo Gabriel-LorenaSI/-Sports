@@ -670,9 +670,10 @@ a:target {
 /* FOOTER */
 
 footer {
-  background-color: var(--verdeEscuro);
+  background-color: var(--laranja);
   height: 45vh;
   margin-top: 30px;
+  border-top: 2px solid var(--verdeEscuro);
 }
 
 .rodape {
@@ -684,7 +685,7 @@ footer {
 }
 
 .rodape h4 {
-  color: var(--laranja);
+  color: var(--verdeEscuro);
 }
 
 .rodape ul li {
