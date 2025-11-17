@@ -69,13 +69,7 @@
 
 /* --- CLASSES DE CORPO E UTILITÁRIAS --- */
 
-.text-evento {
-  font-family: var(--font-body);
-  font-weight: bold;
-  font-size: 30px;
-  color: #ffffff;
-  margin-bottom: 8px;
-}
+
 
 .text-p {
   font-family: var(--font-body);
@@ -429,6 +423,14 @@ a:target {
   align-self: baseline;
 }
 
+.text-evento {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
 .caixaEventos p {
   color: #ffffff;
   margin: 3px 0; 
@@ -437,19 +439,19 @@ a:target {
 /* Data */
 .caixaEventos p:nth-of-type(1)::before {
   content: '📅'; /* Ícone de Calendário */
-  margin-right: 8px;
+  margin-right: 3px;
   font-size: 1.2rem;
 }
 /* Local */
 .caixaEventos p:nth-of-type(2)::before {
   content: '📍';
-  margin-right: 8px;
+  margin-right: 3px;
   font-size: 1.2rem;
 }
 /* Distância */
 .caixaEventos p:nth-of-type(3)::before {
   content: '🏃'; /* Ícone de Corrida */
-  margin-right: 8px;
+  margin-right: 3px;
   font-size: 1.2rem;
 }
 /* Preço */
@@ -461,7 +463,7 @@ a:target {
 }
 .caixaEventos p:nth-of-type(4)::before {
   content: '💲'; 
-  margin-right: 8px;
+  margin-right: 3px;
   font-size: 1.2rem;
   color: #555; 
   font-weight: normal; 
@@ -485,12 +487,11 @@ a:target {
 .calendar {
   position: relative;
   width: 300px;
-  background-color: #2C6422;
+  background-color: var(--verdeEscuro);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   border-radius: 12px;
   overflow: hidden; 
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 
 /* Grid dos Dias */
@@ -518,10 +519,9 @@ a:target {
   align-items: center;
   justify-content: center;
   height: 35px; 
-  width: 100%;
-  color: #222; 
+  width: 100%; 
   background-color: #ffffff;
-  border-radius: 8px;
+  border-radius: 10px;
   font-weight: 600;
   cursor: pointer;
   box-sizing: border-box;
