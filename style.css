@@ -584,12 +584,13 @@ a:target {
 /* Mapa */
 
 .mapa {
-  background-color: var(--laranja);
-  display: grid;
+  padding-top: 30px;
 }
 
 
 #map {
   height: 500px;
+  grid-column: 1 / span 12;
   border: 1px solid var(--azul);
+  border-radius: 15px;
 }
