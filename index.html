@@ -6,6 +6,19 @@
     <title>+Sports</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    
+    <!-- link do Mapa -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+    <script src="https://unpkg.com/leaflet-providers@latest/leaflet-providers.js"></script>
+     <!---->
+
   </head>
   <body>
     <!-- Começo Hero Banner -->
@@ -13,13 +26,13 @@
       <header>
         <nav class="nav-full-bleed">
           <img src="img/logo.png" alt="" class="nav-logo" />
-          <div class="nav-links-wrapper grid-layout">
+          <div class="nav-links-wrapper grid-layout text-button-2">
             <a href="#">Home</a>
             <a href="#">Eventos</a>
             <a href="#">Peladas</a>
-            <a href="#">Login/Cadastro</a>
+            <a href="#">Login</a>
           </div>
-          <input type="text" placeholder="Pesquisar" class="nav-search" />
+          <input type="text" placeholder="Pesquisar" class="nav-search text-label" />
         </nav>
       </header>
 
@@ -83,15 +96,11 @@
         <a href="#slide-7"><span>7</span></a>
       </div>
     </section>
+
     <!-- Final Hero Banner -->
 
-    <br />
-
-    <br />
-    <hr />
-
     <section class="modalidades">
-        <h3>Modalidades</h3>
+        <h4 class="text-h4">Modalidades</h4>
         <ul>
             <li class="setas">
                 <img src="img/iconesModalidade/setaModalidade.png" alt="setaEsquerda"/>
@@ -99,85 +108,91 @@
 
             <li>
                 <img src="img/iconesModalidade/atividade=corrida.png" alt="iconeCorrida" />
-                <p>Corrida</p>
+                <p class="text-button-2">Corrida</p>
             </li>
 
             <li>
                 <img src="img/iconesModalidade/atividade=futebol.png" alt="iconeFutebol"/>
-                <p>Futebol</p>
+                <p class="text-button-2">Futebol</p>
             </li>
             
             <li>
                 <img src="img/iconesModalidade/atividade=bike.png" alt="iconeBike"/>
-                <p>Bike</p>
+                <p class="text-button-2">Bike</p>
             </li>
 
             <li>
                 <img src="img/iconesModalidade/atividade=triathlon.png" alt="iconeTriatro"/>
-                <p>Triatlo</p>
+                <p class="text-button-2">Triatlo</p>
             </li>
             <li>
                 <img src="img/iconesModalidade/atividade=natacao.png" alt="iconeNatação" />
-                <p>Natação</p>
+                <p class="text-button-2">Natação</p>
             </li>
             <li>
                 <img src="img/iconesModalidade/atividade=volei.png" alt="iconeVolei" />
-                <p>Vôlei</p>
+                <p class="text-button-2">Vôlei</p>
             </li>
             <li>
                 <img src="img/iconesModalidade/atividade=nightRun.png" alt="iconeNigthRun"/>
-                <p>Night Run</p>
+                <p class="text-button-2">Night Run</p>
             </li>
                 <li class="setas">
                 <img src="img/iconesModalidade/setaDireita.png" alt="setaDireita" />
             </li>
         </ul>
-</section>
-    <br />
-    <br />
-    <hr />
+    </section>
 
-    <main>
-      <section>
-        <h1>Próximos eventos</h1>
-        <div class="caixaEventos">
+    <main class="container grid-layout">
+      <section class="proximosEventos">
+        <h3 class="text-h3">Próximos eventos</h3>
+        <div class="caixaEventos grid-layout">
           <img src="img/eventos/nerdRun.jpg" alt="eventoNerdRun" />
-          <h4>Nerd Run Mario Bros</h4>
-          <p>14/12/2025</p>
-          <p>Praça Ex-Combatentes - Volta Redonda/RJ</p>
-          <p>Distância: 5Km</p>
-          <p>À partir de: R$: 74,90 reais</p>
+          <div class="caixaEventos__info">
+            <h4 class="text-evento">Nerd Run Mario Bros</h4>
+            <p>14/12/2025</p>
+            <p>Praça Ex-Combatentes - Volta Redonda/RJ</p>
+            <p>Distância: 5Km</p>
+            <p>À partir de: R$: 74,90 reais</p>
+          </div>
         </div>
 
-        <div class="caixaEventos">
+        <div class="caixaEventos grid-layout">
           <img src="img/eventos/nerdRun.jpg" alt="eventoNerdRun" />
-          <h4>Nerd Run Mario Bros</h4>
-          <p>14/12/2025</p>
-          <p>Praça Ex-Combatentes - Volta Redonda/RJ</p>
-          <p>Distância: 5Km</p>
-          <p>À partir de: R$: 74,90 reais</p>
+          <div class="caixaEventos__info">
+            <h4 class="text-evento">Nerd Run Mario Bros</h4>
+            <p>14/12/2025</p>
+            <p>Praça Ex-Combatentes - Volta Redonda/RJ</p>
+            <p>Distância: 5Km</p>
+            <p>À partir de: R$: 74,90 reais</p>
+          </div>
         </div>
 
-        <div class="caixaEventos">
+        <div class="caixaEventos grid-layout">
           <img src="img/eventos/nerdRun.jpg" alt="eventoNerdRun" />
-          <h4>Nerd Run Mario Bros</h4>
-          <p>14/12/2025</p>
-          <p>Praça Ex-Combatentes - Volta Redonda/RJ</p>
-          <p>Distância: 5Km</p>
-          <p>À partir de: R$: 74,90 reais</p>
+          <div class="caixaEventos__info">
+            <h4 class="text-evento">Nerd Run Mario Bros</h4>
+            <p>14/12/2025</p>
+            <p>Praça Ex-Combatentes - Volta Redonda/RJ</p>
+            <p>Distância: 5Km</p>
+            <p>À partir de: R$: 74,90 reais</p>
+          </div>
         </div>
 
-        <div class="caixaEventos">
+        <div class="caixaEventos grid-layout">
           <img src="img/eventos/nerdRun.jpg" alt="eventoNerdRun" />
-          <h4>Nerd Run Mario Bros</h4>
-          <p>14/12/2025</p>
-          <p>Praça Ex-Combatentes - Volta Redonda/RJ</p>
-          <p>Distância: 5Km</p>
-          <p>À partir de: R$: 74,90 reais</p>
+          <div class="caixaEventos__info">
+            <h4 class="text-evento">Nerd Run Mario Bros</h4>
+            <p>14/12/2025</p>
+            <p>Praça Ex-Combatentes - Volta Redonda/RJ</p>
+            <p>Distância: 5Km</p>
+            <p>À partir de: R$: 74,90 reais</p>
+          </div>
         </div>
       </section>
-      <aside>
-        <h2>Calendário Novembro/2025</h2>
+
+      <aside class="calendarioSideBar">
+        <h2 class="text-h4">Calendário Novembro/2025</h2>
         <div class="calendar">
           <div class="calendar__date">
             <div class="calendar__day">D</div>
@@ -194,7 +209,7 @@
             <div class="calendar__number inactive"></div>
             <div class="calendar__number inactive"></div>
             <div class="calendar__number inactive"></div>
-            <div class="calendar__number inactive">1</div>
+            <div class="calendar__number">1</div>
 
             <div class="calendar__number">2</div>
             <div class="calendar__number">3</div>
@@ -240,5 +255,19 @@
         </div>
       </aside>
     </main>
+
+    <section class="mapa container grid-layout">
+      <h4 class="text-h4">Mapa</h4>
+      <div id="map">
+      </div>
+
+    </section>
+    
+
+
   </body>
+
+
+<script src="index.js"></script>
+
 </html>
