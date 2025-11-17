@@ -578,3 +578,18 @@ a:target {
 }
 
 /* FINAL CALENDÁRIO */
+
+/* -----------------------------------------------------------------------------------------------------------------------------*/
+
+/* Mapa */
+
+.mapa {
+  background-color: var(--laranja);
+  display: grid;
+}
+
+
+#map {
+  height: 500px;
+  border: 1px solid var(--azul);
+}
