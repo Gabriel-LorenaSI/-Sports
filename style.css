@@ -667,3 +667,35 @@ a:target {
 
 /* -----------------------------------------------------------------------------------------------------------------------------*/
 
+/* FOOTER */
+
+footer {
+  background-color: var(--verdeEscuro);
+  height: 45vh;
+  margin-top: 30px;
+}
+
+.rodape {
+  padding-top: 50px;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rodape h4 {
+  color: var(--laranja);
+}
+
+.rodape ul li {
+  list-style: none;
+}
+
+.rodape a {
+  text-decoration: none;
+  color: #FFF;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
