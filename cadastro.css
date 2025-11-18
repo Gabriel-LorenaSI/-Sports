@@ -1,8 +1,14 @@
-/* --------------------- HEADER LOGIN --------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------------- INICIO HEADER LOGIN --------------------- */
 
 .headerLogin {
     width: 100%;
-    background: #1b5e20; /* Verde igual ao da barra superior */
+    background: #1b5e20; 
     padding: 15px 0;
     box-shadow: 0px 3px 6px rgba(0,0,0,0.15);
 }
@@ -46,7 +52,10 @@
     width: 180px;
 }
 
-/* --------------------- LOGIN PRINCIPAL --------------------- */
+/* --------------------- FIM HEADER LOGIN --------------------- */
+
+
+/* --------------------- INICIO LOGIN PRINCIPAL --------------------- */
 
 .cadastroPrincipal {
     max-width: 1200px;
@@ -58,7 +67,10 @@
     padding: 0 20px;
 }
 
-/* --------------------- CAMPOS DO LOGIN --------------------- */
+/* --------------------- FIM LOGIN PRINCIPAL --------------------- */
+
+
+/* --------------------- INICIO CAMPOS DO LOGIN --------------------- */
 
 .camposDeCadastro {
     width: 380px;
@@ -115,7 +127,10 @@
     text-decoration: none;
 }
 
-/* --------------------- BOTÃO DE LOGIN --------------------- */
+/* --------------------- FIM CAMPOS DO LOGIN --------------------- */
+
+/* --------------------- INICIO BOTÃO DE LOGIN --------------------- */
+
 .buttonCadastro {
     width: 100%;
     padding: 12px 0;
@@ -143,7 +158,9 @@
     filter: brightness(0.85);
 }
 
-/* --------------------- IMAGEM DO LOGIN --------------------- */
+/* --------------------- FIM BOTÃO DE LOGIN --------------------- */
+
+/* --------------------- INICIO IMAGEM DO LOGIN --------------------- */
 
 .imgCadastro img {
     width: 415px;
@@ -152,8 +169,10 @@
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
 }
+/* --------------------- FIM IMAGEM DO LOGIN --------------------- */
 
-/* --------------------- RESPONSIVIDADE --------------------- */
+
+/* --------------------- INCIO DA RESPONSIVIDADE --------------------- */
 
 @media (max-width: 900px) {
     .cadastroPrincipal {
@@ -171,3 +190,5 @@
         max-width: 380px;
     }
 }
+
+/* --------------------- FIM DA RESPONSIVIDADE --------------------- */
