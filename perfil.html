@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil do usuário</title>
+    <link rel="stylesheet" href="perfil.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+  </head>
+  <header>
+    <nav class="nav-full-bleed">
+      <img src="img/logo.png" alt="" class="nav-logo" />
+      <div class="nav-links-wrapper grid-layout text-button-2">
+        <a href="#">Home</a>
+        <a href="#">Eventos</a>
+        <a href="#">Peladas</a>
+        <a> Sair </a>
+      </div>
+      <input
+        type="text"
+        placeholder="Pesquisar"
+        class="nav-search text-label"
+      />
+    </nav>
+  </header>
+
+  <body>
+      <!-- INICIO DA CAIXA DE ENVENTOS -->
+
+    <main class="container grid-layout">
+      <section class="proximosEventos">
+        <h4 class="text-h4">Eventos inscritos</h4>
+        <div class="caixaEventos grid-layout">
+          <img src="img/eventos/nerdRun.jpg" alt="eventoNerdRun" />
+          <div class="caixaEventos__info">
+            <h4 class="text-evento">Nerd Run Mario Bros</h4>
+            <p>14/12/2025</p>
+            <p>Praça Ex-Combatentes - Volta Redonda/RJ</p>
+            <p>Distância: 5Km</p>
+            <p>À partir de: R$: 74,90 reais</p>
+          </div>
+        </div>
+
+        <div class="caixaEventos grid-layout">
+          <img src="img/eventos/nerdRun.jpg" alt="eventoNerdRun" />
+          <div class="caixaEventos__info">
+            <h4 class="text-evento">Nerd Run Mario Bros</h4>
+            <p>14/12/2025</p>
+            <p>Praça Ex-Combatentes - Volta Redonda/RJ</p>
+            <p>Distância: 5Km</p>
+            <p>À partir de: R$: 74,90 reais</p>
+          </div>
+        </div>
+        <a href="#" class="maisEventos text-button-2">Mais Eventos</a>
+      </section>
+    </main>
+
+    <!-- FIM DA CAIXA DE ENVENTOS -->
+    
+
+    <!-- INICIO DO PERFIL -->
+
+    <div class="sidebar">
+      <div class="sidebar-photo">
+        <img src="img/fotoDePerfil.png" alt="Foto do usuário" />
+      </div>
+      <br>
+      <h2 class="sidebar-name">Nome do Usuário</h2>
+      <hr class="divisor" />
+      <nav class="perfil-menu">
+        <ul>
+          <li class="item-menu ativo">
+            <a href="#">Painel +Sports</a>
+          </li>
+          <li class="item-menu">
+            <a href="#">Botão 2</a>
+          </li>
+          <li class="item-menu">
+            <a href="#">Botão 3</a>
+          </li>
+          <li class="item-menu">
+            <a href="#">Botão 4</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="perfil-footer">
+        <a href="#" class="btn-sair">Sair</a>
+      </div>
+    </div>
+
+    <!-- FIM DO PERFIL -->
+
+    <!-- INICIO DO CALENDÁRIO -->
+
+    <aside class="calendarioSideBar">
+      <h4 class="text-h4">Meu Calendário Novembro/2025</h4>
+      <div class="calendar">
+        <div class="calendar__date">
+          <div class="calendar__day">D</div>
+          <div class="calendar__day">S</div>
+          <div class="calendar__day">T</div>
+          <div class="calendar__day">Q</div>
+          <div class="calendar__day">Q</div>
+          <div class="calendar__day">S</div>
+          <div class="calendar__day">S</div>
+
+          <div class="calendar__number inactive"></div>
+          <div class="calendar__number inactive"></div>
+          <div class="calendar__number inactive"></div>
+          <div class="calendar__number inactive"></div>
+          <div class="calendar__number inactive"></div>
+          <div class="calendar__number inactive"></div>
+          <div class="calendar__number">1</div>
+
+          <div class="calendar__number">2</div>
+          <div class="calendar__number">3</div>
+          <div class="calendar__number">4</div>
+          <div class="calendar__number">5</div>
+          <div class="calendar__number">6</div>
+          <div class="calendar__number">7</div>
+          <div class="calendar__number">8</div>
+
+          <div class="calendar__number">9</div>
+          <div class="calendar__number">10</div>
+          <div class="calendar__number">11</div>
+          <div class="calendar__number">12</div>
+          <div class="calendar__number">13</div>
+          <div class="calendar__number">14</div>
+          <div class="calendar__number event-blue">15</div>
+          <div class="calendar__number event-blue">16</div>
+          <div class="calendar__number">17</div>
+          <div class="calendar__number">18</div>
+          <div class="calendar__number">19</div>
+          <div class="calendar__number">20</div>
+          <div class="calendar__number">21</div>
+          <div class="calendar__number">22</div>
+
+          <div class="calendar__number event-red">23</div>
+          <div class="calendar__number">24</div>
+          <div class="calendar__number">25</div>
+          <div class="calendar__number">26</div>
+          <div class="calendar__number">27</div>
+          <div class="calendar__number">28</div>
+          <div class="calendar__number">29</div>
+
+          <div class="calendar__number event-blue">30</div>
+        </div>
+
+        <div class="calendar__events">
+          <h3>Eventos</h3>
+          <div class="calendar__event-item">15/Nov - CORRIDA</div>
+          <div class="calendar__event-item">16/Nov - CORRIDA</div>
+          <div class="calendar__event-item">23/Nov - CORRIDA</div>
+          <div class="calendar__event-item">30/Nov - CORRIDA</div>
+        </div>
+      </div>
+
+          <!-- FIM DO CALENDÁRIO -->
+
+    </aside>
+  </body>
+</html>

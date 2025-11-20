@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap");
+
+:root {
+  --azul: #0058bc;
+  --verdeClaro: #3b7c2e;
+  --verdeEscuro: #2c6422;
+  --laranja: #cd6116;
+
+  /* Font Families */
+  --font-heading: "Russo One", sans-serif;
+  --font-body: "Exo 2", sans-serif;
+
+  /* Font Weights */
+  --weight-extralight: 200; /* Para "Label" */
+  --weight-regular: 400; /* Para "Paragraph" */
+  --weight-extrabold: 700; /* Para "Button" */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 15px;
+}
+
+/* Começo NAV */
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: var(--verdeEscuro);
+}
+
+.nav-logo {
+  grid-column: 1 / 2;
+  justify-self: end;
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-full-bleed {
+  display: grid;
+  grid-template-columns: 1fr 1040px 1fr;
+  max-width: 1440px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.nav-links-wrapper.grid-layout {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 15px;
+}
+
+.nav-links-wrapper a {
+  padding: 10px;
+  height: 40px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border-radius: 25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 200ms;
+}
+
+.nav-links-wrapper a:nth-child(1) {
+  grid-column: 3 / span 2;
+  background-color: var(--laranja);
+  color: white;
+}
+
+.nav-links-wrapper a:nth-child(2) {
+  /* Eventos */
+  grid-column: 5 / span 2;
+  background-color: white;
+  color: black;
+}
+
+.nav-links-wrapper a:nth-child(3) {
+  /* Peladas */
+  grid-column: 7 / span 2;
+  background-color: white;
+  color: black;
+}
+
+.nav-links-wrapper a:nth-child(4) {
+  /* Login/Cadastro */
+  grid-column: 9 / span 2;
+  background-color: white;
+  color: black;
+}
+
+.nav-links-wrapper a:hover {
+  box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-search {
+  grid-column: 3 / 4;
+  justify-self: start;
+  width: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: var(--font-body);
+  font-weight: var(--weight-regular);
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  padding-top: 120px;
+}
+
+/* INCIO PERFIL*/
+
+.sidebar {
+  width: 270px;
+  background: var(--verdeEscuro);
+  border-radius: 14px;
+  padding: 20px;
+  color: white;
+  font-family: "Arial", sans-serif;
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  grid-column: 1 / span 3;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* FOTO DE PERFIL */
+.sidebar-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.sidebar-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.divisor {
+  width: 80%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 20px ;
+}
+
+.perfil-menu {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.perfil-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-menu {
+  padding: 10px 0;
+  margin-bottom: px;
+  padding-left: 10px;
+}
+
+.item-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: block;
+}
+
+.item-menu:hover {
+  background-color: var(--verdeClaro);
+  border-radius: 0 10px 10px 0;
+}
+
+.perfil-footer {
+  margin-top: auto;
+}
+
+.btn-sair {
+  background-color: #cd6116;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 50px;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+/* FIM PERFIL*/
+
+/* Inicio do portifólio de eventos */
+
+.proximosEventos {
+  grid-column: 1 / span 8;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 15px;
+}
+
+.proximosEventos h4 {
+  grid-column: 1 / -1;
+}
+
+/* Cards */
+.caixaEventos.grid-layout {
+  background-color: var(--azul);
+  margin: 0;
+  grid-column: 1 / -1;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  height: 250px;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Imagem do Evento */
+.caixaEventos img {
+  grid-column: 1 / span 3;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* O Bloco de Texto */
+
+.caixaEventos__info {
+  grid-column: 6 / span 9;
+  height: 80%;
+  align-self: baseline;
+}
+
+.text-evento {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.caixaEventos p {
+  color: #ffffff;
+  margin: 3px 0;
+  font-size: 1rem;
+}
+/* Data */
+.caixaEventos p:nth-of-type(1)::before {
+  content: "📅"; /* Ícone de Calendário */
+  margin-right: 3px;
+  font-size: 1.2rem;
+}
+/* Local */
+.caixaEventos p:nth-of-type(2)::before {
+  content: "📍";
+  margin-right: 3px;
+  font-size: 1.2rem;
+}
+/* Distância */
+.caixaEventos p:nth-of-type(3)::before {
+  content: "🏃"; /* Ícone de Corrida */
+  margin-right: 3px;
+  font-size: 1.2rem;
+}
+/* Preço */
+.caixaEventos p:nth-of-type(4) {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+.caixaEventos p:nth-of-type(4)::before {
+  content: "💲";
+  margin-right: 3px;
+  font-size: 1.2rem;
+  color: #555;
+  font-weight: normal;
+}
+
+.maisEventos {
+  grid-column: 4 / span 2;
+  border-radius: 25px;
+  padding-top: 4px;
+  height: 39px;
+  background-color: var(--laranja);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: none;
+  border: 2px solid var(--laranja);
+  transition: 200ms;
+  text-decoration: none;
+}
+
+.maisEventos:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  color: var(--laranja);
+  background-color: #fff;
+  border: 2px solid var(--laranja);
+}
+
+/* Fim da CAIXA DE EVENTOS */
+
+/* Calendário */
+
+/* Base do Calendário */
+
+.calendarioSideBar {
+  grid-column: 9 / span 4;
+}
+
+.calendar {
+  position: relative;
+  background-color: var(--verdeEscuro);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  overflow: hidden; 
+  box-sizing: border-box;
+  margin-top: 15px;
+}
+
+/* Grid dos Dias */
+.calendar__date {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 5px;
+  box-sizing: border-box;
+}
+
+/* Letras dos Dias */
+.calendar__day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  font-weight: bold;
+  color: #ffffff; 
+}
+
+/* Números dos Dias (Botões) */
+.calendar__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px; 
+  width: 100%; 
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-weight: 200;
+  cursor: pointer;
+  box-sizing: border-box;
+  box-shadow: inset 1px 1px 1px rgba(0,0,0,0.25);
+}
+
+.calendar__number:hover {
+  background-color: #e0e0e0;
+}
+
+/* Para dias do mês anterior/posterior  */
+.calendar__number.inactive {
+  background-color: var(--verdeEscuro);
+  cursor: auto;
+  box-shadow: none;
+}
+
+/* Dias de evento em azul */
+.calendar__number.event-blue {
+  background-color: #0058BC; 
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Dias de evento em vermelho/marrom */
+.calendar__number.event-red {
+  background-color: #CD6116; /* Tom de marrom/vermelho */
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.calendar__events {
+  background-color: #0058BC;
+}
+
+/* Título "Eventos" */
+.calendar__events h3 {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 300;
+  padding: 10px;
+}
+
+/* Item individual do evento */
+.calendar__event-item {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 12px 10px;
+  border-top: 1px solid #007bff;
+  cursor: pointer;
+}
+
+.calendar__event-item:hover {
+  background-color: var(--verdeEscuro);
+  cursor: pointer;
+}
+
+/* FINAL CALENDÁRIO */
