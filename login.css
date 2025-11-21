@@ -1,51 +1,33 @@
+* {
+    max-width: 99.4%;
+    max-height: 100vh;
+}
+
+
 /* --------------------- HEADER LOGIN --------------------- */
 
 .headerLogin {
-    width: 100vh;
-    background: #1b5e20; /* Verde igual ao da barra superior */
+    width: 100%;
+    height: 90px;
+    background: var(--verdeEscuro); /* Verde igual ao da barra superior */
     margin: 5px;
-    padding: 15px 0;
+    align-content: center;
+    border-radius: 10px;
     box-shadow: 0px 3px 6px rgba(0,0,0,0.15);
 }
 
-.headerLogin nav {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+.nav-links-wrapper a:nth-child(1) { 
+  grid-column: 3 / span 2;
+  background-color: white; 
+  color: black;
 }
 
-.headerLogin .nav-logo {
-    width: 140px;
+.nav-links-wrapper a:nth-child(4) { /* Login/Cadastro */
+  grid-column: 9 / span 2; 
+  background-color: var(--laranja);
+  color: rgb(255, 255, 255);
 }
 
-.headerLogin .nav-links-wrapper {
-    display: flex;
-    gap: 20px;
-}
-
-.headerLogin .nav-links-wrapper a {
-    padding: 8px 20px;
-    background: white;
-    border-radius: 50px;
-    color: #1b5e20;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.2s;
-}
-
-.headerLogin .nav-links-wrapper a:hover {
-    background: #ceecc6;
-}
-
-.headerLogin .nav-search {
-    padding: 8px 15px;
-    border-radius: 50px;
-    border: none;
-    width: 180px;
-}
 
 /* --------------------- LOGIN PRINCIPAL --------------------- */
 
@@ -67,26 +49,30 @@
     flex-direction: column;
 }
 
-.camposDeLogin h1 {
-    font-size: 32px;
-    font-weight: 700;
-    color: #1b5e20;
-    margin-bottom: 20px;
+.camposDeLogin h3 {
+    color: var(--verdeEscuro);
+    margin-bottom: 36px;
 }
 
 .camposDeLogin h4 {
-    margin: 10px 0 4px;
+    margin: 0 0 4px;
+    color: var(--verdeEscuro);
+    font-size: 16px;
     font-weight: 600;
-    color: #1b5e20;
+    line-height: 150%;
+    letter-spacing: 5%;
 }
 
 .camposDeLogin input {
     padding: 10px;
     border-radius: 6px;
-    border: 2px solid #b0b0b0;
+    border: 1px solid var(--verdeEscuro);
     outline: none;
     width: 100%;
     font-size: 15px;
+    &:hover {
+        border: 2px solid var(--verdeEscuro);
+    }
 }
 
 .camposDeLogin a[href="#"]:not(:last-of-type) {
@@ -94,8 +80,7 @@
     padding: 10px 0;
     text-align: center;
     border-radius: 6px;
-    font-weight: 700;
-    color: #1b1b1b;
+    font-weight: var(--weight-bold);
     text-decoration: none;
     transition: 0.2s;
 }
@@ -104,15 +89,21 @@
     filter: brightness(0.9);
 }
 
-.camposDeLogin p {
+.politica {
+    margin-top: 5px;
+    color: var(--verdeEscuro);
     font-size: 13px;
-    margin-top: 12px;
-    color: #444;
+}
+
+.criarConta {
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--verdeEscuro);
 }
 
 .camposDeLogin p a {
-    color: #1b5e20;
-    font-weight: 600;
+    color: var(--laranja);
+    font-weight: var(--weight-bold);
     text-decoration: none;
 }
 
@@ -121,16 +112,15 @@
     width: 100%;
     padding: 12px 0;
     text-align: center;
-    background: linear-gradient(to bottom, #ffeb3b, #ffc400);
-    color: #1b1b1b;
+    background: linear-gradient(to right, #CCFF00, #FFFF00);
+    color: var(--verdeEscuro);
     font-size: 16px;
     font-weight: 700;
     border: none;
-    border-radius: 8px;
+    border-radius: 15px;
     cursor: pointer;
     margin-top: 18px;
     transition: 0.2s ease-in-out;
-    box-shadow: 0px 3px 6px rgba(0,0,0,0.25);
     text-decoration: none;
 }
 
@@ -150,7 +140,7 @@
     width: 415px;
     height: 585px;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 21px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
 }
 
