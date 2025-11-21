@@ -1,8 +1,9 @@
 /* --------------------- HEADER LOGIN --------------------- */
 
 .headerLogin {
-    width: 100%;
+    width: 100vh;
     background: #1b5e20; /* Verde igual ao da barra superior */
+    margin: 5px;
     padding: 15px 0;
     box-shadow: 0px 3px 6px rgba(0,0,0,0.15);
 }
