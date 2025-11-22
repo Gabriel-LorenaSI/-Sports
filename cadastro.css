@@ -28,48 +28,24 @@
 
 .headerLogin {
     width: 100%;
-    background: var(--verdeEscuro); 
-    padding: 15px 0;
+    height: 90px;
+    background: var(--verdeEscuro); /* Verde igual ao da barra superior */
+    margin: 5px;
+    align-content: center;
+    border-radius: 10px;
     box-shadow: 0px 3px 6px rgba(0,0,0,0.15);
 }
 
-.headerLogin nav {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+.nav-links-wrapper a:nth-child(1) { 
+  grid-column: 3 / span 2;
+  background-color: white; 
+  color: black;
 }
 
-.headerLogin .nav-logo {
-    width: 140px;
-}
-
-.headerLogin .nav-links-wrapper {
-    display: flex;
-    gap: 20px;
-}
-
-.headerLogin .nav-links-wrapper a {
-    padding: 8px 20px;
-    background: white;
-    border-radius: 50px;
-    color: var(--verdeEscuro);
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.2s;
-}
-
-.headerLogin .nav-links-wrapper a:hover {
-    background: #ceecc6;
-}
-
-.headerLogin .nav-search {
-    padding: 8px 15px;
-    border-radius: 50px;
-    border: none;
-    width: 180px;
+.nav-links-wrapper a:nth-child(4) { /* Login/Cadastro */
+  grid-column: 9 / span 2; 
+  background-color: var(--laranja);
+  color: rgb(255, 255, 255);
 }
 
 /* --------------------- FIM HEADER LOGIN --------------------- */
@@ -101,14 +77,14 @@
 .camposDeCadastro h1 {
     font-size: 32px;
     font-weight: 700;
-    color: #1b5e20;
+    color: var(--verdeEscuro);
     margin-bottom: 20px;
 }
 
 .camposDeCadastro h4 {
     margin: 10px 0 4px;
     font-weight: 600;
-    color: #1b5e20;
+    color: var(--verdeEscuro);
 }
 
 .camposDeCadastro input {
@@ -147,6 +123,34 @@
     text-decoration: none;
 }
 
+.camposDeCadastro a[href="#"]:not(:last-of-type) {
+    margin-top: 15px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: var(--weight-bold);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.camposDeCadastro a[href="#"]:not(:last-of-type):hover {
+    filter: brightness(0.9);
+}
+
+.politica text-label {
+    margin-top: 5px;
+    color: var(--verdeEscuro);
+    font-size: 13px;
+}
+
+
+.camposDeCadastro p a {
+    color: var(--laranja);
+    font-weight: var(--weight-bold);
+    text-decoration: none;
+}
+
+
 /* --------------------- FIM CAMPOS DO LOGIN --------------------- */
 
 /* --------------------- INICIO BOTÃO DE LOGIN --------------------- */
@@ -176,12 +180,6 @@
 .buttonCadastro:active {
     transform: translateY(1px);
     filter: brightness(0.85);
-}
-
-.politica {
-    margin-top: 5px;
-    color: var(--verdeEscuro);
-    font-size: 13px;
 }
 
 

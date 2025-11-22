@@ -71,7 +71,7 @@
     width: 100%;
     font-size: 15px;
     &:hover {
-        border: 2px solid var(--verdeEscuro);
+    border: 2px solid var(--verdeEscuro);
     }
 }
 
@@ -106,6 +106,7 @@
     font-weight: var(--weight-bold);
     text-decoration: none;
 }
+
 
 /* --------------------- BOTÃO DE LOGIN --------------------- */
 .buttonLogin {
