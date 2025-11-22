@@ -28,36 +28,47 @@
     <section class="cadastroPrincipal">
 
       <div class="camposDeCadastro">
-        <h1>Cadastro</h1>
+        <h3 class="text-h3">Cadastro</h3>
 
-        <h4>Nome Completo</h4>
-        <input type="text" required placeholder="Insira seu nome"/>
+        <label for="nome">
+          <h4>Nome Completo</h4>
+          <input class="inputBorder" type="text" id="nome" required placeholder="Insira seu nome"/>
+        </label>
 
-        <h4>CPF</h4>
-        <input type="#" required placeholder="Digite seu CPF aqui"/>
+        <label for="cpf">
+          <h4>CPF</h4>
+          <input class="inputBorder" type="#" id="cpf" required placeholder="Digite seu CPF aqui"/>
+        </label>
 
-        <h4>E-mail</h4>
-        <input type="email" required placeholder="usuário@email.com"/>
+        <label for="emaile">
+          <h4>E-mail</h4>
+          <input class="inputBorder" type="email" id="emaile" required placeholder="usuário@email.com"/>
+        </label>
 
-        <h4>Data de nascimento</h4>
-        <input type="date" required/>
+        <label for="dob">
+          <h4>Data de nascimento</h4>
+          <input class="inputBorder" type="date" id="dob" required/>
+        </label>
 
-        <h4>Senha</h4>
-        <input type="password" required placeholder="Digite sua senha aqui"/>
+        <label for="pw">
+          <h4>Senha</h4>
+          <input class="inputBorder" type="password" id="pw" required placeholder="Digite sua senha aqui"/>
+        </label>
 
-        <h4>Confirmar Senha</h4>
-        <input type="password" required placeholder="Confirme sua senha"/>
+        <label for="2pw">
+          <h4>Confirmar Senha</h4>
+          <input class="inputBorder" type="password" id="2pw" required placeholder="Confirme sua senha"/>
+        </label>
 
 
 
 
-        <a href="#" class="buttonCadastro">Cadastrar</a>
+        <a href="#" class="buttonCadastro text-button-2">Cadastrar</a>
 
         <p class="politica text-label">
-          Ao entrar, você está aceitando a nossa
-         <a href="">Política de Privacidade</a> e
-          <a href="#">Termos de Uso</a>
+          Ao entrar, você está aceitando a nossa <a href=""> Política de Privacidade</a> e <a href="#">Termos de Uso</a>
         </p>
+        <p class="logarConta text-label">Já tem conta? <a href="login.html">Entrar com sua conta +Sports</a></p>
         
       </div>
 

@@ -32,8 +32,8 @@
 /* --------------------- LOGIN PRINCIPAL --------------------- */
 
 .loginPrincipal {
-    max-width: 1200px;
-    margin: 140px auto 60px auto;  /* ↓↓↓ MAIS DISTÂNCIA DO TOPO */
+    max-width: 860px;
+    margin: 200px auto 60px auto;  /* ↓↓↓ MAIS DISTÂNCIA DO TOPO */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,7 +64,7 @@
 }
 
 .camposDeLogin input {
-    padding: 10px;
+    padding: 8px;
     border-radius: 6px;
     border: 1px solid var(--verdeEscuro);
     outline: none;
@@ -75,24 +75,10 @@
     }
 }
 
-.camposDeLogin a[href="#"]:not(:last-of-type) {
-    margin-top: 15px;
-    padding: 10px 0;
-    text-align: center;
-    border-radius: 6px;
-    font-weight: var(--weight-bold);
-    text-decoration: none;
-    transition: 0.2s;
-}
-
-.camposDeLogin a[href="#"]:not(:last-of-type):hover {
-    filter: brightness(0.9);
-}
-
 .politica {
     margin-top: 5px;
     color: var(--verdeEscuro);
-    font-size: 13px;
+    font-size: 13px;    
 }
 
 .criarConta {
@@ -104,7 +90,7 @@
 .camposDeLogin p a {
     color: var(--laranja);
     font-weight: var(--weight-bold);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 
@@ -127,13 +113,7 @@
 }
 
 .buttonLogin:hover {
-    background: linear-gradient(to right, #FFFF00, #CCFF00);
-    
-}
-
-.buttonLogin:active {
-    transform: translateY(1px);
-    filter: brightness(0.85);
+    background: linear-gradient(to right, #FFFF00, #CCFF00); 
 }
 
 .inputUser::-webkit-input-placeholder {
