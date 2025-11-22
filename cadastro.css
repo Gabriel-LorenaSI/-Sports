@@ -55,11 +55,13 @@
 
 .camposDeCadastro h3 {
     color: var(--verdeEscuro);
+    margin-bottom: 8px;
 }
 
 .camposDeCadastro h4 {
     font-weight: var(--weight-bold);
     color: var(--verdeEscuro);
+    margin-bottom: 4px;
 }
 
 .camposDeCadastro input {
