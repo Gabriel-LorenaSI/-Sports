@@ -109,6 +109,7 @@
 
 
 /* --------------------- BOTÃO DE LOGIN --------------------- */
+
 .buttonLogin {
     width: 100%;
     padding: 12px 0;
@@ -121,18 +122,58 @@
     border-radius: 15px;
     cursor: pointer;
     margin-top: 18px;
-    transition: 0.2s ease-in-out;
+    transition: 0.5s ease-in;
     text-decoration: none;
 }
 
 .buttonLogin:hover {
-    filter: brightness(0.92);
-    transform: translateY(-1px);
+    background: linear-gradient(to right, #FFFF00, #CCFF00);
+    
 }
 
 .buttonLogin:active {
     transform: translateY(1px);
     filter: brightness(0.85);
+}
+
+.inputUser::-webkit-input-placeholder {
+  font-family: 'Exo 2', Arial, Helvetica, sans-serif;
+  color: rgb(189, 189, 189);
+}
+
+.inputUser:-ms-input-placeholder {
+  font-family: 'Exo 2', Arial, Helvetica, sans-serif;
+  color: rgb(189, 189, 189);
+}
+
+.inputUser:-moz-placeholder {
+  font-family: 'Exo 2', Arial, Helvetica, sans-serif;
+  color: rgb(189, 189, 189);
+}
+
+.inputUser::-moz-placeholder {
+  font-family: 'Exo 2', Arial, Helvetica, sans-serif;
+  color: rgb(189, 189, 189);
+}
+
+.inputSenha::-webkit-input-placeholder {
+  font-family: 'Exo 2', Arial, Helvetica, sans-serif;
+  color: rgb(189, 189, 189);
+}
+
+.inputSenha:-ms-input-placeholder {
+  font-family: 'Exo 2', Arial, Helvetica, sans-serif;
+  color: rgb(189, 189, 189);
+}
+
+.inputSenha:-moz-placeholder {
+  font-family: 'Exo 2', Arial, Helvetica, sans-serif;
+  color: rgb(189, 189, 189);
+}
+
+.inputSenha::-moz-placeholder {
+  font-family: 'Exo 2', Arial, Helvetica, sans-serif;
+  color: rgb(189, 189, 189);
 }
 
 /* --------------------- IMAGEM DO LOGIN --------------------- */
@@ -141,8 +182,8 @@
     width: 415px;
     height: 585px;
     object-fit: cover;
-    border-radius: 21px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.25);
 }
 
 /* --------------------- RESPONSIVIDADE --------------------- */
