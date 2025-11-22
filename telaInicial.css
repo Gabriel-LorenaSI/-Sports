@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap");
 
 :root {
-  --azul: #0058BC;
-  --verdeClaro: #3B7C2E;
-  --verdeEscuro: #2C6422;
-  --laranja: #CD6116;
+  --azul: #0058bc;
+  --verdeClaro: #3b7c2e;
+  --verdeEscuro: #2c6422;
+  --laranja: #cd6116;
 
   /* Font Families */
-  --font-heading: 'Russo One', sans-serif;
-  --font-body: 'Exo 2', sans-serif;
+  --font-heading: "Russo One", sans-serif;
+  --font-body: "Exo 2", sans-serif;
 
   /* Font Weights */
   --weight-extralight: 200; /* Para "Label" */
-  --weight-regular: 400;    /* Para "Paragraph" */
-  --weight-bold: 600;   /* Para "Button" */
-
+  --weight-regular: 400; /* Para "Paragraph" */
+  --weight-bold: 600; /* Para "Button" */
 }
 
 * {
@@ -24,9 +23,9 @@
 }
 
 .container {
-  max-width: 1040px; 
-  margin-left: auto;   
-  margin-right: auto;  
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -70,8 +69,6 @@
 
 /* --- CLASSES DE CORPO E UTILITÁRIAS --- */
 
-
-
 .text-p {
   font-family: var(--font-body);
   font-weight: var(--weight-regular);
@@ -107,7 +104,6 @@
   line-height: 100%;
   letter-spacing: 0px;
 }
-
 
 /* Começo NAV */
 
@@ -156,26 +152,29 @@ header {
   transition: 200ms;
 }
 
-.nav-links-wrapper a:nth-child(1) { 
+.nav-links-wrapper a:nth-child(1) {
   grid-column: 3 / span 2;
-  background-color: var(--laranja); 
+  background-color: var(--laranja);
   color: white;
 }
 
-.nav-links-wrapper a:nth-child(2) { /* Eventos */
-  grid-column: 5 / span 2; 
+.nav-links-wrapper a:nth-child(2) {
+  /* Eventos */
+  grid-column: 5 / span 2;
   background-color: white;
   color: black;
 }
 
-.nav-links-wrapper a:nth-child(3) { /* Peladas */
-  grid-column: 7 / span 2; 
+.nav-links-wrapper a:nth-child(3) {
+  /* Peladas */
+  grid-column: 7 / span 2;
   background-color: white;
   color: black;
 }
 
-.nav-links-wrapper a:nth-child(4) { /* Login/Cadastro */
-  grid-column: 9 / span 2; 
+.nav-links-wrapper a:nth-child(4) {
+  /* Login/Cadastro */
+  grid-column: 9 / span 2;
   background-color: white;
   color: black;
 }
@@ -193,17 +192,15 @@ header {
   border-radius: 25px;
 }
 
-
-
 /* Final Nav */
 
 body {
-    background-color: rgb(255, 255, 255);
-    font-family: var(--font-body);
-    font-weight: var(--weight-regular);
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.05em;
+  background-color: rgb(255, 255, 255);
+  font-family: var(--font-body);
+  font-weight: var(--weight-regular);
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
 }
 
 /* HERO BANNER, NÃO MEXER */
@@ -217,71 +214,71 @@ body {
   overflow: hidden;
   transition: box-shadow 200ms;
   &:hover {
-    box-shadow: 0 10px 50px -10px rgba(0,0,0,0.25);
+    box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.25);
   }
 }
 
 .slideshow {
-	position: relative;
-	width: 100%;
+  position: relative;
+  width: 100%;
   height: 100%;
-	&:hover a {
-		opacity: 1;
-	}
-	a {
-		opacity: 0;
-		position: relative;
-		text-decoration: none;
-		transition: opacity 0.5s;
-		&:after {
-			border-color: #FFF #FFF transparent transparent;
-			border-style: solid;
-			border-width: 2px;
-			color: #FFF;
-			display: block;
-			height: 10px;
-			position: absolute;
-			top: calc(50% - 5px);
-			width: 10px;
-		}
-		&:first-child:after {
-			content: '';
-			left: 10px;
-			transform: rotate(-135deg);
-		}
-		&:nth-child(2):after {
-			content: '';
-			right: 10px;
-			transform: rotate(45deg);
-		}
-	}
+  &:hover a {
+    opacity: 1;
+  }
+  a {
+    opacity: 0;
+    position: relative;
+    text-decoration: none;
+    transition: opacity 0.5s;
+    &:after {
+      border-color: #fff #fff transparent transparent;
+      border-style: solid;
+      border-width: 2px;
+      color: #fff;
+      display: block;
+      height: 10px;
+      position: absolute;
+      top: calc(50% - 5px);
+      width: 10px;
+    }
+    &:first-child:after {
+      content: "";
+      left: 10px;
+      transform: rotate(-135deg);
+    }
+    &:nth-child(2):after {
+      content: "";
+      right: 10px;
+      transform: rotate(45deg);
+    }
+  }
 
-	.slide {
-		background-color: #FFF;
-		box-sizing: border-box;
-		display: none;
-		position: absolute;
+  .slide {
+    background-color: #fff;
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
     height: 100%;
-		width: 100%;
-		&:first-child,
-		&:target {
-			display: block;
-		}
-		a {
-			display: block;
-			height: 100%;
-			position: absolute;
-			width: 50%;
-			&:nth-child(2) {
-				left: 50%;
-			}
-		}
-		img {
-			width: 100%;
+    width: 100%;
+    &:first-child,
+    &:target {
+      display: block;
+    }
+    a {
+      display: block;
+      height: 100%;
+      position: absolute;
+      width: 50%;
+      &:nth-child(2) {
+        left: 50%;
+      }
+    }
+    img {
+      width: 100%;
       height: 100%;
       object-fit: cover;
-		}
-	}
+    }
+  }
 }
 
 .pagination {
@@ -306,79 +303,73 @@ body {
 }
 
 a:target {
-	color: red;
+  color: red;
 }
-
 
 /* Final HERO BANNER  */
 
-
 /* ----------------------------------------------------------------------------------------------------------------------------- */
-
 
 /* Seção Modalidades */
 .modalidades {
-  max-width: 960px; 
+  max-width: 960px;
   margin: 40px auto;
   overflow: hidden;
 }
 
 /* --- Título "Modalidades" --- */
 .modalidades h4 {
-  text-align: center; 
+  text-align: center;
   margin-bottom: 15px;
 }
 
 /* Lista  */
 .modalidades ul {
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 15px; 
+  gap: 15px;
 }
 
 /* Icone + texto */
 .modalidades li {
-  text-align: center; 
-  flex-shrink: 0; 
-  
+  text-align: center;
+  flex-shrink: 0;
 }
 
 /* Círculo */
 .modalidades li img {
-  display: block; 
-  background-color: #ffffff; 
-  border-radius: 50%; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
-  width: 86px; 
+  display: block;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  width: 86px;
   height: 86px;
-  padding: 20px; 
-  box-sizing: border-box; 
-  margin: 0 auto 10px auto; 
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto 10px auto;
   cursor: pointer;
-  
 }
 
 /* Texto */
 .modalidades li p {
   margin: 0;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
 
 /* Estilos para as SETAS  */
 .modalidades li.setas img {
   box-shadow: none;
   padding: 0;
-  width: 20px; 
+  width: 20px;
   height: 15px;
   margin: 0;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
   cursor: pointer;
 }
-
 
 /* -----------------------------------------------------------------------------------------------------------------------------*/
 
@@ -392,17 +383,16 @@ a:target {
 }
 
 .proximosEventos h4 {
-  grid-column: 1 / -1;  
+  grid-column: 1 / -1;
 }
-
 
 /* Cards */
 .caixaEventos.grid-layout {
   background-color: var(--azul);
   margin: 0;
   grid-column: 1 / -1;
-  border-radius: 10px; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 10px;
   height: 250px;
   align-items: center;
@@ -411,8 +401,8 @@ a:target {
 
 /* Imagem do Evento */
 .caixaEventos img {
-  grid-column: 1 / span 3; 
-  border-radius: 8px; 
+  grid-column: 1 / span 3;
+  border-radius: 8px;
   object-fit: cover;
 }
 
@@ -433,42 +423,41 @@ a:target {
 
 .caixaEventos p {
   color: #ffffff;
-  margin: 3px 0; 
+  margin: 3px 0;
   font-size: 1rem;
 }
 /* Data */
 .caixaEventos p:nth-of-type(1)::before {
-  content: '📅'; /* Ícone de Calendário */
+  content: "📅"; /* Ícone de Calendário */
   margin-right: 3px;
   font-size: 1.2rem;
 }
 /* Local */
 .caixaEventos p:nth-of-type(2)::before {
-  content: '📍';
+  content: "📍";
   margin-right: 3px;
   font-size: 1.2rem;
 }
 /* Distância */
 .caixaEventos p:nth-of-type(3)::before {
-  content: '🏃'; /* Ícone de Corrida */
+  content: "🏃"; /* Ícone de Corrida */
   margin-right: 3px;
   font-size: 1.2rem;
 }
 /* Preço */
 .caixaEventos p:nth-of-type(4) {
-  font-weight: bold; 
-  color: #ffffff; 
+  font-weight: bold;
+  color: #ffffff;
   font-size: 1.1rem;
   margin-top: 10px;
 }
 .caixaEventos p:nth-of-type(4)::before {
-  content: '💲'; 
+  content: "💲";
   margin-right: 3px;
   font-size: 1.2rem;
-  color: #555; 
-  font-weight: normal; 
-  }
-
+  color: #555;
+  font-weight: normal;
+}
 
 .maisEventos {
   grid-column: 4 / span 2;
@@ -480,7 +469,7 @@ a:target {
   text-align: center;
   font-size: 16px;
   font-weight: 600;
-  color: #FFF;
+  color: #fff;
   text-transform: none;
   border: 2px solid var(--laranja);
   transition: 200ms;
@@ -493,11 +482,9 @@ a:target {
   border: 2px solid var(--laranja);
 }
 
-  /* Fim da CAIXA DE EVENTOS */
-
+/* Fim da CAIXA DE EVENTOS */
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
-
 
 /* Calendário */
 
@@ -512,7 +499,7 @@ a:target {
   background-color: var(--verdeEscuro);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   border-radius: 12px;
-  overflow: hidden; 
+  overflow: hidden;
   box-sizing: border-box;
   margin-top: 15px;
 }
@@ -533,7 +520,7 @@ a:target {
   justify-content: center;
   height: 25px;
   font-weight: bold;
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 /* Números dos Dias (Botões) */
@@ -541,14 +528,14 @@ a:target {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 35px; 
-  width: 100%; 
+  height: 35px;
+  width: 100%;
   background-color: #ffffff;
   border-radius: 10px;
   font-weight: 200;
   cursor: pointer;
   box-sizing: border-box;
-  box-shadow: inset 1px 1px 1px rgba(0,0,0,0.25);
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .calendar__number:hover {
@@ -564,20 +551,20 @@ a:target {
 
 /* Dias de evento em azul */
 .calendar__number.event-blue {
-  background-color: #0058BC; 
+  background-color: #0058bc;
   color: #ffffff;
   font-weight: 600;
 }
 
 /* Dias de evento em vermelho/marrom */
 .calendar__number.event-red {
-  background-color: #CD6116; /* Tom de marrom/vermelho */
+  background-color: #cd6116; /* Tom de marrom/vermelho */
   color: #ffffff;
   font-weight: 600;
 }
 
 .calendar__events {
-  background-color: #0058BC;
+  background-color: var(--azul);
 }
 
 /* Título "Eventos" */
@@ -614,7 +601,6 @@ a:target {
   display: grid;
 }
 
-
 #map {
   height: 500px;
   grid-column: 1 / span 12;
@@ -626,7 +612,7 @@ a:target {
 .peladas {
   grid-column: 1 / span 6;
   background-color: var(--verdeClaro);
-  color: #FFF;
+  color: #fff;
   padding: 10px 15px;
   border-radius: 15px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
@@ -635,7 +621,7 @@ a:target {
 .peladasDireita {
   grid-column: 7 / span 6;
   background-color: var(--verdeClaro);
-  color: #FFF;
+  color: #fff;
   padding: 10px 15px;
   border-radius: 15px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
@@ -651,7 +637,7 @@ a:target {
   text-align: center;
   font-size: 16px;
   font-weight: 600;
-  color: #FFF;
+  color: #fff;
   text-transform: none;
   border: 2px solid var(--verdeEscuro);
   transition: 200ms;
@@ -693,9 +679,8 @@ footer {
 
 .rodape a {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   &:hover {
     text-decoration: underline;
   }
 }
-

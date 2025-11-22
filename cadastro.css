@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
+
+:root {
+  --azul: #0058BC;
+  --verdeClaro: #3B7C2E;
+  --verdeEscuro: #2C6422;
+  --laranja: #CD6116;
+
+  /* Font Families */
+  --font-heading: 'Russo One', sans-serif;
+  --font-body: 'Exo 2', sans-serif;
+
+  /* Font Weights */
+  --weight-extralight: 200; /* Para "Label" */
+  --weight-regular: 400;    /* Para "Paragraph" */
+  --weight-bold: 600;   /* Para "Button" */
+
+}
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,7 +28,7 @@
 
 .headerLogin {
     width: 100%;
-    background: #1b5e20; 
+    background: var(--verdeEscuro); 
     padding: 15px 0;
     box-shadow: 0px 3px 6px rgba(0,0,0,0.15);
 }
@@ -35,7 +55,7 @@
     padding: 8px 20px;
     background: white;
     border-radius: 50px;
-    color: #1b5e20;
+    color: var(--verdeEscuro);
     font-weight: 600;
     text-decoration: none;
     transition: 0.2s;
@@ -122,7 +142,7 @@
 }
 
 .camposDeCadastro p a {
-    color: #1b5e20;
+    color: var(--verdeEscuro);
     font-weight: 600;
     text-decoration: none;
 }
@@ -135,7 +155,7 @@
     width: 100%;
     padding: 12px 0;
     text-align: center;
-    background: linear-gradient(to bottom, #ffeb3b, #ffc400);
+    background: linear-gradient(to right, #CCFF00, #FFFF00);
     color: #1b1b1b;
     font-size: 16px;
     font-weight: 700;
@@ -157,6 +177,13 @@
     transform: translateY(1px);
     filter: brightness(0.85);
 }
+
+.politica {
+    margin-top: 5px;
+    color: var(--verdeEscuro);
+    font-size: 13px;
+}
+
 
 /* --------------------- FIM BOTÃO DE LOGIN --------------------- */
 

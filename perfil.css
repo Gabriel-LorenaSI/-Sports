@@ -1,315 +1,254 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
 
 :root {
-  --azul: #0058bc;
-  --verdeClaro: #3b7c2e;
-  --verdeEscuro: #2c6422;
-  --laranja: #cd6116;
+  --azul: #0058BC;
+  --verdeClaro: #3B7C2E;
+  --verdeEscuro: #2C6422;
+  --laranja: #CD6116;
 
   /* Font Families */
-  --font-heading: "Russo One", sans-serif;
-  --font-body: "Exo 2", sans-serif;
+  --font-heading: 'Russo One', sans-serif;
+  --font-body: 'Exo 2', sans-serif;
 
   /* Font Weights */
   --weight-extralight: 200; /* Para "Label" */
-  --weight-regular: 400; /* Para "Paragraph" */
-  --weight-extrabold: 700; /* Para "Button" */
+  --weight-regular: 400;    /* Para "Paragraph" */
+  --weight-bold: 600;   /* Para "Button" */
+
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* --------------------- INICIO HEADER LOGIN --------------------- */
+
+.headerLogin {
+    width: 100%;
+    background: var(--verdeEscuro); 
+    padding: 15px 0;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.15);
 }
 
-.container {
-  max-width: 1040px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+.headerLogin nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
-.grid-layout {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 15px;
+.headerLogin .nav-logo {
+    width: 140px;
 }
 
-/* Começo NAV */
-
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  background-color: var(--verdeEscuro);
+.headerLogin .nav-links-wrapper {
+    display: flex;
+    gap: 20px;
 }
 
-.nav-logo {
-  grid-column: 1 / 2;
-  justify-self: end;
-  max-width: 100%;
-  height: auto;
+.headerLogin .nav-links-wrapper a {
+    padding: 8px 20px;
+    background: white;
+    border-radius: 50px;
+    color: var(--verdeEscuro);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s;
 }
 
-.nav-full-bleed {
-  display: grid;
-  grid-template-columns: 1fr 1040px 1fr;
-  max-width: 1440px;
-  margin: 0 auto;
-  align-items: center;
-  padding: 15px 0;
+.headerLogin .nav-links-wrapper a:hover {
+    background: #ceecc6;
 }
 
-.nav-links-wrapper.grid-layout {
-  grid-column: 2 / 3;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 15px;
+.headerLogin .nav-search {
+    padding: 8px 15px;
+    border-radius: 50px;
+    border: none;
+    width: 180px;
 }
 
-.nav-links-wrapper a {
-  padding: 10px;
-  height: 40px;
-  background-color: white;
-  text-decoration: none;
-  color: black;
-  border-radius: 25px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: box-shadow 200ms;
-}
 
-.nav-links-wrapper a:nth-child(1) {
-  grid-column: 3 / span 2;
-  background-color: var(--laranja);
-  color: white;
-}
+/* --------------------- FIM HEADER LOGIN --------------------- */
 
-.nav-links-wrapper a:nth-child(2) {
-  /* Eventos */
-  grid-column: 5 / span 2;
-  background-color: white;
-  color: black;
-}
 
-.nav-links-wrapper a:nth-child(3) {
-  /* Peladas */
-  grid-column: 7 / span 2;
-  background-color: white;
-  color: black;
-}
 
-.nav-links-wrapper a:nth-child(4) {
-  /* Login/Cadastro */
-  grid-column: 9 / span 2;
-  background-color: white;
-  color: black;
-}
 
-.nav-links-wrapper a:hover {
-  box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.5);
-}
-
-.nav-search {
-  grid-column: 3 / 4;
-  justify-self: start;
-  width: auto;
-  padding: 10px;
-  border: none;
-  border-radius: 25px;
-}
+/* ------------------------- */
+/*      LAYOUT PRINCIPAL     */
+/* ------------------------- */
 
 body {
-  background-color: #ffffff;
+  margin: 0;
   font-family: var(--font-body);
-  font-weight: var(--weight-regular);
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.05em;
-  padding-top: 120px;
+  background: #f2f6ff;
 }
 
-/* INCIO PERFIL*/
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr 320px;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* ------------------------- */
+/*         SIDEBAR           */
+/* ------------------------- */
 
 .sidebar {
-  width: 270px;
   background: var(--verdeEscuro);
-  border-radius: 14px;
-  padding: 20px;
-  color: white;
-  font-family: "Arial", sans-serif;
-  display: block;
-  flex-direction: column;
-  align-items: center;
-  gap: 18px;
-  grid-column: 1 / span 3;
-  grid-template-columns: repeat(12, 1fr);
-}
-
-/* FOTO DE PERFIL */
-.sidebar-photo {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
+  border-radius: 10px;
+  padding: 20px 15px;
+  color: #fff;
+  text-align: center;
+  height: fit-content;
 }
 
 .sidebar-photo img {
-  width: 100%;
-  height: 100%;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
   object-fit: cover;
 }
 
-.divisor {
-  width: 80%;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.3);
-  margin: 20px ;
+.sidebar-name {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-.perfil-menu {
-  width: 100%;
-  margin-bottom: 40px;
+.divisor {
+  border: none;
+  border-top: 1px solid #ffffff60;
+  margin: 15px 0;
 }
 
 .perfil-menu ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  text-align: left;
 }
 
 .item-menu {
-  padding: 10px 0;
-  margin-bottom: px;
-  padding-left: 10px;
+  padding: 12px 0;
 }
 
 .item-menu a {
-  color: white;
+  color: #fff;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1.1rem;
-  display: block;
+  font-size: 17px;
 }
 
-.item-menu:hover {
-  background-color: var(--verdeClaro);
-  border-radius: 0 10px 10px 0;
-}
-
-.perfil-footer {
-  margin-top: auto;
+.item-menu.ativo a {
+  font-weight: bold;
 }
 
 .btn-sair {
-  background-color: #cd6116;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px 50px;
-  border-radius: 25px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
   display: inline-block;
+  background: #c4601e;
+  padding: 10px 40px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.2s;
 }
 
-/* FIM PERFIL*/
+.btn-sair:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  color: var(--laranja);
+  background-color: #fff;
+  border: 1px solid var(--laranja);
+}
 
-/* Inicio do portifólio de eventos */
 
-.proximosEventos {
-  grid-column: 1 / span 8;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 15px;
+/* ------------------------- */
+/*    COLUNA CENTRAL         */
+/* ------------------------- */
+
+.conteudo {
+  width: 100%;
 }
 
 .proximosEventos h4 {
-  grid-column: 1 / -1;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
-/* Cards */
-.caixaEventos.grid-layout {
-  background-color: var(--azul);
-  margin: 0;
-  grid-column: 1 / -1;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  height: 250px;
-  align-items: center;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* Imagem do Evento */
-.caixaEventos img {
-  grid-column: 1 / span 3;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-/* O Bloco de Texto */
-
-.caixaEventos__info {
-  grid-column: 6 / span 9;
-  height: 80%;
-  align-self: baseline;
-}
-
-.text-evento {
+.caixaEventos {
+  display: flex;
+  background: var(--azul);
+  border-radius: 15px;
+  box-shadow: 0 0 10px #00000020;
+  margin-bottom: 20px;
+  padding: 12px;
+  gap: 15px;
   font-family: var(--font-body);
-  font-weight: 700;
-  font-size: 30px;
-  color: #ffffff;
+  color: white;
+}
+
+.caixaEventos img {
+  width: 180px;
+  border-radius: 10px;
+}
+
+.caixaEventos__info h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.maisEventos {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--azul);
+}
+
+.textEvent{
+  font-family: var(--font-body);
 }
 
 .caixaEventos p {
   color: #ffffff;
-  margin: 3px 0;
+  margin: 3px 0; 
   font-size: 1rem;
 }
 /* Data */
 .caixaEventos p:nth-of-type(1)::before {
-  content: "📅"; /* Ícone de Calendário */
+  content: '📅'; /* Ícone de Calendário */
   margin-right: 3px;
   font-size: 1.2rem;
 }
 /* Local */
 .caixaEventos p:nth-of-type(2)::before {
-  content: "📍";
+  content: '📍';
   margin-right: 3px;
   font-size: 1.2rem;
 }
 /* Distância */
 .caixaEventos p:nth-of-type(3)::before {
-  content: "🏃"; /* Ícone de Corrida */
+  content: '🏃'; /* Ícone de Corrida */
   margin-right: 3px;
   font-size: 1.2rem;
 }
 /* Preço */
 .caixaEventos p:nth-of-type(4) {
-  font-weight: bold;
-  color: #ffffff;
+  font-weight: bold; 
+  color: #ffffff; 
   font-size: 1.1rem;
   margin-top: 10px;
 }
 .caixaEventos p:nth-of-type(4)::before {
-  content: "💲";
+  content: '💲'; 
   margin-right: 3px;
   font-size: 1.2rem;
-  color: #555;
-  font-weight: normal;
-}
+  color: #555; 
+  font-weight: normal; 
+  }
 
-.maisEventos {
+  .maisEventos {
   grid-column: 4 / span 2;
   border-radius: 25px;
   padding-top: 4px;
@@ -317,11 +256,11 @@ body {
   background-color: var(--laranja);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
   text-align: center;
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  color: #FFF;
   text-transform: none;
-  border: 2px solid var(--laranja);
+  border: 4px solid var(--laranja);
   transition: 200ms;
   text-decoration: none;
 }
@@ -330,18 +269,17 @@ body {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   color: var(--laranja);
   background-color: #fff;
-  border: 2px solid var(--laranja);
+  border: 1px solid var(--laranja);
 }
 
-/* Fim da CAIXA DE EVENTOS */
+/* ------------------------- */
+/*     COLUNA DIREITA        */
+/* ------------------------- */
 
 /* Calendário */
 
 /* Base do Calendário */
 
-.calendarioSideBar {
-  grid-column: 9 / span 4;
-}
 
 .calendar {
   position: relative;
@@ -413,7 +351,7 @@ body {
 }
 
 .calendar__events {
-  background-color: #0058BC;
+  background-color: var(--azul);
 }
 
 /* Título "Eventos" */
