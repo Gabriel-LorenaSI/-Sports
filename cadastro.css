@@ -1,27 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
-
-:root {
-  --azul: #0058BC;
-  --verdeClaro: #3B7C2E;
-  --verdeEscuro: #2C6422;
-  --laranja: #CD6116;
-
-  /* Font Families */
-  --font-heading: 'Russo One', sans-serif;
-  --font-body: 'Exo 2', sans-serif;
-
-  /* Font Weights */
-  --weight-extralight: 200; /* Para "Label" */
-  --weight-regular: 400;    /* Para "Paragraph" */
-  --weight-bold: 600;   /* Para "Button" */
-
-}
-
-
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    max-width: 99.5%;
+    max-height: 100vh;
 }
 
 /* --------------------- INICIO HEADER LOGIN --------------------- */
