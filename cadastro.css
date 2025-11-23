@@ -95,7 +95,41 @@
     text-decoration: underline;
 }
 
+.fontPlaceholder::-webkit-input-placeholder {
+  font-family: 'Exo 2', Arial, Helvetica, sans-serif;
+  color: rgb(189, 189, 189);
+}
 
+.fontPlaceholder:-ms-input-placeholder {
+  font-family: 'Exo 2', Arial, Helvetica, sans-serif;
+  color: rgb(189, 189, 189);
+}
+
+.fontPlaceholder:-moz-placeholder {
+  font-family: 'Exo 2', Arial, Helvetica, sans-serif;
+  color: rgb(189, 189, 189);
+}
+
+.fontPlaceholder::-moz-placeholder {
+  font-family: 'Exo 2', Arial, Helvetica, sans-serif;
+  color: rgb(189, 189, 189);
+}
+
+
+.msg-erro {
+  color: red;
+  font-size: 11px;
+  font-weight: bold;
+  display: none; /* Começa invisível */
+  margin-top: 5px;
+  margin-bottom: 10px; /* Um espaço extra antes do próximo campo */
+  text-align: left;
+}
+
+.input-invalido {
+  border: 2px solid red !important;
+  background-color: #ffe6e6; /* Fundo avermelhado suave */
+}
 
 
 /* --------------------- FIM CAMPOS DO LOGIN --------------------- */
