@@ -436,40 +436,45 @@ a:target {
 
 .caixaEventos__info {
   grid-column: 6 / span 9;
-  align-self: baseline;
+  align-content: start;
+  height: 100%;
 }
 
-.text-evento {
+.tituloEvento {
   font-family: var(--font-body);
   font-weight: 700;
-  font-size: 30px;
+  font-size: 28px;
   color: #ffffff;
+  text-align: start;
 }
 
-.caixaEventos p {
+.textoEvento {
+  margin-top: 25px;
   color: #ffffff;
-  margin: 3px 0;
   font-size: 1rem;
 }
-/* Data */
+
+/*
+
+
 .caixaEventos p:nth-of-type(1)::before {
-  content: "📅"; /* Ícone de Calendário */
+  content: "📅"; 
   margin-right: 3px;
   font-size: 1.2rem;
 }
-/* Local */
+
 .caixaEventos p:nth-of-type(2)::before {
   content: "📍";
   margin-right: 3px;
   font-size: 1.2rem;
 }
-/* Distância */
+
 .caixaEventos p:nth-of-type(3)::before {
-  content: "🏃"; /* Ícone de Corrida */
+  content: "🏃"; 
   margin-right: 3px;
   font-size: 1.2rem;
 }
-/* Preço */
+
 .caixaEventos p:nth-of-type(4) {
   font-weight: bold;
   color: #ffffff;
@@ -484,7 +489,10 @@ a:target {
   font-weight: normal;
 }
 
+*/
+
 .btnsEventos {
+  margin-top: 0px;
   display: flex;
 }
 
@@ -524,6 +532,9 @@ a:target {
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
+  &:hover{  
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .btnEventoInfo a {
