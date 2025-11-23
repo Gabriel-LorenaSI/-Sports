@@ -192,7 +192,26 @@ header {
   border-radius: 25px;
 }
 
+
 /* Final Nav */
+
+/* -------------------- ANIMAÇÃO DOS EVENTOS ----------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.9s ease;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* -------------------- FIM ANIMAÇÃO DOS EVENTOS ----------------------- */
 
 body {
   background-color: rgb(255, 255, 255);
@@ -369,6 +388,11 @@ a:target {
   margin: 0;
   margin-bottom: 30px;
   cursor: pointer;
+
+}
+
+.modalidades li :hover {
+  transform: translateY(-2px);
 }
 
 /* -----------------------------------------------------------------------------------------------------------------------------*/
@@ -483,6 +507,7 @@ a:target {
 }
 
 /* Fim da CAIXA DE EVENTOS */
+
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 

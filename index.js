@@ -11,32 +11,32 @@
 
   // Skin de Pin
   const pinFutebol = L.icon ({
-    iconUrl: "/img/pins/pinFutebol.png",
+    iconUrl: "img/pins/pinFutebol.png",
     iconSize: [27, 36]
   });
 
   const pinBasquete = L.icon ({
-    iconUrl: "/img/pins/pinBasquete.png",
+    iconUrl: "img/pins/pinBasquete.png",
     iconSize: [27, 36]
   });
 
   const pinKart = L.icon ({
-    iconUrl: "/img/pins/pinKart.png",
+    iconUrl: "img/pins/pinKart.png",
     iconSize: [27, 36]
   });
 
   const pinTenis = L.icon ({
-    iconUrl: "/img/pins/pinTenis.png",
+    iconUrl: "img/pins/pinTenis.png",
     iconSize: [27, 36]
   });
 
   const pinVolei = L.icon ({
-    iconUrl: "/img/pins/pinVolei.png",
+    iconUrl: "img/pins/pinVolei.png",
     iconSize: [27, 36]
   });
 
   const pinSkate = L.icon ({
-    iconUrl: "/img/pins/pinSkate.png",
+    iconUrl: "img/pins/pinSkate.png",
     iconSize: [27, 36]
   });
 
