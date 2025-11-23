@@ -434,7 +434,6 @@ a:target {
 
 .caixaEventos__info {
   grid-column: 6 / span 9;
-  height: 80%;
   align-self: baseline;
 }
 
@@ -482,6 +481,39 @@ a:target {
   color: #555;
   font-weight: normal;
 }
+
+.btnsEventos {
+  display: flex;
+}
+
+.btnEncerradas {
+  margin-top: 40px;
+  padding: 10px;
+  width: 165px;
+  background-color: #B56363;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 2px solid #642222;
+}
+
+.btnEventoInfo {
+  margin-top: 40px;
+  margin-left: 40px;
+  padding: 10px;
+  width: 175px;
+  height: 44px;
+  background-color: var(--laranja);
+  border-radius: 50px;
+  text-align: center;
+}
+
+.btnEventoInfo a {
+  color: white;
+  text-decoration: none;
+}
+
 
 .maisEventos {
   grid-column: 4 / span 2;
