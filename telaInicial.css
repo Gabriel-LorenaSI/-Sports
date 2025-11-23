@@ -149,6 +149,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: 200ms;
 }
 
@@ -181,6 +182,7 @@ header {
 
 .nav-links-wrapper a:hover {
   transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .nav-search {
@@ -295,7 +297,7 @@ body {
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: fill;
     }
   }
 }
@@ -427,7 +429,7 @@ a:target {
 .caixaEventos img {
   grid-column: 1 / span 3;
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 /* O Bloco de Texto */
@@ -487,19 +489,32 @@ a:target {
 }
 
 .btnEncerradas {
-  margin-top: 40px;
+  margin-top: 35px;
   padding: 10px;
   width: 165px;
   background-color: #B56363;
   color: white;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 5px;
   border: 2px solid #642222;
 }
 
+.btnAbertas {
+  margin-top: 35px;
+  padding: 10px;
+  width: 165px;
+  background-color: #71B563;
+  color: var(--verdeEscuro);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 2px solid var(--verdeEscuro);
+  text-align: center;
+}
+
 .btnEventoInfo {
-  margin-top: 40px;
+  margin-top: 35px;
   margin-left: 40px;
   padding: 10px;
   width: 175px;
@@ -507,6 +522,8 @@ a:target {
   background-color: var(--laranja);
   border-radius: 50px;
   text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 .btnEventoInfo a {
