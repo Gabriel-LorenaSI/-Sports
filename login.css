@@ -43,6 +43,21 @@
 
 /* --------------------- CAMPOS DO LOGIN --------------------- */
 
+/* Estilo do texto de erro */
+.msg-erro {
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+  display: none; /* Começa invisível */
+  margin-top: 5px;
+}
+
+/* Classe que vamos adicionar via JS se der erro */
+.input-invalido {
+  border: 2px solid red !important; /* Força a borda vermelha */
+  background-color: #ffe6e6; /* Um fundo levemente avermelhado */
+}
+
 .camposDeLogin {
     width: 380px;
     display: flex;

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="telaInicial.css" />
     <link rel="stylesheet" href="login.css" />
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <title>Login +Sports</title>
   </head>
   <body>
@@ -27,33 +27,111 @@
     </header>
 
     <section class="loginPrincipal">
-
       <div class="camposDeLogin">
         <h3 class="text-h3">Login</h3>
 
         <label for="usuario">
           <h4>Usuário</h4>
         </label>
-        <input class="inputUser" type="text" id="usuario" placeholder="E-mail ou CPF" required />
+        
+        <input
+          class="inputUser"
+          type="text"
+          placeholder="Digite seu e-mail ou CPF"
+          oninput="mascaraLogin(this)"
+          onblur="validarLogin(this)"
+          required
+        />
+        <span id="mensagemErro" class="msg-erro">
+            Por favor, digite um CPF ou E-mail válido.
+        </span>
 
         <label for="senha">
           <h4>Senha</h4>
         </label>
-        <input class="inputSenha" type="password" id="senha" placeholder="Digite sua senha aqui" required />
+        <input
+          class="inputSenha"
+          type="password"
+          id="senha"
+          placeholder="Digite sua senha aqui"
+          required
+        />
 
-        <a href="#" class="buttonLogin text-button-2">Entrar</a>
+        <a href="perfil.html" class="buttonLogin text-button-2">Entrar</a>
 
         <p class="politica text-label">
-          Ao entrar, você está aceitando a nossa <a style="text-decoration: underline;" href="#">Política de Privacidade</a> e <a href="#">Termos de Uso</a>
+          Ao entrar, você está aceitando a nossa
+          <a style="text-decoration: underline" href="#">Política de Privacidade</a>
+          e <a href="#">Termos de Uso</a>
         </p>
-        <p class="criarConta text-label">Não tem Conta? <a href="cadastro.html">Criar conta +Sports grátis</a></p>
-        
+        <p class="criarConta text-label">
+          Não tem Conta? <a href="cadastro.html">Criar conta +Sports grátis</a>
+        </p>
       </div>
-
 
       <div class="imgLogin">
-        <img src="img/imglogin.png" alt="imagemTelaDeLogin">
+        <img src="img/imglogin.png" alt="imagemTelaDeLogin" />
       </div>
     </section>
+
+    <script>
+      function mascaraLogin(input) {
+        let v = input.value;
+
+        // Verifica se tem alguma letra ou @ (característica de E-mail)
+        if (v.match(/[a-zA-Z@]/)) {
+          input.setAttribute("maxlength", "100");
+          return;
+        }
+
+        // Se chegou aqui, é porque SÓ tem números (ou símbolos de CPF)
+        input.setAttribute("maxlength", "14");
+
+        // Aplica a máscara de CPF padrão
+        v = v.replace(/\D/g, ""); 
+        v = v.replace(/(\d{3})(\d)/, "$1.$2"); 
+        v = v.replace(/(\d{3})(\d)/, "$1.$2"); 
+        v = v.replace(/(\d{3})(\d{1,2})$/, "$1-$2"); 
+
+        input.value = v;
+      }
+
+      // --- AS FUNÇÕES ABAIXO AGORA ESTÃO FORA DA MASCARA (Correto) ---
+
+      function validarLogin(input) {
+        let valor = input.value;
+        let spanErro = document.getElementById("mensagemErro");
+        
+        // 1. Verifica se está vazio
+        if (valor === "") {
+            removerErro(input, spanErro);
+            return;
+        }
+
+        // 2. Validação de CPF
+        let isCPF = valor.length === 14;
+
+        // 3. Validação de E-mail
+        let regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        let isEmail = regexEmail.test(valor);
+
+        // 4. Lógica Final
+        if (isCPF || isEmail) {
+          removerErro(input, spanErro);
+        } else {
+          mostrarErro(input, spanErro);
+        }
+      }
+
+      function mostrarErro(input, span) {
+        input.classList.add("input-invalido");
+        span.style.display = "block";
+      }
+
+      function removerErro(input, span) {
+        input.classList.remove("input-invalido");
+        span.style.display = "none";
+      }
+    </script>
   </body>
 </html>
