@@ -459,9 +459,7 @@ a:target {
 }
 
 .btnsEventos {
-  background-color: #2c6422;
   display: flex;
-  align-content: space-between;
 }
 
 .btnEncerradas {
@@ -477,12 +475,14 @@ a:target {
 }
 
 .btnEventoInfo {
-  margin: auto;
+  margin-top: 40px;
+  margin-left: 40px;
   padding: 10px;
   width: 175px;
   height: 44px;
   background-color: var(--laranja);
   border-radius: 50px;
+  text-align: center;
 }
 
 .btnEventoInfo a {
