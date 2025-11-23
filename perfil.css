@@ -11,21 +11,21 @@
   --font-body: "Exo 2", sans-serif;
 
   /* Font Weights */
-  --weight-extralight: 200; /* Para "Label" */
-  --weight-regular: 400; /* Para "Paragraph" */
-  --weight-bold: 600; /* Para "Button" */
+  --weight-extralight: 200;
+  --weight-regular: 400;
+  --weight-bold: 600;
 }
 
 /* --------------------- INICIO HEADER LOGIN --------------------- */
 
-.headerLogin {
+.headerPerfil {
   width: 100%;
   background: var(--verdeEscuro);
   padding: 15px 0;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
 }
 
-.headerLogin nav {
+.headerPerfil nav {
   max-width: 1200px;
   margin: auto;
   display: flex;
@@ -34,16 +34,16 @@
   padding: 0 20px;
 }
 
-.headerLogin .nav-logo {
+.headerPerfil .nav-logo {
   width: 140px;
 }
 
-.headerLogin .nav-links-wrapper {
+.headerPerfil .nav-links-wrapperPerfil {
   display: flex;
   gap: 20px;
 }
 
-.headerLogin .nav-links-wrapper a {
+.headerPerfil .nav-links-wrapperPerfil a {
   padding: 8px 20px;
   background: white;
   border-radius: 50px;
@@ -53,11 +53,11 @@
   transition: 0.2s;
 }
 
-.headerLogin .nav-links-wrapper a:hover {
+.headerPerfil .nav-links-wrapperPerfil a:hover {
   background: #ceecc6;
 }
 
-.headerLogin .nav-search {
+.headerPerfil .nav-searchPerfil {
   padding: 8px 15px;
   border-radius: 50px;
   border: none;
@@ -78,7 +78,7 @@ body {
   display: grid;
   grid-template-columns: 340px 1fr 340px;
   gap: 20px;
-  padding: 20px;
+  padding: 20px 15px 10px 8px;
   height: 100%;
   align-items: start;
 }
@@ -96,7 +96,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  min-height: 600px;
+  min-height: 85vh;
   box-sizing: border-box;
 }
 
@@ -139,6 +139,12 @@ body {
 .item-menu.ativo a {
   font-weight: bold;
 }
+.item-menuu :hover {
+  background-color: var(--verdeClaro);
+  cursor: pointer;
+  border-left: 3px solid white;
+}
+
 .perfil-footer {
   margin-top: auto;
   width: 100%;
@@ -174,62 +180,64 @@ body {
   width: 100%;
 }
 
-.proximosEventos h4 {
+.eventoInscrito h4 {
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 15px;
   margin-top: 0;
 }
 
-.caixaEventos {
+.caixaEventosPerfil {
   display: flex;
   background: var(--azul);
   border-radius: 15px;
   box-shadow: 0 0 10px #00000020;
   margin-bottom: 20px;
-  padding: 12px;
+  padding: 15px;
   gap: 15px;
   font-family: var(--font-body);
   color: white;
+  width: 770px;
+  height: 180px;
 }
 
-.caixaEventos img {
-  width: 180px;
+.caixaEventosPerfil img {
+  width: 200px;
   border-radius: 10px;
 }
 
-.caixaEventos__info h4 {
+.caixaEventosPerfil__info h4 {
   margin: 0;
   font-size: 20px;
   font-weight: bold;
 }
-.text-h4 {
+.text-h4Perfil {
   margin-top: 0;
 }
 
-.textEvent {
+.textEventPerfil {
   font-family: var(--font-body);
 }
 
-.caixaEventos p {
+.caixaEventosPerfil p {
   color: #ffffff;
   margin: 3px 0;
   font-size: 1rem;
 }
 /* Data */
-.caixaEventos p:nth-of-type(1)::before {
+.caixaEventosPerfil p:nth-of-type(1)::before {
   content: "📅"; 
   margin-right: 3px;
   font-size: 1.2rem;
 }
 /* Local */
-.caixaEventos p:nth-of-type(2)::before {
+.caixaEventosPerfil p:nth-of-type(2)::before {
   content: "📍";
   margin-right: 3px;
   font-size: 1.2rem;
 }
 /* Distância */
-.caixaEventos p:nth-of-type(3)::before {
+.caixaEventosPerfil p:nth-of-type(3)::before {
   content: "🏃"; 
   margin-right: 3px;
   font-size: 1.2rem;
@@ -260,7 +268,7 @@ body {
 
 /* --------------------- COLUNA DA DIREITA --------------------- */
 
-.calendar {
+.calendarPerfil {
   position: relative;
   background-color: var(--verdeEscuro);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
@@ -270,8 +278,12 @@ body {
   margin-top: 0;
 }
 
+.text-h4Calendario{
+  margin-top: 0;
+}
+
 /* Grid dos Dias */
-.calendar__date {
+.calendarPerfil__date {
   padding: 15px;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -280,7 +292,7 @@ body {
 }
 
 /* Letras dos Dias */
-.calendar__day {
+.calendarPerfil__day {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -290,7 +302,7 @@ body {
 }
 
 /* Números dos Dias (Botões) */
-.calendar__number {
+.calendarPerfil__number {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -304,37 +316,37 @@ body {
   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
-.calendar__number:hover {
+.calendarPerfil__number:hover {
   background-color: #e0e0e0;
 }
 
 /* Para dias do mês anterior/posterior  */
-.calendar__number.inactive {
+.calendarPerfil__number.inactive {
   background-color: var(--verdeEscuro);
   cursor: auto;
   box-shadow: none;
 }
 
 /* Dias de evento em azul */
-.calendar__number.event-blue {
+.calendarPerfil__number.event-blue {
   background-color: #0058bc;
   color: #ffffff;
   font-weight: 600;
 }
 
 /* Dias de evento em vermelho/marrom */
-.calendar__number.event-red {
+.calendarPerfil__number.event-red {
   background-color: #cd6116; /* Tom de marrom/vermelho */
   color: #ffffff;
   font-weight: 600;
 }
 
-.calendar__events {
+.calendarPerfil__events {
   background-color: var(--azul);
 }
 
 /* Título "Eventos" */
-.calendar__events h3 {
+.calendarPerfil__events h3 {
   color: #ffffff;
   font-size: 1.25rem;
   font-weight: 300;
@@ -342,7 +354,7 @@ body {
 }
 
 /* Item individual do evento */
-.calendar__event-item {
+.calendarPerfil__event-item {
   color: #ffffff;
   font-weight: 500;
   font-size: 1rem;
@@ -351,7 +363,7 @@ body {
   cursor: pointer;
 }
 
-.calendar__event-item:hover {
+.calendarPerfil__event-item:hover {
   background-color: var(--verdeEscuro);
   cursor: pointer;
 }
