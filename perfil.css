@@ -1,70 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap");
 
 :root {
-  --azul: #0058BC;
-  --verdeClaro: #3B7C2E;
-  --verdeEscuro: #2C6422;
-  --laranja: #CD6116;
+  --azul: #0058bc;
+  --verdeClaro: #3b7c2e;
+  --verdeEscuro: #2c6422;
+  --laranja: #cd6116;
 
   /* Font Families */
-  --font-heading: 'Russo One', sans-serif;
-  --font-body: 'Exo 2', sans-serif;
+  --font-heading: "Russo One", sans-serif;
+  --font-body: "Exo 2", sans-serif;
 
   /* Font Weights */
   --weight-extralight: 200; /* Para "Label" */
-  --weight-regular: 400;    /* Para "Paragraph" */
-  --weight-bold: 600;   /* Para "Button" */
-
+  --weight-regular: 400; /* Para "Paragraph" */
+  --weight-bold: 600; /* Para "Button" */
 }
 
 /* --------------------- INICIO HEADER LOGIN --------------------- */
 
 .headerLogin {
-    width: 100%;
-    background: var(--verdeEscuro); 
-    padding: 15px 0;
-    box-shadow: 0px 3px 6px rgba(0,0,0,0.15);
+  width: 100%;
+  background: var(--verdeEscuro);
+  padding: 15px 0;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 .headerLogin nav {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .headerLogin .nav-logo {
-    width: 140px;
+  width: 140px;
 }
 
 .headerLogin .nav-links-wrapper {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .headerLogin .nav-links-wrapper a {
-    padding: 8px 20px;
-    background: white;
-    border-radius: 50px;
-    color: var(--verdeEscuro);
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.2s;
+  padding: 8px 20px;
+  background: white;
+  border-radius: 50px;
+  color: var(--verdeEscuro);
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s;
 }
 
 .headerLogin .nav-links-wrapper a:hover {
-    background: #ceecc6;
+  background: #ceecc6;
 }
 
 .headerLogin .nav-search {
-    padding: 8px 15px;
-    border-radius: 50px;
-    border: none;
-    width: 180px;
+  padding: 8px 15px;
+  border-radius: 50px;
+  border: none;
+  width: 180px;
 }
-
 
 /* --------------------- FIM HEADER LOGIN --------------------- */
 
@@ -82,7 +80,7 @@ body {
   gap: 20px;
   padding: 20px;
   height: 100%;
-   align-items: start;
+  align-items: start;
 }
 
 /* --------------------- FIM LAYOUT PRINCIPAL --------------------- */
@@ -142,8 +140,8 @@ body {
   font-weight: bold;
 }
 .perfil-footer {
-  margin-top: auto; 
-  width: 100%; 
+  margin-top: auto;
+  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -169,7 +167,6 @@ body {
 }
 
 /* --------------------- FIM SIDEBAR PRINCIPAL --------------------- */
-
 
 /* --------------------- COLUNA CENTRAL --------------------- */
 
@@ -206,49 +203,42 @@ body {
   font-size: 20px;
   font-weight: bold;
 }
- .text-h4{
+.text-h4 {
   margin-top: 0;
- }
+}
 
-.textEvent{
+.textEvent {
   font-family: var(--font-body);
 }
 
 .caixaEventos p {
   color: #ffffff;
-  margin: 3px 0; 
+  margin: 3px 0;
   font-size: 1rem;
 }
 /* Data */
 .caixaEventos p:nth-of-type(1)::before {
-  content: '📅'; /* Ícone de Calendário */
+  content: "📅"; 
   margin-right: 3px;
   font-size: 1.2rem;
 }
 /* Local */
 .caixaEventos p:nth-of-type(2)::before {
-  content: '📍';
+  content: "📍";
   margin-right: 3px;
   font-size: 1.2rem;
 }
 /* Distância */
 .caixaEventos p:nth-of-type(3)::before {
-  content: '🏃'; /* Ícone de Corrida */
+  content: "🏃"; 
   margin-right: 3px;
   font-size: 1.2rem;
 }
-/* Preço */
-.caixaEventos p:nth-of-type(4) {
-  font-weight: bold; 
-  color: #ffffff; 
-  font-size: 1.1rem;
-  margin-top: 10px;
-}
 
 .btn-Rotas a {
- display: inline-block;
+  display: inline-block;
   background: var(--laranja);
-  padding: 10px 25px;
+  padding: 8px 25px;
   border-radius: 10px;
   color: white;
   font-weight: bold;
@@ -262,32 +252,8 @@ body {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   color: var(--laranja);
   background-color: #ffffff;
-  border: 2px solid var(--laranja);
-  color: var(--laranja);
-}
-
-  .maisEventos {
-  grid-column: 4 / span 2;
-  border-radius: 25px;
-  padding-top: 4px;
-  height: 39px;
-  background-color: var(--laranja);
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
-  text-align: center;
-  font-size: 20px;
-  font-weight: 500;
-  color: #FFF;
-  text-transform: none;
-  border: 4px solid var(--laranja);
-  transition: 200ms;
-  text-decoration: none;
-}
-
-.maisEventos:hover {
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  color: var(--laranja);
-  background-color: #fff;
   border: 1px solid var(--laranja);
+  color: var(--laranja);
 }
 
 /* --------------------- FIM COLUNA CENTRAL --------------------- */
@@ -299,7 +265,7 @@ body {
   background-color: var(--verdeEscuro);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   border-radius: 12px;
-  overflow: hidden; 
+  overflow: hidden;
   box-sizing: border-box;
   margin-top: 0;
 }
@@ -320,7 +286,7 @@ body {
   justify-content: center;
   height: 25px;
   font-weight: bold;
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 /* Números dos Dias (Botões) */
@@ -328,14 +294,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 35px; 
-  width: 100%; 
+  height: 35px;
+  width: 100%;
   background-color: #ffffff;
   border-radius: 10px;
   font-weight: 200;
   cursor: pointer;
   box-sizing: border-box;
-  box-shadow: inset 1px 1px 1px rgba(0,0,0,0.25);
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .calendar__number:hover {
@@ -351,14 +317,14 @@ body {
 
 /* Dias de evento em azul */
 .calendar__number.event-blue {
-  background-color: #0058BC; 
+  background-color: #0058bc;
   color: #ffffff;
   font-weight: 600;
 }
 
 /* Dias de evento em vermelho/marrom */
 .calendar__number.event-red {
-  background-color: #CD6116; /* Tom de marrom/vermelho */
+  background-color: #cd6116; /* Tom de marrom/vermelho */
   color: #ffffff;
   font-weight: 600;
 }
