@@ -17,6 +17,13 @@ O que falta fazer?
     - Adicionar RegEx e Mask
         - ok
 - Arrumar código Perfil
-    -ok
+    - ok
 - Arrumar os links e botões
     - ok
+
+_______________________________________
+
+Mudanças Menores
+
+- Diminuir Favicon (para ajudar na performance)
+- Mudar imagem Login
