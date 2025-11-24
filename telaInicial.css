@@ -43,6 +43,7 @@
   font-size: 64px;
   line-height: 100%;
   letter-spacing: -2px;
+  cursor: default;
 }
 
 .text-h2 {
@@ -50,6 +51,7 @@
   font-size: 48px;
   line-height: 100%;
   letter-spacing: -1px;
+  cursor: default;
 }
 
 .text-h3 {
@@ -58,6 +60,7 @@
   font-size: 32px;
   line-height: 100%;
   letter-spacing: -0.5px;
+  cursor: default;
 }
 
 .text-h4 {
@@ -65,6 +68,7 @@
   font-size: 24px;
   line-height: 100%;
   letter-spacing: 0px;
+  cursor: default;
 }
 
 /* --- CLASSES DE CORPO E UTILITÁRIAS --- */
@@ -117,9 +121,7 @@ header {
 
 .nav-logo {
   grid-column: 1 / 2;
-  justify-self: end;
-  max-width: 100%;
-  height: auto;
+  margin-top: 3px;
 }
 
 .nav-full-bleed {
@@ -149,7 +151,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   transition: 200ms;
 }
 
@@ -182,7 +184,7 @@ header {
 
 .nav-links-wrapper a:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.45);
 }
 
 .nav-search {
@@ -201,16 +203,7 @@ header {
 
 html {
   scroll-behavior: smooth;
-}
-
-a {
-  text-decoration: none;
-  color: #007bff;
-  transition: color 0.9s ease;
-}
-
-a:hover {
-  color: #0056b3;
+  width: 100%;
 }
 
 /* -------------------- FIM ANIMAÇÃO DOS EVENTOS ----------------------- */
@@ -382,6 +375,7 @@ a:target {
 .modalidades li p {
   margin: 0;
   text-transform: uppercase;
+  cursor: default;
 }
 
 /* Estilos para as SETAS  */
@@ -447,6 +441,7 @@ a:target {
   grid-column: 6 / span 9;
   align-content: start;
   height: 100%;
+  cursor: default;
 }
 
 .tituloEvento {
@@ -455,6 +450,7 @@ a:target {
   font-size: 28px;
   color: #ffffff;
   text-align: start;
+  cursor: default;
 }
 
 .textoEvento {
@@ -602,7 +598,7 @@ a:target {
 .calendar {
   position: relative;
   background-color: var(--verdeEscuro);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.15);
   border-radius: 12px;
   overflow: hidden;
   box-sizing: border-box;
@@ -625,7 +621,7 @@ a:target {
   justify-content: center;
   height: 25px;
   font-weight: bold;
-  color: #ffffff;
+  color: var(--verdeClaro) ;
 }
 
 /* Números dos Dias (Botões) */
@@ -729,6 +725,7 @@ a:target {
 
 .peladas h3 {
   font-weight: 500;
+  cursor: default;
 }
 
 .peladasDireita h3 {
@@ -739,6 +736,7 @@ a:target {
   display: flex;
   margin-top: 10px;
   margin-bottom: 10px;
+  cursor: default;
 }
 
 .btnPelada {

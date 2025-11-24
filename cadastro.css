@@ -1,12 +1,12 @@
 * {
-    max-width: 99.5%;
+    max-width: 100%;
     max-height: 100vh;
 }
 
 /* --------------------- INICIO HEADER LOGIN --------------------- */
 
 .headerLogin {
-    width: 100%;
+    width: 99.5%;
     height: 75px;
     background: var(--verdeEscuro); /* Verde igual ao da barra superior */
     margin: 5px;

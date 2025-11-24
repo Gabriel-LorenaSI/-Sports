@@ -11,9 +11,12 @@ _______________________________________
 O que falta fazer?
 
 - Trocar fotos Hero Banner
+    - ok
 - Arrumar código de Login/Cadastro 
     - ok
     - Adicionar RegEx e Mask
+        - ok
 - Arrumar código Perfil
+    -ok
 - Arrumar os links e botões
-- Ajustar cor botões laranja/branco
+    - ok

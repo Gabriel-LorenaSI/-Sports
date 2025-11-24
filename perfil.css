@@ -1,67 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap");
-
-:root {
-  --azul: #0058bc;
-  --verdeClaro: #3b7c2e;
-  --verdeEscuro: #2c6422;
-  --laranja: #cd6116;
-
-  /* Font Families */
-  --font-heading: "Russo One", sans-serif;
-  --font-body: "Exo 2", sans-serif;
-
-  /* Font Weights */
-  --weight-extralight: 200;
-  --weight-regular: 400;
-  --weight-bold: 600;
+* {
+    max-width: 100%;
+    max-height: 100vh;
 }
 
 /* --------------------- INICIO HEADER LOGIN --------------------- */
 
-.headerPerfil {
-  width: 100%;
-  background: var(--verdeEscuro);
-  padding: 15px 0;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+.headerLogin {
+    width: 99.5%;
+    height: 75px;
+    background: var(--verdeEscuro); /* Verde igual ao da barra superior */
+    margin: 5px;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.15);
 }
 
-.headerPerfil nav {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
+.nav-links-wrapper a:nth-child(1) { 
+  grid-column: 3 / span 2;
+  background-color: white; 
+  color: black;
 }
 
-.headerPerfil .nav-logo {
-  width: 140px;
-}
-
-.headerPerfil .nav-links-wrapperPerfil {
-  display: flex;
-  gap: 20px;
-}
-
-.headerPerfil .nav-links-wrapperPerfil a {
-  padding: 8px 20px;
-  background: white;
-  border-radius: 50px;
-  color: var(--verdeEscuro);
-  font-weight: 600;
-  text-decoration: none;
-  transition: 0.2s;
-}
-
-.headerPerfil .nav-links-wrapperPerfil a:hover {
-  background: #ceecc6;
-}
-
-.headerPerfil .nav-searchPerfil {
-  padding: 8px 15px;
-  border-radius: 50px;
-  border: none;
-  width: 180px;
+.nav-links-wrapper a:nth-child(4) { /* Login/Cadastro */
+  grid-column: 9 / span 2; 
+  background-color: var(--laranja);
+  color: rgb(255, 255, 255);
 }
 
 /* --------------------- FIM HEADER LOGIN --------------------- */
@@ -69,17 +32,12 @@
 /* --------------------- LAYOUT PRINCIPAL --------------------- */
 
 body {
-  margin: 0;
+  margin: 85px 5px;
   font-family: var(--font-body);
-  background: #f2f6ff;
 }
 
 .layout {
-  display: grid;
-  grid-template-columns: 340px 1fr 340px;
-  gap: 20px;
-  padding: 20px 15px 10px 8px;
-  height: 100%;
+  display: flex;
   align-items: start;
 }
 
@@ -90,13 +48,13 @@ body {
 .sidebar {
   background: var(--verdeEscuro);
   border-radius: 10px;
-  padding: 20px 15px;
+  padding: 20px 0;
+  width: 600px;
   color: #fff;
   text-align: center;
-  height: 100%;
   display: flex;
   flex-direction: column;
-  min-height: 85vh;
+  min-height: 90vh;
   box-sizing: border-box;
 }
 
@@ -108,16 +66,35 @@ body {
 }
 
 .sidebar-name {
-  font-size: 18px;
+  font-size: 25px;
   margin-top: 10px;
-  font-weight: bold;
+  font-weight: 500;
+  font-family: var(--font-heading);
   text-transform: uppercase;
+  cursor: default;
+}
+
+.infoUsuario {
+  margin-top: 3px;
+  color: #b6b6b6;
+  font-size: 14px;
+  cursor: default;
+  a {
+    text-decoration: none;
+    color: #b6b6b6;
+    font-size: 12px;
+    cursor: pointer;
+    &:hover {
+      color: #d1d1d1;
+      text-decoration: underline;
+    }
+  }
 }
 
 .divisor {
   border: none;
-  border-top: 1px solid #ffffff60;
-  margin: 15px 0;
+  border-top: 1px solid var(--verdeClaro);
+  margin: 15px 10px;
 }
 
 .perfil-menu ul {
@@ -127,7 +104,14 @@ body {
 }
 
 .item-menu {
-  padding: 12px 0;
+  padding: 12px 0 12px 20px;
+  cursor: pointer;
+  &:hover {
+    margin-right: 20px;
+    border-left: 3px solid white;
+    background-color: var(--verdeClaro);
+    border-radius: 0 8px 8px 0;
+  }
 }
 
 .item-menu a {
@@ -136,40 +120,34 @@ body {
   font-size: 17px;
 }
 
-.item-menu.ativo a {
+.item-menu.ativo {
   font-weight: bold;
-}
-.item-menuu :hover {
-  background-color: var(--verdeClaro);
-  cursor: pointer;
-  border-left: 3px solid white;
 }
 
 .perfil-footer {
   margin-top: auto;
-  width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  transition: 0.5s;
+  &:hover{
+    transform: translateY(-2px);
+  }
 }
 
 .btn-sair {
-  display: inline-block;
   background: var(--laranja);
-  padding: 10px 40px;
+  padding: 10px 155px;
   border-radius: 10px;
   color: white;
   font-weight: bold;
   text-decoration: none;
+  text-transform: uppercase;
   font-size: 18px;
-  transition: 0.2s;
+  transition: 0.5s;
   margin: 0;
 }
 
 .btn-sair:hover {
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  color: var(--laranja);
-  background-color: #ffffff;
-  border: 2px solid var(--laranja);
-  color: var(--laranja);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* --------------------- FIM SIDEBAR PRINCIPAL --------------------- */
@@ -178,108 +156,147 @@ body {
 
 .conteudo {
   width: 100%;
+  margin: 0 8px;
 }
 
 .eventoInscrito h4 {
   font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  margin-top: 0;
+  font-weight: 500;
+  margin-top: 3px;
+  margin-bottom: 8px;
+  cursor: default;
 }
 
-.caixaEventosPerfil {
+.eventosPassados h4 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 3px;
+  margin-bottom: 8px;
+  cursor: default;
+}
+
+.caixaPassados {
   display: flex;
-  background: var(--azul);
-  border-radius: 15px;
-  box-shadow: 0 0 10px #00000020;
-  margin-bottom: 20px;
-  padding: 15px;
-  gap: 15px;
-  font-family: var(--font-body);
-  color: white;
-  width: 770px;
-  height: 180px;
-}
-
-.caixaEventosPerfil img {
-  width: 200px;
-  border-radius: 10px;
-}
-
-.caixaEventosPerfil__info h4 {
+  background-color: var(--azul);
   margin: 0;
-  font-size: 20px;
-  font-weight: bold;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  height: 250px;
+  align-items: flex-start;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
 }
-.text-h4Perfil {
+
+.caixaPassados img {
+  border-radius: 8px;
+  object-fit: fill;
+}
+
+.tituloEvento {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 40px;
+  cursor: default;
+}
+
+.textoEvento {
   margin-top: 0;
 }
 
-.textEventPerfil {
-  font-family: var(--font-body);
+.passadosInfo {
+  cursor: default;
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+  display: grid;
 }
 
-.caixaEventosPerfil p {
-  color: #ffffff;
-  margin: 3px 0;
-  font-size: 1rem;
-}
-/* Data */
-.caixaEventosPerfil p:nth-of-type(1)::before {
-  content: "📅"; 
-  margin-right: 3px;
-  font-size: 1.2rem;
-}
-/* Local */
-.caixaEventosPerfil p:nth-of-type(2)::before {
-  content: "📍";
-  margin-right: 3px;
-  font-size: 1.2rem;
-}
-/* Distância */
-.caixaEventosPerfil p:nth-of-type(3)::before {
-  content: "🏃"; 
-  margin-right: 3px;
-  font-size: 1.2rem;
+.btnPassados {
+  display: flex;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 1px;
+  justify-content: end;
+  gap: 15px;
 }
 
-.btn-Rotas a {
-  display: inline-block;
-  background: var(--laranja);
-  padding: 8px 25px;
-  border-radius: 10px;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 15px;
-  transition: 0.2s;
+.btnEventoInfo {
   margin: 0;
+  border-radius: 10px;
 }
 
-.btn-Rotas a:hover {
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  color: var(--laranja);
-  background-color: #ffffff;
-  border: 1px solid var(--laranja);
-  color: var(--laranja);
+.recibo {
+  background-color: var(--azul);
+  box-shadow: none;
+  cursor: default;
+  &:hover {
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+.recibo a {
+  color: white;
+  font-weight: 800;
+  &:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+.fotos {
+  background-color: var(--verdeClaro);
+  border-radius: 10px;
+}
+
+.btnResultado {
+  padding: 10px 0;
+  width: 175px;
+  height: 44px;
+  background-color: var(--laranja);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover{  
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+  }
+}
+
+.btnResultado a {
+  color: white;
+  text-decoration: none;
 }
 
 /* --------------------- FIM COLUNA CENTRAL --------------------- */
 
 /* --------------------- COLUNA DA DIREITA --------------------- */
 
-.calendarPerfil {
-  position: relative;
-  background-color: var(--verdeEscuro);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  border-radius: 12px;
-  overflow: hidden;
-  box-sizing: border-box;
-  margin-top: 0;
+aside {
+  margin: 0;
 }
 
-.text-h4Calendario{
-  margin-top: 0;
+.calendarPerfil {
+  background-color: var(--verdeEscuro);
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  width: 350px;
+}
+
+aside h4 {
+  font-weight: 500;
+  font-family: var(--font-heading);
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  margin-top: 3px;
+  margin-bottom: 8px;
 }
 
 /* Grid dos Dias */
@@ -298,7 +315,7 @@ body {
   justify-content: center;
   height: 25px;
   font-weight: bold;
-  color: #ffffff;
+  color: var(--verdeClaro);
 }
 
 /* Números dos Dias (Botões) */
@@ -329,9 +346,12 @@ body {
 
 /* Dias de evento em azul */
 .calendarPerfil__number.event-blue {
-  background-color: #0058bc;
+  background-color: var(--azul);
   color: #ffffff;
   font-weight: 600;
+  &:hover {
+    background-color: #014899;
+  }
 }
 
 /* Dias de evento em vermelho/marrom */
@@ -365,6 +385,7 @@ body {
 
 .calendarPerfil__event-item:hover {
   background-color: var(--verdeEscuro);
+  text-decoration: underline;
   cursor: pointer;
 }
 

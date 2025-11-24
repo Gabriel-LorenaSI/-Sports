@@ -4,43 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil do usuário</title>
+    <link rel="stylesheet" href="telaInicial.css">
     <link rel="stylesheet" href="perfil.css" />
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
   </head>
 
   <body>
-    <header class="headerPerfil">
-      <nav>
-        <img src="img/logo.png" alt="" class="nav-logo" />
-        <div class="nav-links-wrapperPerfil grid-layout text-button-2">
+    <header class="headerLogin">
+      <nav class="nav-full-bleed">
+        <a href="telaInicial.html"><img src="img/logo.png" alt="" class="nav-logo" /></a>
+        <div class="nav-links-wrapper grid-layout text-button-2">
           <a href="telaInicial.html">Home</a>
           <a href="#">Eventos</a>
           <a href="#">Peladas</a>
-          <a href="login.html">Login</a>
+          <a href="login.html">Sair</a>
         </div>
         <input
           type="text"
           placeholder="Pesquisar"
-          class="nav-searchPerfil text-label"
+          class="nav-search text-label"
         />
       </nav>
     </header>
 
     <!-- LAYOUT DAS 3 COLUNAS -->
-    <div class="layout">
+    <section class="layout">
       <!-- SIDEBAR -->
       <div class="sidebar">
         <div class="sidebar-photo">
           <img src="img/fotoDePerfil.png" alt="Foto do usuário" />
         </div>
-        <h2 class="sidebar-name">Nome do Usuário</h2>
+        <h2 class="sidebar-name">Bruno Alves</h2>
+        <div class="infoUsuario">
+          <p>📍 Volta Redonda/RJ</p>
+          <a href="#">🖉 Editar Perfil</a>
+        </div>
         <hr class="divisor" />
         <nav class="perfil-menu">
           <ul class="item-menuu">
             <li class="item-menu ativo"><a href="#"> Painel +Sports</a></li>
+            <li class="item-menu"><a href="#"> Eventos</a></li>
+            <li class="item-menu"><a href="#"> Resultados</a></li>
             <li class="item-menu"><a href="#"> Medalhas</a></li>
-            <li class="item-menu"><a href="#"> Proxímas Corridas</a></li>
-            <li class="item-menu"><a href="#"> Últimos resultados</a></li>
             <li class="item-menu"><a href="#"> Dados Pessoais</a></li>
             <li class="item-menu"><a href="#"> Ajuda</a></li>
           </ul>
@@ -53,35 +58,69 @@
       <!-- COLUNA CENTRAL – EVENTOS -->
       <main class="conteudo">
         <section class="eventoInscrito">
-          <h4 class="text-h4Perfil">Eventos inscritos</h4>
-
-          <div class="caixaEventosPerfil">
-            <img src="img/eventos/nerdRun.jpg" alt="eventoNerdRun" />
-            <div class="caixaEventos__info">
-              <h4 class="text-eventoPerfil">Nerd Run Mario Bros</h4>
-              <p> 14/12/2025</p>
-              <p> Praça Ex-Combatentes - Volta Redonda/RJ</p>
-              <p> Distância: 5Km</p>
-              <p class="btn-Rotas"><a href="#">Rotas</a></p>
+          <h4 class="text-h4">Meus Eventos</h4>
+          <div class="caixaPassados">
+          <img src="img/eventos/economizeEmblem.png" alt="eventoNerdRun" />
+          <div class="passadosInfo">
+            <h5 class="tituloEvento">Circuito Economize Run</h5>
+            <div class="textoEvento">
+              <p>📅 30/11/2025</p>
+              <p>📍 Barra Mansa/RJ</p>
+              <p>🏃 Categoria: Corrida 5Km</p>
+            </div>
+            <div class="btnPassados">
+              <div class="btnEventoInfo recibo"><a href="#">Comprovante</a></div>
+              <div class="btnResultado"><a href="#">Status Inscrição</a></div>
+              <div class="btnEventoInfo"><a href="#">Informações Evento</a></div>
             </div>
           </div>
+        </div>
 
-          <div class="caixaEventosPerfil">
-            <img src="img/eventos/nerdRun.jpg" alt="eventoNerdRun" />
-            <div class="caixaEventosPerfil__info">
-              <h4 class="text-evento">Nerd Run Mario Bros</h4>
-              <p> 14/12/2025</p>
-              <p> Praça Ex-Combatentes - Volta Redonda/RJ</p>
-              <p> Distância: 5Km</p>
-              <p class="btn-Rotas"><a href="#">Rotas</a></p>
+          <div class="caixaPassados">
+          <img src="img/eventos/nerdRunEmblem.png" alt="eventoNerdRun" />
+          <div class="passadosInfo">
+            <h5 class="tituloEvento">Nerd Run Mario Bros</h5>
+            <div class="textoEvento">
+              <p>📅 14/12/2025</p>
+              <p>📍 Praça Ex-Combatentes - Volta Redonda/RJ</p>
+              <p>🏃 Categoria: Corrida 5Km</p>
+            </div>
+            <div class="btnPassados">
+              <div class="btnEventoInfo recibo"><a href="#">Comprovante</a></div>
+              <div class="btnResultado"><a href="#">Status Inscrição</a></div>
+              <div class="btnEventoInfo"><a href="#">Informações Evento</a></div>
             </div>
           </div>
+        </div>
+        </section>
+
+        <section class="eventosPassados">
+          <h4 class="text-h4">Eventos Passados</h4>
+
+        <div class="caixaPassados">
+          <img src="img/eventos/padroeiraEmblem.png" alt="eventoNerdRun" />
+          <div class="passadosInfo">
+            <h5 class="tituloEvento">Corrida da Padroeira</h5>
+            <div class="textoEvento">
+              <p>📅 23/11/2025</p>
+              <p>📍 Pinheiral/RJ</p>
+              <p>🏃 Categoria: Corrida 5Km</p>
+            </div>
+            <div class="btnPassados">
+              <div class="btnEventoInfo recibo"><a href="#">Comprovante</a></div>
+              <div class="btnResultado"><a href="#">Resultado</a></div>
+              <div class="btnEventoInfo"><a href="#">Informações Evento</a></div>
+              <div class="btnEventoInfo fotos"><a href="#">Fotos</a></div>
+            </div>
+          </div>
+        </div>
+          
         </section>
       </main>
 
       <!-- COLUNA DIREITA – CALENDÁRIO -->
       <aside>
-        <h4 class="text-h4Calendario">Meu Calendário Novembro/2025</h4>
+        <h4>Meu Calendário: Novembro/2025</h4>
         <div class="calendarPerfil">
           <div class="calendarPerfil__date">
             <div class="calendarPerfil__day">D</div>
@@ -114,8 +153,8 @@
             <div class="calendarPerfil__number">12</div>
             <div class="calendarPerfil__number">13</div>
             <div class="calendarPerfil__number">14</div>
-            <div class="calendarPerfil__number event-blue">15</div>
-            <div class="calendarPerfil__number event-blue">16</div>
+            <div class="calendarPerfil__number">15</div>
+            <div class="calendarPerfil__number">16</div>
 
             <div class="calendarPerfil__number">17</div>
             <div class="calendarPerfil__number">18</div>
@@ -124,7 +163,7 @@
             <div class="calendarPerfil__number">21</div>
             <div class="calendarPerfil__number">22</div>
 
-            <div class="calendarPerfil__number event-red">23</div>
+            <div class="calendarPerfil__number event-blue">23</div>
             <div class="calendarPerfil__number">24</div>
             <div class="calendarPerfil__number">25</div>
             <div class="calendarPerfil__number">26</div>
@@ -137,13 +176,12 @@
 
           <div class="calendarPerfil__events">
             <h3>Eventos</h3>
-            <div class="calendarPerfil__event-item">15/Nov - CORRIDA</div>
-            <div class="calendarPerfil__event-item">16/Nov - CORRIDA</div>
-            <div class="calendarPerfil__event-item">23/Nov - CORRIDA</div>
-            <div class="calendarPerfil__event-item">30/Nov - CORRIDA</div>
+            <div class="calendarPerfil__event-item">23/Nov - Corrida da Padroeira</div>
+            <div class="calendarPerfil__event-item">30/Nov - Circuito Economize Run</div>
+            <div class="calendarPerfil__event-item">14/Dez - Nerd Run Mario Bros</div>
           </div>
         </div>
       </aside>
-    </div>
+    </section>
   </body>
 </html>
