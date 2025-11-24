@@ -136,7 +136,7 @@ body {
 
 .btn-sair {
   background: var(--laranja);
-  padding: 10px 155px;
+  padding: 10px 50px;
   border-radius: 10px;
   color: white;
   font-weight: bold;
@@ -185,7 +185,6 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 10px;
   height: 250px;
-  align-items: flex-start;
   box-shadow: 3px 3px 6px rgba(0,0,0,0.15);
 }
 
@@ -201,8 +200,12 @@ body {
   cursor: default;
 }
 
+.infoCard {
+  display: block;
+}
+
 .textoEvento {
-  margin-top: 0;
+  margin-top: 10px;
 }
 
 .passadosInfo {
@@ -211,6 +214,15 @@ body {
   height: 100%;
   margin-left: 10px;
   display: grid;
+}
+
+.botoesEventos {
+  display: flex;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 1px;
+  justify-content: end;
+  gap: 15px;
 }
 
 .btnPassados {
@@ -391,3 +403,25 @@ aside h4 {
 }
 
 /* --------------------- FIM COLUNA DA DIREITA --------------------- */
+
+
+@media screen and (max-width: 1750px) {
+
+  .passadosInfo {
+    display: flex;
+  }
+
+
+  .infoCard {
+    width: 65%;
+  }
+
+
+  .btnPassados {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    align-items: end;
+    gap: 8px;
+  }
+}
