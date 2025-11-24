@@ -421,11 +421,10 @@ a:target {
   margin: 0;
   grid-column: 1 / -1;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 10px;
   height: 250px;
   align-items: center;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.15);
 }
 
 /* Imagem do Evento */

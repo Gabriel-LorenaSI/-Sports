@@ -56,6 +56,7 @@ body {
   flex-direction: column;
   min-height: 90vh;
   box-sizing: border-box;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.15);
 }
 
 .sidebar-photo img {
@@ -111,6 +112,7 @@ body {
     border-left: 3px solid white;
     background-color: var(--verdeClaro);
     border-radius: 0 8px 8px 0;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
   }
 }
 
@@ -127,7 +129,6 @@ body {
 .perfil-footer {
   margin-top: auto;
   margin-bottom: 0px;
-  transition: 0.5s;
   &:hover{
     transform: translateY(-2px);
   }
@@ -142,12 +143,12 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 18px;
-  transition: 0.5s;
   margin: 0;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.15);
 }
 
 .btn-sair:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 5px 6px rgba(0,0,0,0.2);
 }
 
 /* --------------------- FIM SIDEBAR PRINCIPAL --------------------- */
@@ -185,7 +186,7 @@ body {
   padding: 10px;
   height: 250px;
   align-items: flex-start;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.15);
 }
 
 .caixaPassados img {
