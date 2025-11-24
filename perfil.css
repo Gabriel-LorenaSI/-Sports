@@ -385,7 +385,7 @@ aside h4 {
 }
 
 .calendarPerfil__event-item:hover {
-  background-color: var(--verdeEscuro);
+  background-color: #014899;
   text-decoration: underline;
   cursor: pointer;
 }

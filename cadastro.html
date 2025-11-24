@@ -34,12 +34,13 @@
           <input
             class="fontPlaceholder"
             type="text"
+            id="nome"
             placeholder="Seu nome completo"
             oninput="aplicarMascara(this, 'nome')"
             onblur="validarNome(this)"
             required
           />
-          <span class="msg-erro">Digite um nome válido (mínimo 3 letras).</span>
+          <span class="msg-erro">Digite um nome válido</span>
         </label>
 
         <label for="cpf">
@@ -47,12 +48,13 @@
           <input
             class="fontPlaceholder"
             type="text"
+            id="cpf"
             placeholder="000.000.000-00"
             oninput="aplicarMascara(this, 'cpf')"
             onblur="validarCPF(this)"
             required
           />
-          <span class="msg-erro">O CPF deve conter 11 dígitos.</span>
+          <span class="msg-erro">Digite um CPF válido</span>
         </label>
 
         <label for="emaile">
@@ -60,11 +62,12 @@
           <input
             class="fontPlaceholder"
             type="email"
+            id="emaile"
             placeholder="seu@email.com"
             onblur="validarEmail(this)"
             required
           />
-          <span class="msg-erro">Digite um e-mail válido.</span>
+          <span class="msg-erro">Digite um e-mail válido</span>
         </label>
 
         <label for="dob">
@@ -72,13 +75,14 @@
           <input
             class="fontPlaceholder"
             type="text"
+            id="dob"
             placeholder="dd/mm/aaaa"
             oninput="aplicarMascara(this, 'data')"
             required
           />
         </label>
 
-        <label for="pw">
+        <label for="senhaInput">
           <h4>Senha</h4>
           <input
             class="fontPlaceholder"
@@ -89,8 +93,7 @@
             required
           />
           <span class="msg-erro" id="erroSenha">
-            A senha deve ter: 8 caracteres, 1 maiúscula, 1 minúscula, 1 número e
-            1 símbolo.
+            A senha deve ter no mínimo: 8 caracteres, 1 maiúscula, 1 minúscula, 1 número e 1 símbolo
           </span>
         </label>
 
@@ -99,11 +102,12 @@
           <input
             class="fontPlaceholder"
             type="password"
+            id="2pw"
             placeholder="Repita a senha"
             onblur="validarConfirmarSenha(this)"
             required
           />
-          <span class="msg-erro">As senhas não coincidem.</span>
+          <span class="msg-erro">As senhas não coincidem</span>
         </label>
 
         <a href="login.html" class="buttonCadastro text-button-2">Cadastrar</a>

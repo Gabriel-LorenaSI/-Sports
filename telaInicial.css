@@ -107,6 +107,7 @@
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0px;
+  cursor: default;
 }
 
 /* Começo NAV */
@@ -689,7 +690,7 @@ a:target {
 }
 
 .calendar__event-item:hover {
-  background-color: var(--verdeEscuro);
+  background-color: #014899;
   text-decoration: underline;
   cursor: pointer;
 }

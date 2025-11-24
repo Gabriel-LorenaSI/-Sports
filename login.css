@@ -45,11 +45,12 @@
 
 /* Estilo do texto de erro */
 .msg-erro {
+  margin: 0;
+  padding: 0;
   color: red;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 600;
   display: none; /* Começa invisível */
-  margin-top: 5px;
 }
 
 /* Classe que vamos adicionar via JS se der erro */
