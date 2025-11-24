@@ -139,7 +139,7 @@ header {
 }
 
 .nav-links-wrapper a {
-  padding: 10px;
+  padding: 10px 0;
   height: 40px;
   background-color: white;
   text-decoration: none;
@@ -222,6 +222,7 @@ body {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.05em;
+  color: #252525;
 }
 
 /* HERO BANNER, NÃO MEXER */
@@ -342,6 +343,7 @@ a:target {
 .modalidades h4 {
   text-align: center;
   margin-bottom: 15px;
+  font-weight: 500;
 }
 
 /* Lista  */
@@ -359,10 +361,11 @@ a:target {
 .modalidades li {
   text-align: center;
   flex-shrink: 0;
+  color: var(--azul);
 }
 
 /* Círculo */
-.modalidades li img {
+.imgModalidade {
   display: block;
   background-color: #ffffff;
   border-radius: 50%;
@@ -393,8 +396,9 @@ a:target {
 
 }
 
-.modalidades li :hover {
+.imgModalidade:hover {
   transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.20);
 }
 
 /* -----------------------------------------------------------------------------------------------------------------------------*/
@@ -410,6 +414,11 @@ a:target {
 
 .proximosEventos h4 {
   grid-column: 1 / -1;
+}
+
+.proximosEventos h3 {
+  grid-column: 1 / span 5;
+  font-weight: 400;
 }
 
 /* Cards */
@@ -498,19 +507,21 @@ a:target {
 
 .btnEncerradas {
   margin-top: 35px;
-  padding: 10px;
+  padding: 10px 0;
   width: 165px;
   background-color: #B56363;
   color: white;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
   border-radius: 5px;
   border: 2px solid #642222;
+  text-align: center;
+  cursor: default;
 }
 
 .btnAbertas {
   margin-top: 35px;
-  padding: 10px;
+  padding: 10px 0;
   width: 165px;
   background-color: #71B563;
   color: var(--verdeEscuro);
@@ -519,21 +530,26 @@ a:target {
   border-radius: 5px;
   border: 2px solid var(--verdeEscuro);
   text-align: center;
+  cursor: default;
 }
 
 .btnEventoInfo {
   margin-top: 35px;
   margin-left: 40px;
-  padding: 10px;
+  padding: 10px 0;
   width: 175px;
   height: 44px;
   background-color: var(--laranja);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 50px;
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
   &:hover{  
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
   }
 }
 
@@ -577,6 +593,10 @@ a:target {
 
 .calendarioSideBar {
   grid-column: 9 / span 4;
+}
+
+.calendarioSideBar h3 {
+  font-weight: 500;
 }
 
 .calendar {
@@ -636,14 +656,17 @@ a:target {
 
 /* Dias de evento em azul */
 .calendar__number.event-blue {
-  background-color: #0058bc;
+  background-color: var(--azul);
   color: #ffffff;
   font-weight: 600;
+  &:hover {
+    background-color: #014899;
+  }
 }
 
 /* Dias de evento em vermelho/marrom */
 .calendar__number.event-red {
-  background-color: #cd6116; /* Tom de marrom/vermelho */
+  background-color: var(--laranja); /* Tom de marrom/vermelho */
   color: #ffffff;
   font-weight: 600;
 }
@@ -665,13 +688,14 @@ a:target {
   color: #ffffff;
   font-weight: 500;
   font-size: 1rem;
-  padding: 12px 10px;
-  border-top: 1px solid #007bff;
+  padding: 12px 0 12px 10px;
+  border-top: 1px solid #007bff;  
   cursor: pointer;
 }
 
 .calendar__event-item:hover {
   background-color: var(--verdeEscuro);
+  text-decoration: underline;
   cursor: pointer;
 }
 
@@ -701,6 +725,42 @@ a:target {
   padding: 10px 15px;
   border-radius: 15px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.peladas h3 {
+  font-weight: 500;
+}
+
+.peladasDireita h3 {
+  font-weight: 500;
+}
+
+.infoPelada {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btnPelada {
+  background-color: var(--laranja);
+  height: 44px;
+  align-content: center;
+  cursor: pointer;
+  padding: 0 5px 3px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-top: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.20);
+    text-decoration: underline;
+  }
+}
+
+.btnPelada a {
+  text-decoration: none;
+  color: white;
 }
 
 .peladasDireita {

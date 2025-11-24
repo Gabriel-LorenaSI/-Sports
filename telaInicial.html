@@ -25,12 +25,12 @@
     <section class="heroBanner">
       <header>
         <nav class="nav-full-bleed">
-          <img src="img/logo.png" alt="" class="nav-logo" />
+          <a href="#"><img src="img/logo.png" alt="" class="nav-logo" /></a>
           <div class="nav-links-wrapper grid-layout text-button-2">
             <a href="#">Home</a>
             <a href="#linkEventos">Eventos</a>
             <a href="#">Peladas</a>
-            <a href="login.html">Login</a>
+            <a href="login.html">Login/Cadastro</a>
           </div>
           <input type="text" placeholder="Pesquisar" class="nav-search text-label" />
         </nav>
@@ -83,34 +83,34 @@
             </li>
 
             <li>
-                <img src="img/iconesModalidade/atividade=corrida.png" alt="iconeCorrida" />
+                <img class="imgModalidade" src="img/iconesModalidade/atividade=corrida.png" alt="iconeCorrida" />
                 <p class="text-button-2">Corrida</p>
             </li>
 
             <li>
-                <img src="img/iconesModalidade/atividade=futebol.png" alt="iconeFutebol"/>
+                <img class="imgModalidade" src="img/iconesModalidade/atividade=futebol.png" alt="iconeFutebol"/>
                 <p class="text-button-2">Futebol</p>
             </li>
             
             <li>
-                <img src="img/iconesModalidade/atividade=bike.png" alt="iconeBike"/>
+                <img class="imgModalidade" src="img/iconesModalidade/atividade=bike.png" alt="iconeBike"/>
                 <p class="text-button-2">Bike</p>
             </li>
 
             <li>
-                <img src="img/iconesModalidade/atividade=triathlon.png" alt="iconeTriatro"/>
+                <img class="imgModalidade" src="img/iconesModalidade/atividade=triathlon.png" alt="iconeTriatro"/>
                 <p class="text-button-2">Triatlo</p>
             </li>
             <li>
-                <img src="img/iconesModalidade/atividade=natacao.png" alt="iconeNatação" />
+                <img class="imgModalidade" src="img/iconesModalidade/atividade=natacao.png" alt="iconeNatação" />
                 <p class="text-button-2">Natação</p>
             </li>
             <li>
-                <img src="img/iconesModalidade/atividade=volei.png" alt="iconeVolei" />
+                <img class="imgModalidade" src="img/iconesModalidade/atividade=volei.png" alt="iconeVolei" />
                 <p class="text-button-2">Vôlei</p>
             </li>
             <li>
-                <img src="img/iconesModalidade/atividade=nightRun.png" alt="iconeNigthRun"/>
+                <img class="imgModalidade" src="img/iconesModalidade/atividade=nightRun.png" alt="iconeNigthRun"/>
                 <p class="text-button-2">Night Run</p>
             </li>
                 <li class="setas">
@@ -121,7 +121,7 @@
 
     <main class="container grid-layout">
       <section class="proximosEventos">
-        <h4 class="text-h4">Próximos Eventos</h4>
+        <h3 class="text-h3">Eventos em Destaque</h3>
         <div class="caixaEventos grid-layout">
           <img src="img/eventos/nerdRunEmblem.png" alt="eventoNerdRun" />
           <div class="caixaEventos__info">
@@ -194,7 +194,7 @@
       </section>
 
       <aside class="calendarioSideBar">
-        <h4 class="text-h4">Novembro/2025</h4>
+        <h3 class="text-h3">Novembro/2025</h3>
         <div class="calendar">
           <div class="calendar__date">
             <div class="calendar__day">D</div>
@@ -228,7 +228,7 @@
             <div class="calendar__number">13</div>
             <div class="calendar__number">14</div>
             <div class="calendar__number event-blue">15</div>
-            <div class="calendar__number event-blue">16</div>
+            <div class="calendar__number">16</div>
             <div class="calendar__number">17</div>
             <div class="calendar__number">18</div>
             <div class="calendar__number">19</div>
@@ -236,7 +236,7 @@
             <div class="calendar__number">21</div>
             <div class="calendar__number">22</div>
 
-            <div class="calendar__number event-red">23</div>
+            <div class="calendar__number event-blue">23</div>
             <div class="calendar__number">24</div>
             <div class="calendar__number">25</div>
             <div class="calendar__number">26</div>
@@ -249,10 +249,10 @@
 
           <div class="calendar__events">
             <h3>Eventos</h3>
-            <div class="calendar__event-item">15/Nov - CORRIDA</div>
-            <div class="calendar__event-item">16/Nov - CORRIDA</div>
-            <div class="calendar__event-item">23/Nov - CORRIDA</div>
-            <div class="calendar__event-item">30/Nov - CORRIDA</div>
+            <div class="calendar__event-item">15/Nov - VR Race 5Km</div>
+            <div class="calendar__event-item">23/Nov - Valença Challenge Race</div>
+            <div class="calendar__event-item">23/Nov - Corrida da Padroeira</div>
+            <div class="calendar__event-item">30/Nov - Circuito Economize Run</div>
           </div>
         </div>
       </aside>
@@ -262,14 +262,26 @@
       <h4 class="text-h4">Mapa</h4>
       <div id="map"></div>
       <div class="peladas">
-        <h3 class="text-h3">Jogo Pelada 1</h3>
-        <p>00/00/0000 - 00:00</p>
-        <p>Volta Redonda/RJ</p>
+        <h3 class="text-h3">Jogo Leo88 19h AERO</h3>
+        <div class="infoPelada">
+          <div class="textoPelada">
+            <p>⚽ Futebol Society</p>
+            <p>📅 26/11/2025 - 19:00</p>
+            <p>📍 Aero - Volta Redonda/RJ</p>
+          </div>
+          <div class="btnPelada"><a href="#">Informações e Contato</a></div>
+        </div>
       </div>
       <div class="peladasDireita">
-        <h3 class="text-h3">Jogo Pelada 1</h3>
-        <p>00/00/0000 - 00:00</p>
-        <p>Volta Redonda/RJ</p>
+        <h3 class="text-h3">Jogo xAndrex 1 da tarde</h3>
+        <div class="infoPelada">
+          <div class="textoPelada">
+            <p>🏐 Vôlei</p>
+            <p>📅 30/11/2025 - 13:00</p>
+            <p>📍 Praça Prof. José L. de Castro</p>
+          </div>
+          <div class="btnPelada"><a href="#">Informações e Contato</a></div>
+        </div>
       </div>
 
       <a href="#" class="btnOutros text-button-2">Outros</a>
