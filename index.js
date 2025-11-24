@@ -1,13 +1,10 @@
 // Posição do Mapa e Zoom
-  var map = L.map('map').setView([-22.508, -44.092], 13);
+  var map = L.map('map').setView([-22.508, -44.092], 14);
 
   // OpenStreetMap
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
   }).addTo(map);
-
-  // Skin do Mapa
-  L.tileLayer.provider('Stadia.OSMBright').addTo(map);
 
   // Skin de Pin
   const pinFutebol = L.icon ({
