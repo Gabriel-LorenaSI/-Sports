@@ -424,4 +424,10 @@ aside h4 {
     align-items: end;
     gap: 8px;
   }
+
+  .tituloEvento {
+    margin-top: 0;
+    font-size: 35px;
+    line-height: 102%;
+  }
 }
