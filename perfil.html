@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil do usuário</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="telaInicial.css">
     <link rel="stylesheet" href="perfil.css" />
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
@@ -40,7 +41,8 @@
           <a href="#">🖉 Editar Perfil</a>
         </div>
         <hr class="divisor" />
-        <nav class="perfil-menu">
+        <span id="burgao" class="material-symbols-outlined" onclick="clickMenu()">keyboard_arrow_down</span>
+        <nav id="itens" class="perfil-menu">
           <ul class="item-menuu">
             <li class="item-menu ativo"><a href="#"> Painel +Sports</a></li>
             <li class="item-menu"><a href="#"> Eventos</a></li>
@@ -191,5 +193,16 @@
         </div>
       </aside>
     </section>
+      <script>
+        /* JavaScript do MENU HAMBURGER*/
+          function clickMenu() {
+            if (itens.style.display == 'block') {
+              itens.style.display = 'none'
+            } else {
+              itens.style.display = 'block'
+            }
+
+          }
+      </script>
   </body>
 </html>
