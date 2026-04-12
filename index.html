@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>+Sports</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="telaInicial.css" />
+    
+    <!-- link do Mapa -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+     <!---->
+
+  </head>
+  <body>
+    <!-- Começo Hero Banner -->
+    <section class="heroBanner">
+      <header>
+        <nav class="nav-full-bleed">
+          <a href="#"><img src="img/logo.png" alt="" class="nav-logo" /></a>
+          <div class="nav-links-wrapper grid-layout text-button-2">
+            <a href="#">Home</a>
+            <a href="#linkEventos">Eventos</a>
+            <a href="#">Peladas</a>
+            <a href="login.html">Login/Cadastro</a>
+          </div>
+          <input type="text" placeholder="Pesquisar" class="nav-search text-label" />
+        </nav>
+      </header>
+
+      <div class="slideshow">
+        <div id="slide-1" class="slide">
+          <a href="#slide-4"></a>
+          <a href="#slide-2"></a>
+          <img src="img/BG.jpg" />
+        </div>
+        <div id="slide-2" class="slide">
+          <a href="#slide-1"></a>
+          <a href="#slide-3"></a>
+          <img
+            src="img/eventos/Economize.jpg"
+          />
+        </div>
+        <div id="slide-3" class="slide">
+          <a href="#slide-2"></a>
+          <a href="#slide-4"></a>
+          <img
+            src="img/eventos/Caicara.jpg"
+          />
+        </div>
+        <div id="slide-4" class="slide">
+          <a href="#slide-3"></a>
+          <a href="#slide-1"></a>
+          <img
+            src="img/eventos/Padroeira.jpg"
+          />
+        </div>
+      </div>
+
+      <div class="pagination">
+        <a href="#slide-1"><span>1</span></a>
+        <a href="#slide-2"><span>2</span></a>
+        <a href="#slide-3"><span>3</span></a>
+        <a href="#slide-4"><span>4</span></a>
+      </div>
+    </section>
+
+    <!-- Final Hero Banner -->
+
+    <section class="modalidades"  id="linkEventos" >
+        <h4 class="text-h4">Modalidades</h4>
+        <ul>
+            <li class="setas">
+                <img src="img/iconesModalidade/setaModalidade.png" alt="setaEsquerda"/>
+            </li>
+
+            <li>
+                <img class="imgModalidade" src="img/iconesModalidade/atividade=corrida.png" alt="iconeCorrida" />
+                <p class="text-button-2">Corrida</p>
+            </li>
+
+            <li>
+                <img class="imgModalidade" src="img/iconesModalidade/atividade=futebol.png" alt="iconeFutebol"/>
+                <p class="text-button-2">Futebol</p>
+            </li>
+            
+            <li>
+                <img class="imgModalidade" src="img/iconesModalidade/atividade=bike.png" alt="iconeBike"/>
+                <p class="text-button-2">Bike</p>
+            </li>
+
+            <li>
+                <img class="imgModalidade" src="img/iconesModalidade/atividade=triathlon.png" alt="iconeTriatro"/>
+                <p class="text-button-2">Triatlo</p>
+            </li>
+            <li>
+                <img class="imgModalidade" src="img/iconesModalidade/atividade=natacao.png" alt="iconeNatação" />
+                <p class="text-button-2">Natação</p>
+            </li>
+            <li>
+                <img class="imgModalidade" src="img/iconesModalidade/atividade=volei.png" alt="iconeVolei" />
+                <p class="text-button-2">Vôlei</p>
+            </li>
+            <li>
+                <img class="imgModalidade" src="img/iconesModalidade/atividade=nightRun.png" alt="iconeNigthRun"/>
+                <p class="text-button-2">Night Run</p>
+            </li>
+                <li class="setas">
+                <img src="img/iconesModalidade/setaDireita.png" alt="setaDireita" />
+            </li>
+        </ul>
+    </section>
+
+    <main class="container grid-layout">
+      <section class="proximosEventos">
+        <h3 class="text-h3">Eventos em Destaque</h3>
+        <div class="caixaEventos grid-layout">
+          <img src="img/eventos/meiaRoyalEmblem.png" alt="eventoNerdRun" />
+          <div class="caixaEventos__info">
+            <h4 class="tituloEvento">2ª Meia Maratona do Aço</h4>
+            <div class="textoEvento">
+              <p>📅 12/04/2026</p>
+              <p>📍 Volta Redonda/RJ</p>
+              <p>🏃 Distância: 21K</p>
+              <p>💲 <strong style="font-size: 1.2rem;">À partir de: R$: 119,90</strong></p>
+            </div>
+            <div class="btnsEventos">
+              <div class="btnEncerradas">Inscrições Encerradas</div>
+              <div class="btnEventoInfo"><a href="#">Mais Informações</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="caixaEventos grid-layout">
+          <img src="img/eventos/guerreiroEmblem.png" alt="eventoNerdRun" />
+          <div class="caixaEventos__info">
+            <h4 class="tituloEvento">Corrida do Guerreiro</h4>
+            <div class="textoEvento">
+              <p>📅 21/04/2026</p>
+              <p>📍 Volta Redonda/RJ</p>
+              <p>🏃 Distância: 3K ou 5K</p>
+              <p>💲 <strong style="font-size: 1.2rem;">À partir de: R$: 130,90</strong></p>
+            </div>
+            <div class="btnsEventos">
+              <div class="btnAbertas">Inscrições Abertas</div>
+              <div class="btnEventoInfo"><a href="#">Mais Informações</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="caixaEventos grid-layout">
+          <img src="img/eventos/falcoesEmblem.png" alt="eventoNerdRun" />
+          <div class="caixaEventos__info">
+            <h4 class="tituloEvento">Falcões de Aço 2026</h4>
+            <div class="textoEvento">
+              <p>📅 26/04/2026</p>
+              <p>📍 Volta Redonda/RJ</p>
+              <p>🏃 Distância: 5K</p>
+              <p>💲 <strong style="font-size: 1.2rem;">À partir de: R$: 114,90</strong></p>
+            </div>
+            <div class="btnsEventos">
+              <div class="btnAbertas">Inscrições Abertas</div>
+              <div class="btnEventoInfo"><a href="#">Mais Informações</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="caixaEventos grid-layout">
+          <img src="img/eventos/drSaudeEmblem.png" alt="eventoNerdRun" />
+          <div class="caixaEventos__info">
+            <h4 class="tituloEvento">Circuito Dr. Saúde 5Km</h4>
+            <div class="textoEvento">
+              <p>📅 03/05/2026</p>
+              <p>📍 Bananal/SP</p>
+              <p>🏃 Distância: 5K</p>
+              <p>💲 <strong style="font-size: 1.2rem;">À partir de: R$: 99,90</strong></p>
+            </div>
+            <div class="btnsEventos">
+              <div class="btnEncerradas">Inscrições Encerradas</div>
+              <div class="btnEventoInfo"><a href="#">Mais Informações</a></div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="maisEventos text-button-2">Mais Eventos</a>
+      </section>
+
+      <aside class="calendarioSideBar">
+        <h3 class="text-h3">Novembro/2025</h3>
+        <div class="calendar">
+          <div class="calendar__date">
+            <div class="calendar__day">D</div>
+            <div class="calendar__day">S</div>
+            <div class="calendar__day">T</div>
+            <div class="calendar__day">Q</div>
+            <div class="calendar__day">Q</div>
+            <div class="calendar__day">S</div>
+            <div class="calendar__day">S</div>
+
+            <div class="calendar__number inactive"></div>
+            <div class="calendar__number inactive"></div>
+            <div class="calendar__number inactive"></div>
+            <div class="calendar__number inactive"></div>
+            <div class="calendar__number inactive"></div>
+            <div class="calendar__number inactive"></div>
+            <div class="calendar__number">1</div>
+
+            <div class="calendar__number">2</div>
+            <div class="calendar__number">3</div>
+            <div class="calendar__number">4</div>
+            <div class="calendar__number">5</div>
+            <div class="calendar__number">6</div>
+            <div class="calendar__number">7</div>
+            <div class="calendar__number">8</div>
+
+            <div class="calendar__number">9</div>
+            <div class="calendar__number">10</div>
+            <div class="calendar__number">11</div>
+            <div class="calendar__number">12</div>
+            <div class="calendar__number">13</div>
+            <div class="calendar__number">14</div>
+            <div class="calendar__number event-blue">15</div>
+            <div class="calendar__number">16</div>
+            <div class="calendar__number">17</div>
+            <div class="calendar__number">18</div>
+            <div class="calendar__number">19</div>
+            <div class="calendar__number">20</div>
+            <div class="calendar__number">21</div>
+            <div class="calendar__number">22</div>
+
+            <div class="calendar__number event-blue">23</div>
+            <div class="calendar__number">24</div>
+            <div class="calendar__number">25</div>
+            <div class="calendar__number">26</div>
+            <div class="calendar__number">27</div>
+            <div class="calendar__number">28</div>
+            <div class="calendar__number">29</div>
+
+            <div class="calendar__number event-blue">30</div>
+          </div>
+
+          <div class="calendar__events">
+            <h3>Eventos</h3>
+            <div class="calendar__event-item">15/Nov - VR Race 5K</div>
+            <div class="calendar__event-item">23/Nov - Valença Challenge Race</div>
+            <div class="calendar__event-item">23/Nov - Corrida da Padroeira</div>
+            <div class="calendar__event-item">30/Nov - Circuito Economize Run</div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <section class="mapa container grid-layout">
+      <h4 class="text-h4">Mapa</h4>
+      <div id="map"></div>
+      <div class="peladas">
+        <h3 class="text-h3">Jogo Leo88 19h AERO</h3>
+        <div class="infoPelada">
+          <div class="textoPelada">
+            <p>⚽ Futebol Society</p>
+            <p>📅 26/11/2025 - 19:00</p>
+            <p>📍 Aero - Volta Redonda/RJ</p>
+          </div>
+          <div class="btnPelada"><a href="#">Informações e Contato</a></div>
+        </div>
+      </div>
+      <div class="peladasDireita">
+        <h3 class="text-h3">Jogo xAndrex 1 da tarde</h3>
+        <div class="infoPelada">
+          <div class="textoPelada">
+            <p>🏐 Vôlei</p>
+            <p>📅 30/11/2025 - 13:00</p>
+            <p>📍 Praça Prof. José L. de Castro</p>
+          </div>
+          <div class="btnPelada"><a href="#">Informações e Contato</a></div>
+        </div>
+      </div>
+
+      <a href="#" class="btnOutros text-button-2">Outros</a>
+    </section>
+  
+  <footer>
+    <div class="rodape container grid-layout">
+      <div class="rodapeLogo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div>
+      <div class="rodapeLinks">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Eventos</a></li>
+          <li><a href="#">Mapa</a></li>
+        </ul>
+      </div>
+      <div class="rodapeUsuario">
+        <h4>Área do Usuário</h4>
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="cadastro.html">Cadastrar</a></li>
+          <li><a href="login.html">Meus Eventos</a></li>
+          <li><a href="#">Ajuda</a></li>
+        </ul>
+      </div>
+      <div class="rodapeSports">
+        <h4>+Sports</h4>
+        <ul>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+    
+
+
+  </body>
+  <script src="index.js"></script>
+
+</html>
