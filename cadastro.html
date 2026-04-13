@@ -3,34 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="telaInicial.css" />
-    <link rel="stylesheet" href="cadastro.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/cadastro.css" />
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <script src="./js/cadastro.js"></script>
+    <script src="./js/tema.js"></script>
     <title>Cadastro | +Sports</title>
   </head>
   <body>
     <header class="headerLogin">
       <nav class="nav-full-bleed">
-  <a href="index.html"><img src="img/logo.png" alt="" class="nav-logo" /></a>
-  <div class="nav-links-wrapper grid-layout text-button-2">
-    <a href="index.html">Home</a>
-    <a href="#">Eventos</a>
-    <a href="#">Peladas</a>
-    <a href="login.html">Login</a>
-  </div>
+        <a href="index.html"><img src="img/logo.png" alt="" class="nav-logo" /></a>
+        <div class="nav-links-wrapper grid-layout text-button-2">
+          <a href="index.html">Home</a>
+          <a href="#">Eventos</a>
+          <a href="#">Peladas</a>
+          <a href="login.html">Login</a>
+        </div>
 
-  <div class="trilho" id="tema-toggle">
-  <span class="icone-sol">☀</span>
-  <span class="icone-lua">◐</span>
-  <div class="indicador"></div>
-</div>
+        <div class="trilho" id="tema-toggle">
+          <span class="icone-sol">☀</span>
+          <span class="icone-lua">◐</span>
+          <div class="indicador"></div>
+        </div>
 
-  <input
-    type="text"
-    placeholder="Pesquisar"
-    class="nav-search text-label"
-  />
-</nav>
+        <input
+          type="text"
+          placeholder="Pesquisar"
+          class="nav-search text-label"
+        />
+      </nav>
     </header>
     <section class="cadastroPrincipal">
       <div class="camposDeCadastro">
@@ -133,110 +135,5 @@
         <img src="img/imgCadastro.png" alt="imagemTelaDeLogin" />
       </div>
     </section>
-    <script>
-      /* --- 1. MÁSCARAS (Formata enquanto digita) --- */
-      function aplicarMascara(input, tipo) {
-        let v = input.value;
-
-        if (tipo === "cpf") {
-          input.setAttribute("maxlength", "14");
-          v = v.replace(/\D/g, "");
-          v = v.replace(/(\d{3})(\d)/, "$1.$2");
-          v = v.replace(/(\d{3})(\d)/, "$1.$2");
-          v = v.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
-          input.value = v;
-        }
-
-        if (tipo === "nome") {
-          // Remove números e símbolos
-          v = v.replace(/[^a-zA-ZÀ-ÿ\s]/g, "");
-          input.value = v;
-        }
-
-        if (tipo === "data") {
-          input.setAttribute("maxlength", "10");
-          v = v.replace(/\D/g, "");
-          v = v.replace(/(\d{2})(\d)/, "$1/$2");
-          v = v.replace(/(\d{2})(\d)/, "$1/$2");
-          input.value = v;
-        }
-      }
-
-      /* --- 2. VALIDAÇÕES (Verifica ao sair do campo) --- */
-
-      function validarNome(input) {
-        let span = input.nextElementSibling;
-        if (input.value.length < 3) {
-          mostrarErro(input, span);
-        } else {
-          removerErro(input, span);
-        }
-      }
-
-      function validarCPF(input) {
-        let span = input.nextElementSibling;
-        // Verifica tamanho (14 contando pontos e traço)
-        if (input.value.length !== 14) {
-          mostrarErro(input, span);
-        } else {
-          removerErro(input, span);
-        }
-      }
-
-      function validarEmail(input) {
-        let span = input.nextElementSibling;
-        let regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (!regexEmail.test(input.value)) {
-          mostrarErro(input, span);
-        } else {
-          removerErro(input, span);
-        }
-      }
-
-      // VALIDAÇÃO DE SENHA FORTE
-      function validarSenha(input) {
-        let span = document.getElementById("erroSenha");
-        let v = input.value;
-
-        // Regex explicada:
-        // (?=.*[a-z]) -> Pelo menos uma minúscula
-        // (?=.*[A-Z]) -> Pelo menos uma maiúscula
-        // (?=.*[0-9]) -> Pelo menos um número
-        // (?=.*[^a-zA-Z0-9]) -> Pelo menos um símbolo
-        // .{8,}       -> Mínimo 8 caracteres
-        let regexSenha =
-          /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^a-zA-Z0-9]).{8,}$/;
-
-        if (!regexSenha.test(v)) {
-          mostrarErro(input, span);
-        } else {
-          removerErro(input, span);
-        }
-      }
-
-      function validarConfirmarSenha(input) {
-        let span = input.nextElementSibling;
-        let senhaPrincipal = document.getElementById("senhaInput").value;
-
-        if (input.value !== senhaPrincipal || input.value === "") {
-          mostrarErro(input, span);
-        } else {
-          removerErro(input, span);
-        }
-      }
-
-      /* --- FUNÇÕES AUXILIARES --- */
-      function mostrarErro(input, span) {
-        input.classList.add("input-invalido");
-        span.style.display = "block";
-      }
-
-      function removerErro(input, span) {
-        input.classList.remove("input-invalido");
-        span.style.display = "none";
-      }
-    </script>
-    <script src="tema.js"></script>
   </body>
 </html>
