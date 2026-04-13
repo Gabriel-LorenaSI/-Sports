@@ -343,7 +343,7 @@ a:target {
   font-weight: 500;
 }
 
-/* Estrutura geral: seta + área visível + seta */
+/* Estrutura geral do carrossel */
 .modalidades-carrossel {
   display: flex;
   align-items: center;
@@ -367,7 +367,7 @@ a:target {
   display: block;
 }
 
-/* Janela visível do carrossel */
+/* Área visível */
 .modalidades-janela {
   overflow: hidden;
   width: 100%;
@@ -388,22 +388,35 @@ a:target {
 .item-modalidade {
   text-align: center;
   flex-shrink: 0;
-  color: var(--azul);
   min-width: 100px;
+  color: var(--azul);
+  cursor: pointer;
 }
 
-/* Círculo */
+/* Bolinha */
 .imgModalidade {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #ffffff;
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   width: 86px;
   height: 86px;
-  padding: 20px;
-  box-sizing: border-box;
   margin: 0 auto 10px auto;
   cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+}
+
+/* Imagem do ícone */
+.imgModalidade img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  transition: filter 0.3s ease;
 }
 
 /* Texto */
@@ -411,12 +424,49 @@ a:target {
   margin: 0;
   text-transform: uppercase;
   cursor: default;
+  transition: color 0.3s ease;
 }
 
-/* Hover dos ícones */
+/* Hover */
 .imgModalidade:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.20);
+}
+
+/* Ativo no modo claro */
+.item-modalidade.ativo .imgModalidade {
+  background-color: var(--laranja);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.item-modalidade.ativo p {
+  color: var(--laranja);
+}
+
+.item-modalidade.ativo .imgModalidade img {
+  filter: brightness(0) invert(1);
+}
+
+/* Modo escuro base */
+body.dark .item-modalidade {
+  color: #ffffff;
+}
+
+body.dark .imgModalidade {
+  background-color: #1f1f1f;
+}
+
+/* Ativo no modo escuro */
+body.dark .item-modalidade.ativo .imgModalidade {
+  background-color: var(--azul);
+}
+
+body.dark .item-modalidade.ativo p {
+  color: var(--azul);
+}
+
+body.dark .item-modalidade.ativo .imgModalidade img {
+  filter: brightness(0) invert(1);
 }
 
 /* -----------------------------------------------------------------------------------------------------------------------------*/
@@ -991,7 +1041,6 @@ body.dark footer {
 body.dark .rodape h4 {
   color: var(--azul);
 }
-
 
 /* Uma transição suave para o tema escuro */
 body,
