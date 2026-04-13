@@ -1373,18 +1373,18 @@ footer {
 
   .btnEncerradas,
   .btnAbertas {
-    width: 100%;
+    width: 75%;
     margin: 0;
   }
 
   .btnEventoInfo {
-    width: 100%;
+    width: 90%;
     margin: 0;
     border-radius: 10px;
   }
 
   .maisEventos {
-    width: 100%;
+    width: 50%;
     margin: auto;
   }
 
