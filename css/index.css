@@ -909,7 +909,7 @@ body.dark .nav-links-wrapper a {
   color: #ffffff;
 }
 
-body.dark .nav-links-wrapper a:nth-child(1) {
+body.dark .nav-links-wrapper a:nth-of-type(1) {
   background-color: var(--azul);
   color: white;
 }
