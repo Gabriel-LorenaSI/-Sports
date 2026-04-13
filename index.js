@@ -50,3 +50,5 @@
   var tenisETPC = L.marker([-22.524, -44.101], {icon: pinTenis}).addTo(map);
 
   var bsqtLrnjal = L.marker([-22.514, -44.094], {icon: pinBasquete}).addTo(map);
+
+ 

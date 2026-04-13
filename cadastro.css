@@ -210,3 +210,130 @@
 }
 
 /* --------------------- FIM DA RESPONSIVIDADE --------------------- */
+
+/* botão tema escuro */
+
+.trilho {
+  width: 60px;
+  height: 30px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  position: absolute;
+  top: 24px;
+  right: 250px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7px;
+  box-sizing: border-box;
+}
+
+.icone-sol,
+.icone-lua {
+  font-size: 14px;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.indicador {
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.trilho.ativo {
+  background-color: #444;
+}
+
+.trilho.ativo .indicador {
+  left: 34px;
+}
+
+/* tema escuro da pagina para editar */
+
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark .headerLogin {
+    background: #1f1f1f;
+}
+
+body.dark .nav-links-wrapper a:nth-child(1) {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+body.dark .nav-links-wrapper a:nth-child(2),
+body.dark .nav-links-wrapper a:nth-child(3) {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+body.dark .nav-links-wrapper a:nth-child(4) {
+    background-color: var(--laranja);
+    color: white;
+}
+
+body.dark .nav-search {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+body.dark .nav-search::placeholder {
+    color: #cfcfcf;
+}
+
+body.dark .camposDeCadastro h3,
+body.dark .camposDeCadastro h4,
+body.dark .politica,
+body.dark .logarConta {
+    color: #f1f1f1;
+}
+
+body.dark .camposDeCadastro input {
+    background-color: #1f1f1f;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark .camposDeCadastro input::placeholder {
+    color: #bdbdbd;
+}
+
+body.dark .imgCadastro img {
+    box-shadow: 0px 4px 12px rgba(255,255,255,0.08);
+}
+
+body.dark .input-invalido {
+    background-color: #3a1f1f !important;
+    border: 2px solid red !important;
+}
+
+/* Uma transição suave para o tema escuro */
+body,
+header,
+input,
+a,
+section,
+div,
+aside,
+main,
+footer {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}

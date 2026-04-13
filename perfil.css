@@ -463,3 +463,161 @@ aside h4 {
     line-height: 102%;
   }
 }
+
+/* botão tema escuro */
+
+.trilho {
+  width: 60px;
+  height: 30px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  position: absolute;
+  top: 24px;
+  right: 250px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7px;
+  box-sizing: border-box;
+}
+
+.icone-sol,
+.icone-lua {
+  font-size: 14px;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.indicador {
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.trilho.ativo {
+  background-color: #444;
+}
+
+.trilho.ativo .indicador {
+  left: 34px;
+}
+
+/* Cores do tema escuro da pagina */
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark .headerLogin {
+  background: #1f1f1f;
+}
+
+body.dark .nav-links-wrapper a:nth-child(1) {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+body.dark .nav-links-wrapper a:nth-child(2),
+body.dark .nav-links-wrapper a:nth-child(3) {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+body.dark .nav-links-wrapper a:nth-child(4) {
+  background-color: var(--laranja);
+  color: white;
+}
+
+body.dark .nav-search {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+body.dark .nav-search::placeholder {
+  color: #cfcfcf;
+}
+
+body.dark .sidebar {
+  background: #1f1f1f;
+  color: white;
+}
+
+body.dark .infoUsuario {
+  color: #cfcfcf;
+}
+
+body.dark .infoUsuario a {
+  color: #cfcfcf;
+}
+
+body.dark .menuPainel:hover,
+body.dark .item-menu:hover {
+  background-color: #2d2d2d;
+  border-left: 3px solid white;
+}
+
+body.dark .divisor {
+  border-top: 1px solid #444;
+}
+
+body.dark .caixaPassados {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+body.dark .btnResultado {
+  background-color: var(--laranja);
+}
+
+body.dark .calendarPerfil {
+  background-color: #1f1f1f;
+}
+
+body.dark .calendarPerfil__number {
+  background-color: #2b2b2b;
+  color: white;
+}
+
+body.dark .calendarPerfil__number:hover {
+  background-color: #3a3a3a;
+}
+
+body.dark .calendarPerfil__number.inactive {
+  background-color: #1f1f1f;
+}
+
+body.dark aside h4 {
+  color: white;
+}
+
+body.dark .calendarPerfil__events {
+  background-color: #0f4d9c;
+}
+
+/* Uma transição suave para o tema escuro */
+body,
+header,
+input,
+a,
+section,
+div,
+aside,
+main,
+footer {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}

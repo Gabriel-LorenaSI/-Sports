@@ -11,19 +11,26 @@
   <body>
     <header class="headerLogin">
       <nav class="nav-full-bleed">
-        <a href="index.html"><img src="img/logo.png" alt="" class="nav-logo" /></a>
-        <div class="nav-links-wrapper grid-layout text-button-2">
-          <a href="index.html">Home</a>
-          <a href="#">Eventos</a>
-          <a href="#">Peladas</a>
-          <a href="cadastro.html">Cadastro</a>
-        </div>
-        <input
-          type="text"
-          placeholder="Pesquisar"
-          class="nav-search text-label"
-        />
-      </nav>
+  <a href="index.html"><img src="img/logo.png" alt="" class="nav-logo" /></a>
+  <div class="nav-links-wrapper grid-layout text-button-2">
+    <a href="index.html">Home</a>
+    <a href="#">Eventos</a>
+    <a href="#">Peladas</a>
+    <a href="cadastro.html">Cadastro</a>
+  </div>
+
+  <div class="trilho" id="tema-toggle">
+  <span class="icone-sol">☀</span>
+  <span class="icone-lua">◐</span>
+  <div class="indicador"></div>
+</div>
+
+  <input
+    type="text"
+    placeholder="Pesquisar"
+    class="nav-search text-label"
+  />
+</nav>
     </header>
 
     <section class="loginPrincipal">
@@ -134,5 +141,6 @@
         span.style.display = "none";
       }
     </script>
+    <script src="tema.js"></script>
   </body>
 </html>
