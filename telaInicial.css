@@ -930,6 +930,15 @@ body.dark .calendar__number {
   color: #ffffff;
 }
 
+body.dark .calendar__number.event-blue {
+  background-color: var(--azul);
+  color: #ffffff;
+}
+
+body.dark .calendar__number.event-blue:hover {
+  background-color: #014899;
+}
+
 body.dark .peladas,
 body.dark .peladasDireita {
   background-color: #1f1f1f;

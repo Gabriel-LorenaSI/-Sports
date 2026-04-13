@@ -589,6 +589,15 @@ body.dark .calendarPerfil__number {
   color: white;
 }
 
+body.dark .calendarPerfil__number.event-blue {
+  background-color: var(--azul);
+  color: #ffffff;
+}
+
+body.dark .calendarPerfil__number.event-blue:hover {
+  background-color: #014899;
+}
+
 body.dark .calendarPerfil__number:hover {
   background-color: #3a3a3a;
 }
