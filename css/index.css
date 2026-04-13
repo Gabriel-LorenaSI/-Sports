@@ -336,15 +336,45 @@ a:target {
   overflow: hidden;
 }
 
-/* --- Título "Modalidades" --- */
+/* Título */
 .modalidades h4 {
   text-align: center;
   margin-bottom: 15px;
   font-weight: 500;
 }
 
-/* Lista  */
-.modalidades ul {
+/* Estrutura geral: seta + área visível + seta */
+.modalidades-carrossel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* Botões das setas */
+.seta-modalidades {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Imagens das setas */
+.seta-modalidades img {
+  width: 20px;
+  height: 15px;
+  display: block;
+}
+
+/* Janela visível do carrossel */
+.modalidades-janela {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Lista dos itens */
+.modalidades-lista {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -354,11 +384,12 @@ a:target {
   gap: 15px;
 }
 
-/* Icone + texto */
-.modalidades li {
+/* Cada item */
+.item-modalidade {
   text-align: center;
   flex-shrink: 0;
   color: var(--azul);
+  min-width: 100px;
 }
 
 /* Círculo */
@@ -376,24 +407,13 @@ a:target {
 }
 
 /* Texto */
-.modalidades li p {
+.item-modalidade p {
   margin: 0;
   text-transform: uppercase;
   cursor: default;
 }
 
-/* Estilos para as SETAS  */
-.modalidades li.setas img {
-  box-shadow: none;
-  padding: 0;
-  width: 20px;
-  height: 15px;
-  margin: 0;
-  margin-bottom: 30px;
-  cursor: pointer;
-
-}
-
+/* Hover dos ícones */
 .imgModalidade:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.20);

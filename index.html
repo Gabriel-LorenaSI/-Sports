@@ -88,16 +88,16 @@
     <!-- Final Hero Banner -->
 
     <section class="modalidades" id="linkEventos">
-      <h4 class="text-h4">Modalidades</h4>
-      <ul>
-        <li class="setas">
-          <img
-            src="img/iconesModalidade/setaModalidade.png"
-            alt="setaEsquerda"
-          />
-        </li>
+  <h4 class="text-h4">Modalidades</h4>
 
-        <li>
+  <div class="modalidades-carrossel">
+    <button class="seta-modalidades seta-esquerda" type="button" aria-label="Voltar modalidades">
+      <img src="img/iconesModalidade/setaModalidade.png" alt="setaEsquerda" />
+    </button>
+
+    <div class="modalidades-janela">
+      <ul class="modalidades-lista">
+        <li class="item-modalidade">
           <img
             class="imgModalidade"
             src="img/iconesModalidade/atividade=corrida.png"
@@ -106,7 +106,7 @@
           <p class="text-button-2">Corrida</p>
         </li>
 
-        <li>
+        <li class="item-modalidade">
           <img
             class="imgModalidade"
             src="img/iconesModalidade/atividade=futebol.png"
@@ -115,7 +115,7 @@
           <p class="text-button-2">Futebol</p>
         </li>
 
-        <li>
+        <li class="item-modalidade">
           <img
             class="imgModalidade"
             src="img/iconesModalidade/atividade=bike.png"
@@ -124,7 +124,7 @@
           <p class="text-button-2">Bike</p>
         </li>
 
-        <li>
+        <li class="item-modalidade">
           <img
             class="imgModalidade"
             src="img/iconesModalidade/atividade=triathlon.png"
@@ -132,7 +132,8 @@
           />
           <p class="text-button-2">Triatlo</p>
         </li>
-        <li>
+
+        <li class="item-modalidade">
           <img
             class="imgModalidade"
             src="img/iconesModalidade/atividade=natacao.png"
@@ -140,7 +141,8 @@
           />
           <p class="text-button-2">Natação</p>
         </li>
-        <li>
+
+        <li class="item-modalidade">
           <img
             class="imgModalidade"
             src="img/iconesModalidade/atividade=volei.png"
@@ -148,7 +150,8 @@
           />
           <p class="text-button-2">Vôlei</p>
         </li>
-        <li>
+
+        <li class="item-modalidade">
           <img
             class="imgModalidade"
             src="img/iconesModalidade/atividade=nightRun.png"
@@ -156,11 +159,14 @@
           />
           <p class="text-button-2">Night Run</p>
         </li>
-        <li class="setas">
-          <img src="img/iconesModalidade/setaDireita.png" alt="setaDireita" />
-        </li>
       </ul>
-    </section>
+    </div>
+
+    <button class="seta-modalidades seta-direita" type="button" aria-label="Avançar modalidades">
+      <img src="img/iconesModalidade/setaDireita.png" alt="setaDireita" />
+    </button>
+  </div>
+</section>
 
     <main class="container grid-layout">
       <section class="proximosEventos">

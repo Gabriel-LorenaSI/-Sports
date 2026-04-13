@@ -77,3 +77,20 @@ if (btnMenu && btnFechar && menuLateral) {
     });
   });
 }
+
+// Carrossel
+const listaModalidades = document.querySelector(".modalidades-lista");
+const btnSetaEsquerda = document.querySelector(".seta-esquerda");
+const btnSetaDireita = document.querySelector(".seta-direita");
+
+if (listaModalidades && btnSetaEsquerda && btnSetaDireita) {
+  btnSetaDireita.addEventListener("click", () => {
+    const primeiroItem = listaModalidades.firstElementChild;
+    listaModalidades.appendChild(primeiroItem);
+  });
+
+  btnSetaEsquerda.addEventListener("click", () => {
+    const ultimoItem = listaModalidades.lastElementChild;
+    listaModalidades.insertBefore(ultimoItem, listaModalidades.firstElementChild);
+  });
+}
