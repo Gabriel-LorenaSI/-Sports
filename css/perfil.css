@@ -437,33 +437,6 @@ aside h4 {
 /* --------------------- FIM COLUNA DA DIREITA --------------------- */
 
 
-@media screen and (max-width: 1750px) {
-
-  .passadosInfo {
-    display: flex;
-  }
-
-
-  .infoCard {
-    width: 65%;
-  }
-
-
-  .btnPassados {
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-    align-items: end;
-    gap: 8px;
-  }
-
-  .tituloEvento {
-    margin-top: 0;
-    font-size: 35px;
-    line-height: 102%;
-  }
-}
-
 /* botão tema escuro */
 
 .trilho {
@@ -525,24 +498,23 @@ body.dark .headerLogin {
 }
 
 body.dark .nav-links-wrapper a:nth-child(1) {
-  background-color: #1f1f1f;
-  color: white;
+  background-color: white;
+  color: #1f1f1f;
 }
 
 body.dark .nav-links-wrapper a:nth-child(2),
 body.dark .nav-links-wrapper a:nth-child(3) {
-  background-color: #1f1f1f;
-  color: white;
+  background-color: white;
+  color: #1f1f1f;
 }
 
 body.dark .nav-links-wrapper a:nth-child(4) {
-  background-color: var(--laranja);
+  background-color: var(--azul);
   color: white;
 }
 
 body.dark .nav-search {
-  background-color: #1f1f1f;
-  color: white;
+  background-color: white;
 }
 
 body.dark .nav-search::placeholder {
@@ -583,6 +555,10 @@ body.dark .btnResultado {
 
 body.dark .calendarPerfil {
   background-color: #1f1f1f;
+}
+
+body.dark .calendarPerfil__day {
+  color: var(--azul);
 }
 
 body.dark .calendarPerfil__number {
@@ -630,4 +606,31 @@ footer {
     color 0.3s ease,
     border-color 0.3s ease,
     box-shadow 0.3s ease;
+}
+
+@media screen and (max-width: 1750px) {
+
+  .passadosInfo {
+    display: flex;
+  }
+
+
+  .infoCard {
+    width: 65%;
+  }
+
+
+  .btnPassados {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    align-items: end;
+    gap: 8px;
+  }
+
+  .tituloEvento {
+    margin-top: 0;
+    font-size: 35px;
+    line-height: 102%;
+  }
 }

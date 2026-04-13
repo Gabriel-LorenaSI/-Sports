@@ -906,7 +906,7 @@ body.dark .nav-links-wrapper a {
 }
 
 body.dark .nav-links-wrapper a:nth-child(1) {
-  background-color: var(--laranja);
+  background-color: var(--azul);
   color: white;
 }
 
@@ -935,6 +935,10 @@ body.dark .calendar {
   background-color: #1f1f1f;
 }
 
+body.dark .calendar__day {
+  color: #ffffff;
+}
+
 body.dark .calendar__number {
   background-color: #2b2b2b;
   color: #ffffff;
@@ -957,7 +961,13 @@ body.dark .peladasDireita {
 body.dark footer {
   background-color: #111111;
   color: #ffffff;
+  border-top: 2px solid var(--azul);
 }
+
+body.dark .rodape h4 {
+  color: var(--azul);
+}
+
 
 /* Uma transição suave para o tema escuro */
 body,

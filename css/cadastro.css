@@ -272,24 +272,24 @@ body.dark .headerLogin {
 }
 
 body.dark .nav-links-wrapper a:nth-child(1) {
-    background-color: #1f1f1f;
-    color: white;
+    background-color: white;
+    color: #1f1f1f;
 }
 
 body.dark .nav-links-wrapper a:nth-child(2),
 body.dark .nav-links-wrapper a:nth-child(3) {
-    background-color: #1f1f1f;
-    color: white;
+    background-color: white;
+    color: #1f1f1f;
 }
 
 body.dark .nav-links-wrapper a:nth-child(4) {
-    background-color: var(--laranja);
+    background-color: var(--azul);
     color: white;
 }
 
 body.dark .nav-search {
-    background-color: #1f1f1f;
-    color: white;
+    background-color: white;
+    color: #1f1f1f;
 }
 
 body.dark .nav-search::placeholder {

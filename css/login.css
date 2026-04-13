@@ -273,7 +273,7 @@ body.dark .nav-links-wrapper a:nth-child(3) {
 }
 
 body.dark .nav-links-wrapper a:nth-child(4) {
-  background-color: var(--laranja);
+  background-color: var(--azul);
   color: white;
 }
 
