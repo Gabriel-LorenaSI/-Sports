@@ -830,7 +830,7 @@ footer {
 .trilho {
   width: 60px;
   height: 30px;
-  background-color: #d9d9d9;
+  background-color: white;
   border-radius: 20px;
   position: absolute;
   top: 24px;
@@ -847,16 +847,18 @@ footer {
 
 .icone-sol,
 .icone-lua {
+  color: #1f1f1f;
   font-size: 14px;
   line-height: 1;
   pointer-events: none;
   user-select: none;
 }
 
+
 .indicador {
   width: 22px;
   height: 22px;
-  background-color: white;
+  background-color: #1f1f1f;
   border-radius: 50%;
   position: absolute;
   top: 4px;
@@ -888,6 +890,14 @@ footer {
 body.dark {
   background-color: #121212;
   color: #ffffff;
+}
+
+body.dark .indicador {
+  background-color: white;
+}
+
+body.dark .icone-sol {
+  color: white;
 }
 
 body.dark .nav-links-wrapper a {

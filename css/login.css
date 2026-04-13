@@ -206,7 +206,7 @@
 .trilho {
   width: 60px;
   height: 30px;
-  background-color: #d9d9d9;
+  background-color: white;
   border-radius: 20px;
   position: absolute;
   top: 24px;
@@ -223,6 +223,7 @@
 
 .icone-sol,
 .icone-lua {
+  color: #1f1f1f;
   font-size: 14px;
   line-height: 1;
   pointer-events: none;
@@ -232,7 +233,7 @@
 .indicador {
   width: 22px;
   height: 22px;
-  background-color: white;
+  background-color: #1f1f1f;
   border-radius: 50%;
   position: absolute;
   top: 4px;
@@ -261,14 +262,14 @@ body.dark .headerLogin {
 }
 
 body.dark .nav-links-wrapper a:nth-child(1) {
-  background-color: #1f1f1f;
-  color: white;
+  background-color: white;
+  color: #1f1f1f;
 }
 
 body.dark .nav-links-wrapper a:nth-child(2),
 body.dark .nav-links-wrapper a:nth-child(3) {
-  background-color: #1f1f1f;
-  color: white;
+  background-color: white;
+  color: #1f1f1f;
 }
 
 body.dark .nav-links-wrapper a:nth-child(4) {
@@ -277,8 +278,8 @@ body.dark .nav-links-wrapper a:nth-child(4) {
 }
 
 body.dark .nav-search {
-  background-color: #1f1f1f;
-  color: white;
+  background-color: white;
+  color: #1f1f1f;
 }
 
 body.dark .nav-search::placeholder {

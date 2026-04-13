@@ -469,7 +469,7 @@ aside h4 {
 .trilho {
   width: 60px;
   height: 30px;
-  background-color: #d9d9d9;
+  background-color: white;
   border-radius: 20px;
   position: absolute;
   top: 24px;
@@ -486,6 +486,7 @@ aside h4 {
 
 .icone-sol,
 .icone-lua {
+  color: #1f1f1f;
   font-size: 14px;
   line-height: 1;
   pointer-events: none;
@@ -495,7 +496,7 @@ aside h4 {
 .indicador {
   width: 22px;
   height: 22px;
-  background-color: white;
+  background-color: #1f1f1f;
   border-radius: 50%;
   position: absolute;
   top: 4px;
