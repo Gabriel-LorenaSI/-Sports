@@ -52,3 +52,28 @@
   var bsqtLrnjal = L.marker([-22.514, -44.094], {icon: pinBasquete}).addTo(map);
 
  
+// ==========================================
+// LÓGICA DO MENU HAMBÚRGUER (MOBILE/TABLET)
+// ==========================================
+const btnMenu = document.getElementById('btnMenu');
+const btnFechar = document.getElementById('btnFechar');
+const menuLateral = document.getElementById('menuLateral');
+
+if (btnMenu && btnFechar && menuLateral) {
+  // Abre o menu
+  btnMenu.addEventListener('click', () => {
+    menuLateral.classList.add('menu-aberto');
+  });
+
+  // Fecha o menu no botão (X)
+  btnFechar.addEventListener('click', () => {
+    menuLateral.classList.remove('menu-aberto');
+  });
+
+  // Fecha o menu caso clique em algum link (útil para Single Page)
+  menuLateral.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      menuLateral.classList.remove('menu-aberto');
+    });
+  });
+}

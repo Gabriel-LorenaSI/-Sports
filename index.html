@@ -29,7 +29,11 @@
       <header>
         <nav class="nav-full-bleed">
           <a href="#"><img src="img/logo.png" alt="" class="nav-logo" /></a>
-          <div class="nav-links-wrapper grid-layout text-button-2">
+
+          <div class="menu-hamburger" id="btnMenu">☰</div>
+
+          <div class="nav-links-wrapper grid-layout text-button-2" id="menuLateral">
+            <div class="btn-fechar" id="btnFechar">✖</div>
             <a href="#">Home</a>
             <a href="#linkEventos">Eventos</a>
             <a href="#">Peladas</a>
@@ -41,6 +45,7 @@
             <span class="icone-lua">◐</span>
             <div class="indicador"></div>
           </div>
+
           <input
             type="text"
             placeholder="Pesquisar"
@@ -317,7 +322,7 @@
     </main>
 
     <section class="mapa container grid-layout">
-      <h4 class="text-h4">Mapa</h4>
+      <h3 class="text-h3">Mapa</h3>
       <div id="map"></div>
       <div class="peladas">
         <h3 class="text-h3">Jogo Leo88 19h AERO</h3>
