@@ -10,20 +10,11 @@ _______________________________________
 
 O que falta fazer?
 
-- Trocar fotos Hero Banner
-    - ok
-- Arrumar código de Login/Cadastro 
-    - ok
-    - Adicionar RegEx e Mask
-        - ok
-- Arrumar código Perfil
-    - ok
-- Arrumar os links e botões
-    - ok
+- Arrumar Cor do Modo Dark no Index
+- Arrumar Cor do Modo Dark no Modal Menu Hamburger Header
 
 _______________________________________
 
 Mudanças Menores
 
-- Diminuir Favicon (para ajudar na performance)
-- Mudar imagem Login
+- 
