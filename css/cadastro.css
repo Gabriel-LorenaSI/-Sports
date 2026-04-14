@@ -373,6 +373,17 @@ footer {
             text-align: left;
         }
     }
+
+    body.dark .nav-links-wrapper a:nth-of-type(1) {
+        background-color: #1f1f1f;
+        color: white;
+    }
+
+    body.dark .nav-links-wrapper a:nth-of-type(2),
+    body.dark .nav-links-wrapper a:nth-of-type(3) {
+      background-color: #1f1f1f;
+      color: white;
+    }
 }
 
 @media (max-width: 768px) {
@@ -427,6 +438,17 @@ footer {
         label {
             text-align: left;
         }
+    }
+
+    body.dark .nav-links-wrapper a:nth-of-type(1) {
+        background-color: #1f1f1f;
+        color: white;
+    }
+
+    body.dark .nav-links-wrapper a:nth-of-type(2),
+    body.dark .nav-links-wrapper a:nth-of-type(3) {
+      background-color: #1f1f1f;
+      color: white;
     }
 }
 /* --------------------- FIM DA RESPONSIVIDADE --------------------- */
