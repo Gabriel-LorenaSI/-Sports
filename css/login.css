@@ -1,6 +1,7 @@
 * {
-    max-width: 100%;
-    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -16,13 +17,13 @@
     box-shadow: 0px 3px 6px rgba(0,0,0,0.15);
 }
 
-.nav-links-wrapper a:nth-child(1) { 
+.nav-links-wrapper a:nth-of-type(1) { 
   grid-column: 3 / span 2;
   background-color: white; 
   color: black;
 }
 
-.nav-links-wrapper a:nth-child(4) { /* Login/Cadastro */
+.nav-links-wrapper a:nth-of-type(4) { /* Login/Cadastro */
   grid-column: 9 / span 2; 
   background-color: var(--laranja);
   color: rgb(255, 255, 255);
@@ -184,6 +185,7 @@
 
 /* --------------------- RESPONSIVIDADE --------------------- */
 
+
 @media (max-width: 900px) {
     .loginPrincipal {
         flex-direction: column;
@@ -201,6 +203,107 @@
     }
 }
 
+@media (max-width: 425px) {
+    body {
+        margin: 0;
+    }
+
+    .headerLogin {
+        position: relative;
+        width: calc(100% - 10px);
+        height: 75px;
+        background-color: var(--verdeEscuro);
+        border-radius: 10px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    }
+    
+    .trilho {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 0;
+    }
+
+    .nav-links-wrapper a:nth-of-type(1) {
+        grid-column: 3 / span 2;
+        background-color: white;
+        color: black;
+    }
+
+    .nav-links-wrapper a:nth-of-type(4) {
+        grid-column: 9 / span 2;
+        background-color: var(--laranja);
+        color: rgb(255, 255, 255);
+    }
+
+    .loginPrincipal {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 30px;
+        gap: 20px;
+    }
+
+    .imgLogin img {
+        display: none;
+    }
+
+    .camposDeLogin {
+        width: 100%;
+        max-width: 380px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    .headerLogin {
+        position: relative;
+        width: calc(100% - 10px);
+        height: 75px;
+        background-color: var(--verdeEscuro);
+        margin: 5px;
+        border-radius: 10px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    }
+    
+    .trilho {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 0;
+    }
+
+    .nav-links-wrapper a:nth-child(1) {
+        grid-column: 3 / span 2;
+        background-color: white;
+        color: black;
+    }
+
+    .nav-links-wrapper a:nth-child(4) {
+        grid-column: 9 / span 2;
+        background-color: var(--laranja);
+        color: rgb(255, 255, 255);
+    }
+
+    .loginPrincipal {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 30px;
+        gap: 20px;
+    }
+
+    .imgLogin img {
+        display: none;
+    }
+
+    .camposDeLogin {
+        width: 100%;
+        max-width: 380px;
+    }
+}
+
 /* --------------------- TEMA ESCURO BOTÃO --------------------- */
 
 .trilho {
@@ -208,17 +311,12 @@
   height: 30px;
   background-color: white;
   border-radius: 20px;
-  position: absolute;
-  top: 24px;
-  right: 250px;
-  cursor: pointer;
-  transition: 0.3s;
-  z-index: 20;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 7px;
   box-sizing: border-box;
+  transition: 0.3s;
 }
 
 .icone-sol,
@@ -239,7 +337,6 @@
   top: 4px;
   left: 4px;
   transition: 0.3s;
-  z-index: 2;
 }
 
 .trilho.ativo {
