@@ -1282,6 +1282,16 @@ footer {
   .rodapeLogo {
     margin: auto;
   }
+
+  body.dark header {
+    background-color: #1f1f1f;
+  }
+
+  body.dark .nav-links-wrapper.grid-layout {
+    background-color: #121212;
+  }
+
+
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
@@ -1537,5 +1547,13 @@ footer {
   .rodapeLogo {
     grid-column: 1 / -1;
     margin: auto;
+  }
+
+  body.dark header {
+    background-color: #1f1f1f;
+  }
+
+  body.dark .nav-links-wrapper.grid-layout {
+    background-color: #121212;
   }
 }
