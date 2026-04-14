@@ -1096,7 +1096,7 @@ footer {
 
   .nav-links-wrapper.grid-layout {
     position: fixed;
-    top: -100%;
+    top: -200%;
     right: auto;
     left: 0;
     width: 100vw;
@@ -1355,7 +1355,8 @@ footer {
   }
 
   .slideshow,
-  .pagination {
+  .pagination,
+  .seta-modalidades {
     display: none;
   }
 
@@ -1369,9 +1370,10 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     padding: 0 10px;
     overflow-x: visible;
+    padding: 0;
   }
 
   .modalidades li.setas {
