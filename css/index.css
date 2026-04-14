@@ -22,6 +22,10 @@
   padding: 0;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 .container {
   max-width: 1040px;
   margin-left: auto;
@@ -119,6 +123,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 10;
+  align-content: center;
 }
 
 .nav-logo {
@@ -1065,11 +1070,17 @@ footer {
     text-align: center;
   }
 
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
   header {
     position: relative;
     left: auto;
-    width: calc(100% - 20px);
-    margin: auto;
+    width: calc(100% - 10px);
+    margin: 5px;
+    height: 75px;
     background-color: var(--verdeEscuro);
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -1152,10 +1163,14 @@ footer {
 
   .heroBanner {
     height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
   }
 
   body {
-    margin-top: 10px;
+    margin: 0;
+    padding: 0;
   }
 
   .container.grid-layout {
