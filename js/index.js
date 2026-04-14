@@ -85,13 +85,13 @@ const btnSetaDireita = document.querySelector(".seta-direita");
 
 if (listaModalidades && btnSetaEsquerda && btnSetaDireita) {
 btnSetaDireita.addEventListener("click", () => {
-  const ultimoItem = listaModalidades.lastElementChild;
-  listaModalidades.insertBefore(ultimoItem, listaModalidades.firstElementChild);
+  const primeiroItem = listaModalidades.firstElementChild;
+  listaModalidades.appendChild(primeiroItem);
 });
 
 btnSetaEsquerda.addEventListener("click", () => {
-  const primeiroItem = listaModalidades.firstElementChild;
-  listaModalidades.appendChild(primeiroItem);
+  const ultimoItem = listaModalidades.lastElementChild;
+  listaModalidades.insertBefore(ultimoItem, listaModalidades.firstElementChild);
 });
 }
 
