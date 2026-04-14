@@ -11,6 +11,7 @@ _______________________________________
 O que falta fazer?
 
 - Arrumar Cor do Modo Dark no Index
+    Tentar usar o body.dark dentro do @media
 - Arrumar Cor do Modo Dark no Modal Menu Hamburger Header
 
 _______________________________________
