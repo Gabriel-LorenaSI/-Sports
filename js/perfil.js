@@ -7,3 +7,8 @@
             }
 
           }
+
+          function clickMenu() {
+             let menu = document.getElementById('itens');
+             menu.classList.toggle('aberto');
+            }
