@@ -1289,11 +1289,24 @@ footer {
     text-align: center;
   }
 
+  .heroBanner {
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
   header {
     position: relative;
     left: auto;
-    width: calc(100% - 30px);
-    margin: 10px auto;
+    width: calc(100% - 10px);
+    margin: 5px;
+    height: 75px;
     border-radius: 10px;
     background-color: var(--verdeEscuro);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
