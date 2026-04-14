@@ -106,7 +106,6 @@ body {
 }
 
 .menuPainel:hover {
-    margin-right: 20px;
     border-left: 3px solid rgb(255, 255, 255);
     background-color: var(--verdeClaro);
     border-radius: 0 8px 8px 0;
@@ -120,7 +119,15 @@ body {
 }
 
 #itens {
-  display: none;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.7s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+#itens.aberto {
+    max-height: 500px; 
+    opacity: 1;
 }
 
 
