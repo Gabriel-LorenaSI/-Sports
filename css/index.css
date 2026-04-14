@@ -782,6 +782,10 @@ body.dark .item-modalidade.ativo .imgModalidade img {
 .mapa {
   padding-top: 30px;
   display: grid;
+
+  h3 {
+    font-weight: 500;
+  }
 }
 
 #map {
@@ -790,6 +794,12 @@ body.dark .item-modalidade.ativo .imgModalidade img {
   border: 2px solid var(--verdeClaro);
   border-radius: 20px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.mapa .text-h3 {
+  grid-column: 1 / span 12;
+  white-space: nowrap;
+  text-align: left;
 }
 
 .peladas {
@@ -801,12 +811,12 @@ body.dark .item-modalidade.ativo .imgModalidade img {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
 }
 
-.peladas h3 {
+.peladas h4 {
   font-weight: 500;
   cursor: default;
 }
 
-.peladasDireita h3 {
+.peladasDireita h4 {
   font-weight: 500;
 }
 
@@ -1242,6 +1252,10 @@ footer {
     padding-top: 0;
   }
 
+  .mapa .text-h3 {
+    text-align: center;
+  }
+
   #map {
     height: 350px;
     border-radius: 10px;
@@ -1508,6 +1522,10 @@ footer {
   #map {
     height: 400px;
     border-radius: 10px;
+  }
+
+  .mapa .text-h3 {
+    text-align: center;
   }
 
   .peladas,
